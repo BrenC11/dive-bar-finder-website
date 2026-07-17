@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://divebarfinder.app/sitemap.xml
+Sitemap: https://divebarfinder.info/sitemap.xml
