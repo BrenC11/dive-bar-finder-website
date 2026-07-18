@@ -1104,6 +1104,371 @@ details[open] summary::after {
   color: #655d51;
 }
 
+/* After-dark atlas */
+.world-guides-tease {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0;
+  background:
+    radial-gradient(
+      circle at 16% 12%,
+      rgba(238, 50, 31, 0.24),
+      transparent 24%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 119px,
+      rgba(255, 255, 255, 0.035) 119px 120px
+    ),
+    #070707;
+}
+.world-guides-tease::after {
+  content: "NIGHT / CITY / FIELD NOTES";
+  position: absolute;
+  right: -45px;
+  top: 48%;
+  color: rgba(255, 255, 255, 0.08);
+  font-weight: 900;
+  letter-spacing: 0.42em;
+  transform: rotate(90deg);
+}
+.world-tease-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: center;
+}
+.world-tease-copy {
+  position: relative;
+}
+.world-tease-copy .eyebrow {
+  color: var(--red);
+}
+.atlas-number {
+  position: absolute;
+  right: -30px;
+  top: -85px;
+  margin: 0;
+  color: rgba(238, 50, 31, 0.2);
+  font: 900 13rem/1 var(--display);
+}
+.world-tease-copy h2 {
+  position: relative;
+  margin: 20px 0 24px;
+  font-size: clamp(3.8rem, 6.7vw, 7.5rem);
+  line-height: 0.78;
+}
+.world-tease-copy > p:not(.atlas-number) {
+  max-width: 550px;
+  margin-bottom: 34px;
+  color: var(--muted);
+}
+.world-tease-cities {
+  border-top: 1px solid var(--line);
+}
+.world-tease-cities a {
+  display: grid;
+  grid-template-columns: 76px 1fr 1.35fr;
+  gap: 20px;
+  align-items: center;
+  min-height: 88px;
+  color: var(--cream);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  transition:
+    0.2s background,
+    0.2s padding;
+}
+.world-tease-cities a:hover {
+  padding-inline: 14px;
+  background: rgba(238, 50, 31, 0.12);
+}
+.world-tease-cities b {
+  color: var(--red);
+  font: 900 1.15rem var(--display);
+}
+.world-tease-cities span {
+  font: 800 1.55rem var(--display);
+  text-transform: uppercase;
+}
+.world-tease-cities small {
+  color: var(--muted);
+}
+
+.world-city-guide {
+  --city-accent: var(--red);
+}
+.world-city-guide .guide-hero::after {
+  content: "AFTER DARK / FIELD NOTES";
+}
+.world-city-hero {
+  min-height: 820px;
+  display: flex;
+  align-items: flex-end;
+  isolation: isolate;
+  background:
+    radial-gradient(
+      circle at 76% 24%,
+      color-mix(in srgb, var(--city-accent) 52%, transparent),
+      transparent 23%
+    ),
+    linear-gradient(
+      118deg,
+      #050505 43%,
+      color-mix(in srgb, var(--city-accent) 25%, #090909) 100%
+    );
+}
+.world-city-hero .world-grid {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.32;
+  background:
+    linear-gradient(
+        color-mix(in srgb, var(--city-accent) 20%, transparent) 1px,
+        transparent 1px
+      )
+      0 0 / 54px 54px,
+    linear-gradient(
+        90deg,
+        color-mix(in srgb, var(--city-accent) 20%, transparent) 1px,
+        transparent 1px
+      )
+      0 0 / 54px 54px;
+  mask-image: linear-gradient(90deg, transparent, #000 40%, #000);
+  transform: perspective(500px) rotateY(-12deg) scale(1.15);
+}
+.world-city-hero .city-stamp {
+  color: var(--city-accent);
+}
+.world-city-hero h1 em {
+  display: block;
+  color: var(--city-accent);
+  font-style: normal;
+}
+.world-city-guide .article-lead {
+  border-color: var(--city-accent);
+}
+.city-notes article {
+  position: relative;
+  overflow: hidden;
+}
+.city-notes article::after {
+  content: "";
+  position: absolute;
+  right: -24px;
+  bottom: -24px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid var(--city-accent);
+  border-radius: 50%;
+}
+
+.cities-hub {
+  background: #070707;
+  color: var(--cream);
+}
+.atlas-hero {
+  position: relative;
+  min-height: 920px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 190px 0 95px;
+  background:
+    radial-gradient(
+      circle at 72% 44%,
+      rgba(238, 50, 31, 0.35),
+      transparent 17%
+    ),
+    radial-gradient(
+      circle at 72% 44%,
+      transparent 0 24%,
+      rgba(255, 255, 255, 0.09) 24.2% 24.4%,
+      transparent 24.6% 35%,
+      rgba(255, 255, 255, 0.06) 35.2% 35.4%,
+      transparent 35.6%
+    ),
+    #050505;
+}
+.atlas-orbit {
+  position: absolute;
+  top: 15%;
+  right: 3%;
+  width: min(48vw, 650px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+}
+.atlas-orbit::before,
+.atlas-orbit::after {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+}
+.atlas-orbit::after {
+  inset: 32%;
+  background: var(--red);
+  box-shadow: 0 0 70px rgba(238, 50, 31, 0.55);
+}
+.atlas-hero .eyebrow {
+  color: var(--red);
+}
+.atlas-hero h1 {
+  position: relative;
+  z-index: 1;
+  max-width: 980px;
+  margin: 28px 0 34px;
+  font-size: clamp(6rem, 13vw, 13rem);
+  line-height: 0.68;
+  letter-spacing: -0.055em;
+}
+.atlas-hero h1 em {
+  color: transparent;
+  font-style: normal;
+  -webkit-text-stroke: 2px var(--cream);
+}
+.atlas-hero p {
+  max-width: 610px;
+  color: #c7c0b5;
+  font-size: 1.15rem;
+}
+.atlas-jump {
+  display: inline-flex;
+  gap: 24px;
+  margin-top: 36px;
+  color: var(--cream);
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.atlas-jump span {
+  color: var(--red);
+}
+.atlas-manifesto {
+  background: var(--red);
+  color: #090909;
+}
+.atlas-manifesto .wrap {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 50px;
+  padding-block: 55px;
+}
+.atlas-manifesto span {
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.atlas-manifesto p {
+  max-width: 900px;
+  font: 800 clamp(1.8rem, 3vw, 3.4rem) / 1 var(--display);
+  text-transform: uppercase;
+}
+.city-index {
+  padding-block: 110px;
+}
+.city-region {
+  margin-bottom: 95px;
+}
+.city-region-title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.city-region-title b {
+  color: var(--red);
+}
+.city-index-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.city-index-grid a {
+  position: relative;
+  min-height: 330px;
+  padding: 28px;
+  color: var(--cream);
+  text-decoration: none;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition:
+    0.25s background,
+    0.25s transform;
+}
+.city-index-grid a:nth-child(3n + 1) {
+  border-left: 1px solid var(--line);
+}
+.city-index-grid a:hover {
+  z-index: 1;
+  background: color-mix(in srgb, var(--city-accent) 20%, #0a0a0a);
+  transform: translateY(-8px);
+}
+.city-index-grid a > span {
+  color: var(--city-accent);
+  font: 900 1rem var(--display);
+  letter-spacing: 0.15em;
+}
+.city-index-grid h2 {
+  margin: 95px 0 10px;
+  font-size: clamp(2.5rem, 4vw, 4.8rem);
+  line-height: 0.8;
+}
+.city-index-grid p {
+  color: var(--muted);
+}
+.city-index-grid a > b {
+  position: absolute;
+  left: 28px;
+  bottom: 28px;
+  color: var(--city-accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.featured-region .city-index-grid {
+  grid-template-columns: 1fr;
+}
+.featured-region .city-index-grid a {
+  border-left: 1px solid var(--line);
+}
+.atlas-method {
+  padding: 95px 0;
+  background: #e7ddca;
+  color: #0b0b0a;
+}
+.atlas-method .wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.atlas-method .wrap > div {
+  padding: 35px;
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+.atlas-method .wrap > div:last-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+.atlas-method span {
+  color: var(--red-dark);
+  font-weight: 900;
+}
+.atlas-method h2 {
+  margin: 60px 0 14px;
+  font-size: 3.3rem;
+}
+.atlas-method p {
+  color: #4c463c;
+}
+.atlas-cta {
+  margin-block: 110px;
+}
+
 .city-guide .guide-hero {
   position: relative;
   overflow: hidden;
@@ -1432,12 +1797,65 @@ details[open] summary::after {
     grid-template-columns: 1fr;
   }
   .london-cluster-grid,
+  .world-tease-grid,
   .district-grid,
   .cluster-links,
   .london-cta,
   .intent-cards,
   .contrast-list {
     grid-template-columns: 1fr;
+  }
+  .world-guides-tease {
+    padding: 80px 0;
+  }
+  .world-tease-grid {
+    gap: 55px;
+  }
+  .atlas-number {
+    right: 0;
+    font-size: 9rem;
+  }
+  .world-tease-cities a {
+    grid-template-columns: 58px 1fr;
+  }
+  .world-tease-cities small {
+    display: none;
+  }
+  .world-city-hero {
+    min-height: auto;
+  }
+  .world-city-hero h1 em {
+    margin-top: 10px;
+  }
+  .atlas-hero {
+    min-height: 790px;
+    padding-top: 160px;
+  }
+  .atlas-hero h1 {
+    font-size: clamp(5rem, 25vw, 8rem);
+  }
+  .atlas-orbit {
+    top: 20%;
+    right: -28%;
+    width: 92vw;
+    opacity: 0.7;
+  }
+  .atlas-manifesto .wrap,
+  .atlas-method .wrap,
+  .city-index-grid {
+    grid-template-columns: 1fr;
+  }
+  .atlas-manifesto .wrap {
+    gap: 25px;
+  }
+  .city-index-grid a,
+  .city-index-grid a:nth-child(3n + 1) {
+    min-height: 285px;
+    border-left: 1px solid var(--line);
+  }
+  .atlas-method .wrap > div {
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   }
   .london-cluster {
     padding: 80px 0;

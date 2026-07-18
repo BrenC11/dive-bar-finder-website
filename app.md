@@ -159,3 +159,34 @@ Live-result research showed distinct intent around “dive bars London”, “al
 - Treat Camden, Soho, North, East and South London as useful starting areas rather than guarantees.
 - Keep transport, return journeys and direct verification of current venue details central to the advice.
 - Expand to another city only when the app has useful coverage and the page can contain genuinely distinct local guidance.
+
+## International city SEO cluster — 18 July 2026
+
+The city-guide strategy now extends the London model into a curated
+international atlas. The primary target pattern is `dive bars in [city]`, with
+semantic support from local terms such as neighbourhood bar, tavern, Kneipe,
+brown café, bar de quartier, izakaya, live house, music pub and band room.
+
+### Published city pages
+
+- United States: New York City, Los Angeles, Austin, Chicago, Nashville and New
+  Orleans.
+- Canada: Toronto and Montréal.
+- Europe: London, Paris, Berlin, Amsterdam, Dublin and Edinburgh.
+- Asia Pacific: Tokyo and Melbourne.
+
+### Search and conversion approach
+
+- Each page answers city-specific discovery friction: boroughs in New York,
+  driving distances in Los Angeles, live programming in Austin and Nashville,
+  late transit in Montréal, Paris and Tokyo, club/bar distinctions in Berlin,
+  responsible tourism in Amsterdam, and live-music room types in Melbourne.
+- Pages avoid fixed “best bars” rankings that decay quickly and create
+  unverifiable endorsement risk.
+- Every guide connects the informational query to an in-app workflow: Nearby,
+  scene filters, list comparison, map routing, current-detail verification,
+  favourites and collection check-ins.
+- The `/guides/cities.html` atlas is the crawl and discovery hub. The homepage,
+  London guide and every international guide link into the cluster.
+- App Store clicks carry a city-specific `data-download-source` value for
+  conversion measurement in Vercel Web Analytics.
