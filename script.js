@@ -36,10 +36,13 @@ window.va =
     (window.vaq = window.vaq || []).push(args);
   };
 
-if (location.protocol === "https:") {
+if (
+  location.protocol === "https:" &&
+  location.hostname.endsWith("divebarfinder.info")
+) {
   const analytics = document.createElement("script");
   analytics.defer = true;
-  analytics.src = "/_vercel/insights/script.js";
+  analytics.src = "/analytics-config.js";
   document.head.append(analytics);
 }
 
