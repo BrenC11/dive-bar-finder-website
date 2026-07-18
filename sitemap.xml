@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://divebarfinder.info/</loc><lastmod>2026-07-17</lastmod><priority>1.0</priority></url>
-  <url><loc>https://divebarfinder.info/guides/dive-bars-near-me.html</loc><lastmod>2026-07-17</lastmod><priority>0.9</priority></url>
-  <url><loc>https://divebarfinder.info/guides/punk-bars-near-me.html</loc><lastmod>2026-07-17</lastmod><priority>0.8</priority></url>
-  <url><loc>https://divebarfinder.info/guides/rock-metal-bars-near-me.html</loc><lastmod>2026-07-17</lastmod><priority>0.8</priority></url>
-  <url><loc>https://divebarfinder.info/guides/goth-bars-near-me.html</loc><lastmod>2026-07-17</lastmod><priority>0.8</priority></url>
-  <url><loc>https://divebarfinder.info/guides/hidden-local-bars.html</loc><lastmod>2026-07-17</lastmod><priority>0.8</priority></url>
-  <url><loc>https://divebarfinder.info/guides/dive-bars-while-travelling.html</loc><lastmod>2026-07-17</lastmod><priority>0.8</priority></url>
+  <url><loc>https://divebarfinder.info/</loc><lastmod>2026-07-18</lastmod><priority>1.0</priority></url>
+  <url><loc>https://divebarfinder.info/about.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://divebarfinder.info/guides/dive-bars-near-me.html</loc><lastmod>2026-07-18</lastmod><priority>0.9</priority></url>
+  <url><loc>https://divebarfinder.info/guides/punk-bars-near-me.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://divebarfinder.info/guides/rock-metal-bars-near-me.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://divebarfinder.info/guides/goth-bars-near-me.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://divebarfinder.info/guides/hidden-local-bars.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://divebarfinder.info/guides/dive-bars-while-travelling.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
 </urlset>

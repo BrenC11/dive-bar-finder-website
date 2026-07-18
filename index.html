@@ -36,9 +36,40 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://divebarfinder.info/#website",
+            "url": "https://divebarfinder.info/",
+            "name": "Dive Bar Finder",
+            "alternateName": "Dive Bar Finder App",
+            "inLanguage": "en-GB",
+            "publisher": { "@id": "https://divebarfinder.info/#organization" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://divebarfinder.info/#organization",
+            "name": "Fear Army LTD",
+            "url": "https://divebarfinder.info/about.html",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://divebarfinder.info/assets/app-store/app-icon.jpg",
+              "width": 512,
+              "height": 512
+            },
+            "sameAs": [
+              "https://apps.apple.com/gb/developer/fear-army-ltd/id1865975145"
+            ]
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["SoftwareApplication", "MobileApplication"],
         "name": "Dive Bar Finder",
-        "applicationCategory": "FoodAndDrinkApplication",
+        "applicationCategory": "LifestyleApplication",
         "operatingSystem": "iOS 17.0 or later",
         "description": "Find nearby dive bars, punk bars, goth bars, rock bars, metal bars and alternative nightlife spots.",
         "url": "https://divebarfinder.info/",
@@ -123,7 +154,7 @@
         <nav class="navlinks" aria-label="Main navigation">
           <a href="#how">How it works</a><a href="#collection">Collection</a
           ><a href="#screenshots">Screenshots</a><a href="#guides">Guides</a
-          ><a href="#faq">FAQ</a
+          ><a href="about.html">About</a><a href="#faq">FAQ</a
           ><a
             class="nav-cta"
             href="https://apps.apple.com/gb/app/dive-bar-finder/id6758267440"
@@ -618,7 +649,7 @@
                 height="44"
               />Dive Bar Finder</a
             >
-            <p style="color: #777; max-width: 390px; margin-top: 18px">
+            <p class="footer-copy">
               Find the bars with character. Built by Fear Army LTD for people
               who prefer atmosphere over polish.
             </p>
@@ -626,7 +657,7 @@
           <nav class="footer-nav" aria-label="Footer">
             <a href="#how">How it works</a><a href="#collection">Collection</a
             ><a href="#screenshots">Screenshots</a><a href="#guides">Guides</a
-            ><a href="#faq">FAQ</a
+            ><a href="about.html">About</a><a href="#faq">FAQ</a
             ><a
               href="https://apps.apple.com/gb/app/dive-bar-finder/id6758267440"
               >App Store</a
