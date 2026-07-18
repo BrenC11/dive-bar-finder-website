@@ -75,16 +75,16 @@ This is an intent-led plan based on the current App Store listing, live search r
 
 ### Primary commercial keywords
 
-| Priority | Keyword | Intent | Best page/placement |
-|---|---|---|---|
-| 1 | dive bars near me | Immediate local discovery; highest product fit | Homepage title, H1 support copy, hero, FAQ, dedicated guide |
-| 2 | dive bar finder | App/tool-seeking and navigational | Brand name, title, H1, app schema, homepage copy |
-| 3 | find dive bars | Action-led discovery | Homepage meta description, how-it-works, CTAs |
-| 4 | punk bars near me | Immediate niche venue discovery | Dedicated guide, guide cards, filters copy |
-| 5 | rock bars near me | Immediate niche venue discovery | Dedicated guide, guide cards, filters copy |
-| 6 | metal bars near me | Immediate niche venue discovery | Dedicated guide, guide cards, filters copy |
-| 7 | goth bars near me | Immediate niche venue discovery | Dedicated guide, guide cards, filters copy |
-| 8 | alternative bars near me | Broader alternative-nightlife discovery | Dedicated guide, homepage feature copy |
+| Priority | Keyword                  | Intent                                         | Best page/placement                                         |
+| -------- | ------------------------ | ---------------------------------------------- | ----------------------------------------------------------- |
+| 1        | dive bars near me        | Immediate local discovery; highest product fit | Homepage title, H1 support copy, hero, FAQ, dedicated guide |
+| 2        | dive bar finder          | App/tool-seeking and navigational              | Brand name, title, H1, app schema, homepage copy            |
+| 3        | find dive bars           | Action-led discovery                           | Homepage meta description, how-it-works, CTAs               |
+| 4        | punk bars near me        | Immediate niche venue discovery                | Dedicated guide, guide cards, filters copy                  |
+| 5        | rock bars near me        | Immediate niche venue discovery                | Dedicated guide, guide cards, filters copy                  |
+| 6        | metal bars near me       | Immediate niche venue discovery                | Dedicated guide, guide cards, filters copy                  |
+| 7        | goth bars near me        | Immediate niche venue discovery                | Dedicated guide, guide cards, filters copy                  |
+| 8        | alternative bars near me | Broader alternative-nightlife discovery        | Dedicated guide, homepage feature copy                      |
 
 ### High-conversion long-tail keywords
 
@@ -139,3 +139,23 @@ This is an intent-led plan based on the current App Store listing, live search r
 - `assets/app-store/screenshot-1.webp` through `screenshot-6.webp`
 
 Source: Apple App Store listing and Apple iTunes Search API. App facts and ratings can change; refresh this file before major campaigns.
+
+## London search cluster — 18 July 2026
+
+Live-result research showed distinct intent around “dive bars London”, “alternative bars London”, “rock bars London”, “metal bars London”, “goth bars London” and “non-touristy bars London”. Searchers also repeatedly distinguish permanent bar identity from gig venues and event nights. The cluster therefore uses one broad city hub and four intent-specific supporting guides rather than overlapping ranked venue lists.
+
+### Target pages
+
+1. `/guides/dive-bars-london.html` — primary London hub; targets dive bars in London, best dive bars London and characterful London bars.
+2. `/guides/punk-bars-london.html` — targets punk bars London, punk pubs London and London punk nightlife.
+3. `/guides/rock-metal-bars-london.html` — targets rock bars London, metal bars London and heavy-music bars and venues.
+4. `/guides/goth-alternative-bars-london.html` — targets goth bars London, alternative bars London and alternative nightlife London.
+5. `/guides/non-touristy-bars-london.html` — targets non-touristy bars London, local bars London and bars beyond the tourist trail.
+
+### Editorial guardrails
+
+- Do not publish a fixed ranked venue list without a repeatable process for checking closures, relocations and current programmes.
+- Explain the difference between a permanent scene identity and an event night.
+- Treat Camden, Soho, North, East and South London as useful starting areas rather than guarantees.
+- Keep transport, return journeys and direct verification of current venue details central to the advice.
+- Expand to another city only when the app has useful coverage and the page can contain genuinely distinct local guidance.

@@ -1005,6 +1005,334 @@ details[open] summary::after {
 .related a:hover {
   border-color: var(--red);
 }
+
+/* London search cluster */
+.london-cluster {
+  padding: 105px 0;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(238, 50, 31, 0.08) 1px, transparent 1px) 0 0 /
+      74px 74px,
+    linear-gradient(rgba(238, 50, 31, 0.08) 1px, transparent 1px) 0 0 / 74px
+      74px,
+    #e7ddca;
+  color: #0b0b0a;
+  border-block: 8px solid var(--red);
+}
+.london-cluster-grid {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: clamp(60px, 10vw, 150px);
+  align-items: center;
+}
+.london-cluster .eyebrow {
+  color: #9f1f13;
+}
+.london-code {
+  margin: 42px 0 15px;
+  font: 900 clamp(5.5rem, 11vw, 9rem) / 0.63 var(--display);
+  letter-spacing: -0.06em;
+  color: var(--red);
+}
+.london-cluster h2 {
+  margin-top: 45px;
+  font-size: clamp(4.5rem, 8vw, 7rem);
+}
+.london-cluster-intro > p:not(.london-code) {
+  max-width: 520px;
+  margin: 18px 0 30px;
+  color: #403a31;
+}
+.london-cluster .text-link {
+  color: #0b0b0a;
+  font-weight: 800;
+  text-underline-offset: 7px;
+}
+.london-cluster .text-link span {
+  color: var(--red);
+}
+.london-lines {
+  position: relative;
+  border-block: 1px solid rgba(11, 11, 10, 0.32);
+}
+.london-lines::before {
+  content: "";
+  position: absolute;
+  top: 36px;
+  bottom: 36px;
+  left: 28px;
+  width: 5px;
+  background: var(--red);
+}
+.london-lines a {
+  position: relative;
+  display: grid;
+  grid-template-columns: 58px 1fr auto;
+  align-items: center;
+  gap: 18px;
+  min-height: 92px;
+  color: #0b0b0a;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(11, 11, 10, 0.22);
+  transition:
+    background 0.2s ease,
+    padding 0.2s ease;
+}
+.london-lines a:last-child {
+  border-bottom: 0;
+}
+.london-lines a:hover {
+  padding-inline: 12px;
+  background: rgba(238, 50, 31, 0.1);
+}
+.line-node {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border: 5px solid var(--red);
+  border-radius: 50%;
+  background: #e7ddca;
+  font: 900 1.4rem var(--display);
+}
+.london-lines b {
+  font: 800 1.65rem var(--display);
+  text-transform: uppercase;
+}
+.london-lines small {
+  color: #655d51;
+}
+
+.city-guide .guide-hero {
+  position: relative;
+  overflow: hidden;
+}
+.city-guide .guide-hero::after {
+  content: "LONDON / NIGHT / FIELD NOTES";
+  position: absolute;
+  right: -58px;
+  bottom: 92px;
+  color: rgba(255, 255, 255, 0.09);
+  font: 900 1rem var(--body);
+  letter-spacing: 0.38em;
+  transform: rotate(-90deg);
+}
+.london-hero {
+  min-height: 850px;
+  display: flex;
+  align-items: flex-end;
+  background:
+    radial-gradient(
+      circle at 78% 30%,
+      rgba(238, 50, 31, 0.45),
+      transparent 22%
+    ),
+    linear-gradient(112deg, #050505 46%, #22100b 100%);
+}
+.city-stamp {
+  position: absolute;
+  top: 170px;
+  right: max(8vw, 50px);
+  color: var(--red);
+  font: 900 clamp(6rem, 14vw, 13rem) / 0.63 var(--display);
+  letter-spacing: -0.07em;
+  opacity: 0.42;
+}
+.scene-hero {
+  min-height: 760px;
+  display: flex;
+  align-items: flex-end;
+}
+.scene-hero h1 {
+  max-width: 1120px;
+}
+.scene-punk {
+  background:
+    linear-gradient(115deg, rgba(0, 0, 0, 0.95) 38%, rgba(167, 24, 12, 0.8)),
+    repeating-linear-gradient(
+      -45deg,
+      transparent 0 25px,
+      rgba(255, 255, 255, 0.07) 25px 27px
+    );
+}
+.scene-metal {
+  background:
+    radial-gradient(
+      circle at 80% 22%,
+      rgba(225, 52, 30, 0.38),
+      transparent 20%
+    ),
+    linear-gradient(125deg, #050505, #161615 66%, #3a0e08);
+}
+.scene-goth {
+  background:
+    radial-gradient(
+      ellipse at 76% 30%,
+      rgba(102, 34, 96, 0.48),
+      transparent 28%
+    ),
+    linear-gradient(120deg, #040404 42%, #1c0d21 100%);
+}
+.scene-local {
+  color: #0b0b0a;
+  background:
+    linear-gradient(rgba(14, 13, 11, 0.11) 1px, transparent 1px) 0 0 / 48px 48px,
+    #e5dbc7;
+}
+.scene-local .breadcrumbs,
+.scene-local .guide-dek,
+.scene-local .guide-meta {
+  color: #4d463b;
+}
+.scene-local .breadcrumbs a,
+.scene-local .guide-meta a {
+  color: #0b0b0a;
+}
+.article-lead {
+  padding-left: 26px;
+  border-left: 5px solid var(--red);
+  font-size: 1.22rem;
+}
+.district-board {
+  padding: 20px 0 85px;
+  background: var(--paper);
+  color: var(--ink);
+}
+.district-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid rgba(7, 7, 7, 0.24);
+  border-left: 1px solid rgba(7, 7, 7, 0.24);
+}
+.district-grid article {
+  min-height: 265px;
+  padding: 30px;
+  border-right: 1px solid rgba(7, 7, 7, 0.24);
+  border-bottom: 1px solid rgba(7, 7, 7, 0.24);
+}
+.district-grid span,
+.intent-cards span,
+.contrast-list span {
+  color: var(--red-dark);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.district-grid h3 {
+  margin: 58px 0 10px;
+  font-size: 2.5rem;
+}
+.district-grid p {
+  color: #4c463c;
+}
+.route-steps {
+  counter-reset: route;
+  list-style: none;
+  padding: 0 !important;
+}
+.route-steps li {
+  position: relative;
+  padding: 22px 0 22px 60px;
+  border-top: 1px solid var(--line);
+}
+.route-steps li::before {
+  counter-increment: route;
+  content: counter(route, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 20px;
+  color: var(--red);
+  font: 900 1.4rem var(--display);
+}
+.cluster-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 34px 0 55px;
+}
+.cluster-links a {
+  min-height: 175px;
+  padding: 24px;
+  color: var(--cream);
+  text-decoration: none;
+  border: 1px solid var(--line);
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+.cluster-links a:hover {
+  transform: translateY(-4px);
+  border-color: var(--red);
+}
+.cluster-links span,
+.cluster-links strong,
+.cluster-links small {
+  display: block;
+}
+.cluster-links span {
+  color: var(--red);
+  font: 900 0.78rem var(--body);
+}
+.cluster-links strong {
+  margin-top: 38px;
+  font: 800 1.75rem var(--display);
+  text-transform: uppercase;
+}
+.cluster-links small {
+  margin-top: 4px;
+  color: var(--muted);
+}
+.london-cta {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 35px;
+  align-items: end;
+}
+.london-cta .eyebrow {
+  color: var(--red-dark);
+}
+.signal-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 38px 0 52px;
+}
+.signal-strip span {
+  padding: 10px 14px;
+  color: var(--cream);
+  border: 1px solid var(--red);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.intent-cards,
+.contrast-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 30px -80px 55px;
+}
+.intent-cards article,
+.contrast-list > div {
+  padding: 25px;
+  border: 1px solid var(--line);
+  background: #141413;
+}
+.intent-cards h3,
+.contrast-list strong {
+  display: block;
+  margin: 35px 0 8px;
+  color: var(--cream);
+  font: 800 1.7rem var(--display);
+  text-transform: uppercase;
+}
+.intent-cards p,
+.contrast-list p {
+  font-size: 0.9rem;
+}
 .reveal {
   opacity: 0;
   transform: translateY(25px);
@@ -1102,6 +1430,54 @@ details[open] summary::after {
   }
   .related-grid {
     grid-template-columns: 1fr;
+  }
+  .london-cluster-grid,
+  .district-grid,
+  .cluster-links,
+  .london-cta,
+  .intent-cards,
+  .contrast-list {
+    grid-template-columns: 1fr;
+  }
+  .london-cluster {
+    padding: 80px 0;
+  }
+  .london-cluster h2 {
+    font-size: clamp(4rem, 19vw, 6rem);
+  }
+  .london-lines a {
+    grid-template-columns: 58px 1fr;
+  }
+  .london-lines small {
+    display: none;
+  }
+  .city-stamp {
+    top: 150px;
+    right: 20px;
+  }
+  .london-hero,
+  .scene-hero {
+    min-height: auto;
+  }
+  .city-guide .guide-hero {
+    padding: 135px 0 65px;
+  }
+  .city-guide .guide-hero h1 {
+    font-size: clamp(3.65rem, 15.5vw, 4.8rem);
+    overflow-wrap: break-word;
+  }
+  .city-guide .guide-hero::after {
+    display: none;
+  }
+  .district-grid article {
+    min-height: 230px;
+  }
+  .intent-cards,
+  .contrast-list {
+    margin-inline: 0;
+  }
+  .london-cta .app-button {
+    justify-self: start;
   }
   .section {
     padding: 80px 0;
