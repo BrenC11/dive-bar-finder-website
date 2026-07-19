@@ -189,4 +189,4 @@ brown café, bar de quartier, izakaya, live house, music pub and band room.
 - The `/guides/cities.html` atlas is the crawl and discovery hub. The homepage,
   London guide and every international guide link into the cluster.
 - App Store clicks carry a city-specific `data-download-source` value for
-  conversion measurement in Vercel Web Analytics.
+  first-party conversion measurement.

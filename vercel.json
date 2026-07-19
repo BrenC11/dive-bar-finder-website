@@ -1,5 +1,4 @@
 {
-  "buildCommand": "node build-analytics.mjs",
   "outputDirectory": ".",
   "headers": [
     {
