@@ -127,6 +127,7 @@ const cities = [
   },
   {
     slug: "montreal", name: "Montréal", short: "Montréal", code: "YUL", country: "CA", locale: "en-CA", accent: "#4dd0e1",
+    modified: "2026-07-28", displayModified: "28 July 2026",
     tagline: "Late nights in two languages.",
     description: "Find dive bars in Montréal across the Plateau, Mile End, Village and emerging neighbourhood scenes, with practical bilingual and late-night tips.",
     intro: "Montréal combines dense neighbourhood life, deep music culture and a genuinely late rhythm. A bar search can move between French and English, terrace and basement, neighbourhood tavern and experimental music room within a short walk—especially when you choose the right axis.",
@@ -141,7 +142,13 @@ const cities = [
     ],
     fieldNotes: [["Language", "Search French terms as well as English ones."], ["Season", "Terrace season and deep winter require different plans."], ["Hours", "Late closing changes the shape of the entire evening."]],
     transport: "The Métro stops before the bars do. Check the final train and night-bus route before settling into a late room.",
-    etiquette: "Open with bonsoir, follow the venue’s language lead and tip appropriately. Montréal’s relaxed surface still has clear local manners."
+    etiquette: "Open with bonsoir, follow the venue’s language lead and tip appropriately. Montréal’s relaxed surface still has clear local manners.",
+    faq: [
+      ["What should I search for besides dive bar in Montréal?", "Try taverne, bar de quartier, bar rock, salle de spectacle and the name of the neighbourhood. French search terms often reveal places that an English only search misses."],
+      ["Do I need to speak French in Montréal bars?", "You can visit many Montréal bars in English, but starting with bonsoir and saying merci is courteous. Follow the language used by staff and never assume everyone wants to switch languages."],
+      ["Which Montréal neighbourhoods are good for an alternative bar search?", "The Plateau and Mile End are strong for independent culture, the Quartier Latin for student and theatre energy, the Village for LGBTQ+ nightlife, and Villeray for a more neighbourhood focused route."],
+      ["How late can I use the Montréal Métro after a night out?", "The bars can stay open later than the Métro runs. Check the current STM last train and night bus times before choosing a late venue, because service varies by line and day."]
+    ]
   },
   {
     slug: "paris", name: "Paris", short: "Paris", code: "PAR", country: "FR", locale: "en", accent: "#ff8a80",
@@ -163,6 +170,7 @@ const cities = [
   },
   {
     slug: "berlin", name: "Berlin", short: "Berlin", code: "BER", country: "DE", locale: "en", accent: "#d4e157",
+    modified: "2026-07-28", displayModified: "28 July 2026",
     tagline: "No last call. Still make a plan.",
     description: "A field guide to Berlin dive bars, Kneipen, punk rooms and neighbourhood nightlife across Kreuzberg, Neukölln and Friedrichshain.",
     intro: "Berlin’s lack of a universal closing time changes the psychology of a night out: there is less pressure to arrive early, but more reason to understand the room you are entering. The city’s Kneipen, music bars and club-adjacent spaces are distinct cultures, not interchangeable stops.",
@@ -177,7 +185,13 @@ const cities = [
     ],
     fieldNotes: [["Cash", "Carry euros; card acceptance is not universal."], ["Smoking", "Rules and real-world smoke levels may differ from expectations."], ["Privacy", "A no-photo rule is a rule, not a suggestion."]],
     transport: "Weekend all-night services help, but weekday gaps and replacement transport still matter. Check BVG before moving across the city.",
-    etiquette: "Keep your phone away where requested, have cash, greet with a simple hallo and do not treat local regulars as evidence for your authenticity hunt."
+    etiquette: "Keep your phone away where requested, have cash, greet with a simple hallo and do not treat local regulars as evidence for your authenticity hunt.",
+    faq: [
+      ["What should I search for besides dive bar in Berlin?", "Try Kneipe, Eckkneipe, Rockkneipe, Musikbar and the name of the Kiez. These local terms separate neighbourhood pubs and music rooms from clubs and themed tourist bars."],
+      ["Do Berlin dive bars take cards?", "Some do, but cash only service remains common enough that carrying euros is sensible. Check recent venue information and ask before ordering if the payment policy is unclear."],
+      ["Can people smoke inside Berlin bars?", "Smoking conditions vary by venue, room size and local rules. Recent reviews and official venue information are the safest way to check, especially if smoke affects your health or comfort."],
+      ["Which Berlin areas are useful for a Kneipe or punk bar search?", "Kreuzberg, Neukölln and Friedrichshain offer dense alternative nightlife, while Schöneberg and City West add historic queer venues and older neighbourhood pubs. Search at Kiez level because the atmosphere changes quickly between nearby streets."]
+    ]
   },
   {
     slug: "amsterdam", name: "Amsterdam", short: "Amsterdam", code: "AMS", country: "NL", locale: "en", accent: "#ff5252",
@@ -286,6 +300,16 @@ function page(city, index) {
           <article><span>${zone}</span><h3>${name}</h3><p>${copy}</p></article>`).join("");
   const notes = city.fieldNotes.map(([label, copy]) => `
             <article><span>${label}</span><h3>${label}</h3><p>${copy}</p></article>`).join("");
+  const faq = city.faq ?? [];
+  const faqMarkup = faq.length ? `
+        <section class="guide-faq" aria-labelledby="${city.slug}-faq">
+          <h2 id="${city.slug}-faq">${city.short} dive bar questions</h2>
+          ${faq.map(([question, answer]) => `<details><summary>${question}</summary><p class="answer">${answer}</p></details>`).join("\n          ")}
+        </section>` : "";
+  const articleSchema = {"@type":"Article","headline":`Dive Bars in ${city.name}: ${city.tagline}`,"description":city.description,"image":"https://divebarfinder.info/assets/app-store/screenshot-6.webp","author":{"@type":"Organization","name":"Dive Bar Finder","url":"https://divebarfinder.info/about.html"},"publisher":{"@type":"Organization","name":"Fear Army LTD","logo":{"@type":"ImageObject","url":"https://divebarfinder.info/assets/app-store/app-icon.jpg"}},"datePublished":date,"dateModified":city.modified ?? date,"mainEntityOfPage":`https://divebarfinder.info/guides/dive-bars-${city.slug}.html`,"about":{"@type":"Place","name":city.name,"address":{"@type":"PostalAddress","addressLocality":city.name,"addressCountry":city.country}}};
+  const breadcrumbSchema = {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://divebarfinder.info/"},{"@type":"ListItem","position":2,"name":"City guides","item":"https://divebarfinder.info/guides/cities.html"},{"@type":"ListItem","position":3,"name":`Dive bars in ${city.name}`,"item":`https://divebarfinder.info/guides/dive-bars-${city.slug}.html`} ]};
+  const faqSchema = faq.length ? {"@type":"FAQPage","mainEntity":faq.map(([question, answer]) => ({"@type":"Question","name":question,"acceptedAnswer":{"@type":"Answer","text":answer}}))} : null;
+  const graph = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
   return `<!doctype html>
 <html lang="${city.locale}">
   <head>
@@ -303,7 +327,7 @@ function page(city, index) {
     <link rel="icon" href="../assets/app-store/app-icon.jpg" />
     <link rel="stylesheet" href="../styles.css" />
     <script type="application/ld+json">
-      ${JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"Article","headline":`Dive Bars in ${city.name}: ${city.tagline}`,"description":city.description,"image":"https://divebarfinder.info/assets/app-store/screenshot-6.webp","author":{"@type":"Organization","name":"Dive Bar Finder","url":"https://divebarfinder.info/about.html"},"publisher":{"@type":"Organization","name":"Fear Army LTD","logo":{"@type":"ImageObject","url":"https://divebarfinder.info/assets/app-store/app-icon.jpg"}},"datePublished":date,"dateModified":date,"mainEntityOfPage":`https://divebarfinder.info/guides/dive-bars-${city.slug}.html`,"about":{"@type":"Place","name":city.name,"address":{"@type":"PostalAddress","addressLocality":city.name,"addressCountry":city.country}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://divebarfinder.info/"},{"@type":"ListItem","position":2,"name":"City guides","item":"https://divebarfinder.info/guides/cities.html"},{"@type":"ListItem","position":3,"name":`Dive bars in ${city.name}`,"item":`https://divebarfinder.info/guides/dive-bars-${city.slug}.html`}]}]}, null, 2)}
+      ${JSON.stringify({"@context":"https://schema.org","@graph":graph}, null, 2)}
     </script>
   </head>
   <body class="city-guide world-city-guide" style="--city-accent:${city.accent}">
@@ -323,7 +347,7 @@ function page(city, index) {
           <div class="eyebrow">After-dark field notes · ${city.country}</div>
           <h1>Dive bars in ${city.name}. <em>${city.tagline}</em></h1>
           <p class="guide-dek">${city.description}</p>
-          <div class="guide-meta"><span>8 minute read</span><span>Updated ${displayDate}</span><span>By <a href="../about.html">Dive Bar Finder</a></span></div>
+          <div class="guide-meta"><span>8 minute read</span><span>Updated ${city.displayModified ?? displayDate}</span><span>By <a href="../about.html">Dive Bar Finder</a></span></div>
         </div>
       </section>
 
@@ -362,6 +386,8 @@ function page(city, index) {
         <h2>Enter as a guest</h2>
         <p>${city.etiquette}</p>
         <p>Characterful bars are communities, workplaces and sometimes small cultural institutions. Recent safety, accessibility and venue information should always outweigh a romantic description of grit.</p>
+
+        ${faqMarkup}
 
         <section class="article-cta london-cta">
           <div><span class="eyebrow">The live map beats the old list</span><h2>Find your ${city.short} bar.</h2><p>Compare nearby options, filter by scene, save favourites and open directions on your iPhone.</p></div>
