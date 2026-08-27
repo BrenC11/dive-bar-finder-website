@@ -1,0 +1,30 @@
+# Dive Bar Finder
+
+> Dive Bar Finder is an independent iPhone app for discovering dive bars, punk bars, goth bars, rock bars, metal bars and alternative nightlife nearby.
+
+Official website: https://divebarfinder.info/
+App Store: https://apps.apple.com/gb/app/dive-bar-finder/id6758267440
+Publisher: Fear Army LTD
+
+## Main pages
+
+- [About Dive Bar Finder](https://divebarfinder.info/about.html): Product purpose, editorial method and limitations.
+- [World city guides](https://divebarfinder.info/guides/cities.html): Neighbourhood-first nightlife guides for sixteen cities.
+- [Support](https://divebarfinder.info/support.html): App help and contact information.
+- [For bars and venues](https://divebarfinder.info/venues.html): Listing corrections, venue suggestions and guide-linking information.
+- [Privacy policy](https://divebarfinder.info/privacy.html)
+- [Terms of use](https://divebarfinder.info/terms.html)
+
+## Featured scene guides
+
+- [Rock and metal bars in London](https://divebarfinder.info/guides/rock-metal-bars-london.html)
+- [Punk bars and venues in London](https://divebarfinder.info/guides/punk-bars-london.html)
+- [Goth and alternative nights in London](https://divebarfinder.info/guides/goth-alternative-bars-london.html)
+- [Punk, metal and goth places in Berlin](https://divebarfinder.info/guides/alternative-bars-berlin.html)
+- [Punk, rock and metal bars in Montréal](https://divebarfinder.info/guides/punk-rock-bars-montreal.html)
+
+## Editorial notes
+
+Guides distinguish permanent bars from ticketed venues and recurring event nights. Venue details, opening hours, programmes, accessibility and admission rules can change. Time-sensitive information should be checked with the venue before travelling.
+
+Listings are not paid rankings or certifications. Corrections and venue suggestions are reviewed against current public evidence.
