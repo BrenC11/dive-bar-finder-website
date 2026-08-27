@@ -4,11 +4,12 @@ SEO-focused landing website and search-intent guides for the [Dive Bar Finder iP
 
 ## Site
 
-Production: https://dive-bar-finder-website.vercel.app/
+Production: https://divebarfinder.info/
 
 ## Structure
 
 - `index.html` — conversion-focused landing page
+- `support.html`, `privacy.html` and `terms.html` — public App Store support and legal pages
 - `guides/` — keyword-targeted editorial guides
 - `assets/app-store/` — icon and screenshots from the App Store listing
 - `app.md` — app facts, positioning and keyword research

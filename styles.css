@@ -5,6 +5,109 @@ img {
   height: auto;
 }
 
+/* Support and legal pages */
+.legal-hero {
+  padding: 175px 0 70px;
+  background:
+    radial-gradient(circle at 82% 20%, rgba(238, 50, 31, 0.3), transparent 24%),
+    linear-gradient(118deg, #070707 48%, #1b0c08 100%);
+  border-bottom: 1px solid var(--line);
+}
+.legal-hero h1 {
+  max-width: 900px;
+  margin: 22px 0 18px;
+  font-size: clamp(4.5rem, 10vw, 8.5rem);
+  letter-spacing: -0.05em;
+}
+.legal-hero p {
+  max-width: 720px;
+  color: #c7beb1;
+  font-size: 1.08rem;
+}
+.legal-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 760px);
+  gap: clamp(45px, 8vw, 120px);
+  align-items: start;
+}
+.legal-nav {
+  position: sticky;
+  top: 115px;
+  display: grid;
+  gap: 4px;
+}
+.legal-nav a {
+  padding: 11px 0;
+  color: var(--muted);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+.legal-nav a:hover,
+.legal-nav a[aria-current="page"] {
+  color: var(--cream);
+}
+.legal-copy {
+  color: #c7beb1;
+}
+.legal-copy h2 {
+  margin: 58px 0 16px;
+  color: var(--cream);
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+}
+.legal-copy h2:first-child {
+  margin-top: 0;
+}
+.legal-copy h3 {
+  margin: 30px 0 10px;
+  color: var(--cream);
+  font-size: 1.55rem;
+}
+.legal-copy p + p,
+.legal-copy ul + p,
+.legal-copy p + ul {
+  margin-top: 16px;
+}
+.legal-copy ul {
+  padding-left: 22px;
+}
+.legal-copy li + li {
+  margin-top: 8px;
+}
+.legal-copy a {
+  color: var(--cream);
+}
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 34px;
+}
+.support-card {
+  padding: 26px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+.support-card h2 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+}
+.support-card a {
+  color: var(--cream);
+  font-weight: 700;
+}
+@media (max-width: 760px) {
+  .legal-layout {
+    grid-template-columns: 1fr;
+  }
+  .legal-nav {
+    position: static;
+  }
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* About and methodology */
 .about-hero {
   min-height: 760px;
@@ -1698,6 +1801,55 @@ details[open] summary::after {
 .contrast-list p {
   font-size: 0.9rem;
 }
+.venue-shortlist {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 32px -80px 55px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+.venue-shortlist article {
+  min-height: 285px;
+  padding: 28px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #141413;
+}
+.venue-shortlist span,
+.venue-shortlist strong {
+  display: block;
+}
+.venue-shortlist span {
+  color: var(--red);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.venue-shortlist strong {
+  margin-top: 34px;
+  color: var(--cream);
+  font: 800 2rem/0.95 var(--display);
+  text-transform: uppercase;
+}
+.venue-shortlist p {
+  margin: 18px 0;
+  font-size: 0.93rem;
+}
+.venue-shortlist a {
+  display: block;
+  margin-top: 8px;
+  color: var(--cream);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.guide-faq h3 {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
 .reveal {
   opacity: 0;
   transform: translateY(25px);
@@ -1802,7 +1954,8 @@ details[open] summary::after {
   .cluster-links,
   .london-cta,
   .intent-cards,
-  .contrast-list {
+  .contrast-list,
+  .venue-shortlist {
     grid-template-columns: 1fr;
   }
   .world-guides-tease {
@@ -1892,6 +2045,9 @@ details[open] summary::after {
   }
   .intent-cards,
   .contrast-list {
+    margin-inline: 0;
+  }
+  .venue-shortlist {
     margin-inline: 0;
   }
   .london-cta .app-button {

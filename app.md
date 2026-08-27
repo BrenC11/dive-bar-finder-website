@@ -1,6 +1,6 @@
 # Dive Bar Finder — app and SEO source of truth
 
-Last researched: 17 July 2026  
+Last researched: 28 July 2026
 App Store: https://apps.apple.com/gb/app/dive-bar-finder/id6758267440
 
 ## App Store facts
@@ -11,7 +11,8 @@ App Store: https://apps.apple.com/gb/app/dive-bar-finder/id6758267440
 - Category: Food & Drink; secondary category: Travel
 - Price: Free with in-app purchases
 - Platform: iPhone (requires iOS 17.0 or later)
-- Current version: 1.0.10 (released 5 June 2026)
+- Current public version: 1.0.11 (released 23 July 2026)
+- Prepared update: 1.0.12 (build 12, subject to final App Store Connect build-number check)
 - First released: 2 March 2026
 - Age rating: 17+
 - Language: English
@@ -28,7 +29,7 @@ App Store: https://apps.apple.com/gb/app/dive-bar-finder/id6758267440
 >
 > Whether you are at home, on tour, travelling, visiting a new city or just looking for somewhere better to drink tonight, Dive Bar Finder helps you find the kind of bars that normal nightlife apps often miss.
 >
-> Explore nearby bars, check photos and reviews, save your favourites, get directions and start building your own list of places worth going back to.
+> Explore nearby bars, check photos and ratings, save your favourites, get directions and start building your own list of places worth going back to.
 >
 > You can also unlock achievements by visiting bars, giving you another reason to explore new places, track where you have been and turn finding dive bars into a game.
 
@@ -37,7 +38,7 @@ App Store: https://apps.apple.com/gb/app/dive-bar-finder/id6758267440
 - Find dive bars near your current location
 - Discover punk, goth, rock, metal and alternative bars
 - Explore hidden local bars and nightlife spots
-- View photos, reviews and useful venue information
+- View photos, ratings and useful venue information
 - Save favourite bars for later
 - Get directions with Apple Maps or Google Maps
 - Unlock achievements by visiting bars
@@ -45,7 +46,14 @@ App Store: https://apps.apple.com/gb/app/dive-bar-finder/id6758267440
 
 ## Current release notes
 
-Version 1.0.10 adds a Collection tab, improved venue discovery, richer venue details, better filtering, offline-friendly cached results and a more polished premium trial experience, plus performance and reliability improvements.
+Version 1.0.12 makes worldwide searches more accurate with stronger dive, punk, goth, rock, metal and alternative-bar filtering. It also defaults search strictness to Standard, keeps cached results tied to the correct location, and improves recovery when no matching bars are found.
+
+## App Store Connect URLs
+
+- Marketing URL: https://divebarfinder.info/
+- Support URL: https://divebarfinder.info/support.html
+- Privacy Policy URL: https://divebarfinder.info/privacy.html
+- Terms URL: https://divebarfinder.info/terms.html
 
 ## Positioning
 
