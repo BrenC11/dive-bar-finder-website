@@ -1577,7 +1577,7 @@ details[open] summary::after {
   overflow: hidden;
 }
 .city-guide .guide-hero::after {
-  content: "LONDON / NIGHT / FIELD NOTES";
+  content: var(--scene-label, "LONDON / NIGHT / FIELD NOTES");
   position: absolute;
   right: -58px;
   bottom: 92px;

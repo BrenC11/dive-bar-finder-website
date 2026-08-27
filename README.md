@@ -6,6 +6,13 @@ SEO-focused landing website and search-intent guides for the [Dive Bar Finder iP
 
 Production: https://divebarfinder.info/
 
+Featured guides:
+
+- [Rock and metal bars in London](https://divebarfinder.info/guides/rock-metal-bars-london.html)
+- [Punk, metal and goth places in Berlin](https://divebarfinder.info/guides/alternative-bars-berlin.html)
+- [Punk, rock and metal bars in Montréal](https://divebarfinder.info/guides/punk-rock-bars-montreal.html)
+- [Information for bars and venues](https://divebarfinder.info/venues.html)
+
 ## Structure
 
 - `index.html` — conversion-focused landing page
