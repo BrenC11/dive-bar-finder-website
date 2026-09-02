@@ -1,6 +1,6 @@
 # Dive Bar Finder — app and SEO source of truth
 
-Last researched: 28 July 2026
+Last researched: 2 September 2026
 App Store: https://apps.apple.com/gb/app/dive-bar-finder/id6758267440
 
 ## App Store facts
@@ -11,13 +11,12 @@ App Store: https://apps.apple.com/gb/app/dive-bar-finder/id6758267440
 - Category: Food & Drink; secondary category: Travel
 - Price: Free with in-app purchases
 - Platform: iPhone (requires iOS 17.0 or later)
-- Current public version: 1.0.11 (released 23 July 2026)
-- Prepared update: 1.0.12 (build 12, subject to final App Store Connect build-number check)
+- Current public version: 1.0.12 (released 29 July 2026)
 - First released: 2 March 2026
-- Age rating: 17+
+- Age rating: 18+
 - Language: English
 - App Store rating at research time: 5.0 from 2 ratings
-- App size at research time: approximately 17 MB
+- App size at research time: approximately 10.7 MB
 
 ## App Store description
 
@@ -183,6 +182,11 @@ brown café, bar de quartier, izakaya, live house, music pub and band room.
 - Europe: London, Paris, Berlin, Amsterdam, Dublin and Edinburgh.
 - Asia Pacific: Tokyo and Melbourne.
 
+The 2 September 2026 expansion grows this atlas to 70 city guides. Europe now
+has a 36-city regional hub. North America has a 32-city regional hub covering
+the United States, Canada and Mexico. Tokyo and Melbourne remain linked from
+the world atlas.
+
 ### Search and conversion approach
 
 - Each page answers city-specific discovery friction: boroughs in New York,
@@ -198,3 +202,17 @@ brown café, bar de quartier, izakaya, live house, music pub and band room.
   London guide and every international guide link into the cluster.
 - App Store clicks carry a city-specific `data-download-source` value for
   first-party conversion measurement.
+
+## Programmatic city expansion cohort: 2 September 2026
+
+The controlled programmatic SEO cohort contains 54 pages: Manchester, Glasgow,
+Bristol and Liverpool plus 50 major-city guides across Europe and North
+America. Search-result research showed distinct demand around dive, rock,
+punk, metal and alternative nightlife, with a direct fit to the app's category
+filters.
+
+Each page has its own neighbourhood logic, search vocabulary, transport risk,
+etiquette and late-night planning advice. The pages do not publish permanent
+rankings or claim that every result in a district is a dive bar. Europe and
+North America have dedicated crawl hubs, while the world atlas remains the
+parent discovery page.

@@ -1,0 +1,3404 @@
+[
+  {
+    "slug": "/guides/dive-bars-manchester",
+    "canonical_path": "/guides/dive-bars-manchester.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars manchester",
+    "secondary_queries": [
+      "rock bars manchester",
+      "alternative bars manchester",
+      "punk bars manchester"
+    ],
+    "search_intent": "commercial",
+    "audience": "Manchester visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Manchester.",
+    "unique_value": "Explains Oxford Road & Princess Street, Northern Quarter & Ancoats, Salford & Chapel Street, Hulme & Moss Side edges as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Official local transport information",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Manchester",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "rock bar",
+        "alternative nightlife"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/cities"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-athens",
+      "/guides/dive-bars-glasgow"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Manchester map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-glasgow",
+    "canonical_path": "/guides/dive-bars-glasgow.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars glasgow",
+    "secondary_queries": [
+      "rock bars glasgow",
+      "alternative bars glasgow",
+      "punk bars glasgow"
+    ],
+    "search_intent": "commercial",
+    "audience": "Glasgow visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Glasgow.",
+    "unique_value": "Explains Sauchiehall Street & Bath Street, Finnieston, West End, Southside as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Official local transport information",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Glasgow",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "rock bar",
+        "alternative nightlife"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-manchester"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-manchester",
+      "/guides/dive-bars-bristol"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Glasgow map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-bristol",
+    "canonical_path": "/guides/dive-bars-bristol.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars bristol",
+    "secondary_queries": [
+      "rock bars bristol",
+      "alternative bars bristol",
+      "punk bars bristol"
+    ],
+    "search_intent": "commercial",
+    "audience": "Bristol visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Bristol.",
+    "unique_value": "Explains Old City & St Nicholas, Stokes Croft, Gloucester Road, Bedminster & Southville as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Official local transport information",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Bristol",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "rock bar",
+        "alternative nightlife"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-glasgow"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-glasgow",
+      "/guides/dive-bars-liverpool"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Bristol map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-liverpool",
+    "canonical_path": "/guides/dive-bars-liverpool.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars liverpool",
+    "secondary_queries": [
+      "rock bars liverpool",
+      "alternative bars liverpool",
+      "punk bars liverpool"
+    ],
+    "search_intent": "commercial",
+    "audience": "Liverpool visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Liverpool.",
+    "unique_value": "Explains Ropewalks, Georgian Quarter, Baltic Triangle, Cavern Quarter & Dale Street as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Official local transport information",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Liverpool",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "rock bar",
+        "alternative nightlife"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-bristol"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-bristol",
+      "/guides/dive-bars-birmingham"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Liverpool map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-birmingham",
+    "canonical_path": "/guides/dive-bars-birmingham.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars birmingham",
+    "secondary_queries": [
+      "rock bars birmingham",
+      "alternative bars birmingham",
+      "punk bars birmingham"
+    ],
+    "search_intent": "commercial",
+    "audience": "Birmingham visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Birmingham.",
+    "unique_value": "Explains Digbeth, Jewellery Quarter, Stirchley, Gay Village as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "West Midlands Metro, rail and night buses",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Birmingham",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "rock pub",
+        "metal bar",
+        "independent music venue"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-liverpool"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-liverpool",
+      "/guides/dive-bars-leeds"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Birmingham map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-leeds",
+    "canonical_path": "/guides/dive-bars-leeds.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars leeds",
+    "secondary_queries": [
+      "rock bars leeds",
+      "alternative bars leeds",
+      "punk bars leeds"
+    ],
+    "search_intent": "commercial",
+    "audience": "Leeds visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Leeds.",
+    "unique_value": "Explains Call Lane, Northern Quarter, Hyde Park, Headingley as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "West Yorkshire buses, rail and licensed taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Leeds",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "rock bar",
+        "indie pub",
+        "gig venue"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-birmingham"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-birmingham",
+      "/guides/dive-bars-newcastle"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Leeds map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-newcastle",
+    "canonical_path": "/guides/dive-bars-newcastle.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars newcastle",
+    "secondary_queries": [
+      "rock bars newcastle",
+      "alternative bars newcastle",
+      "punk bars newcastle"
+    ],
+    "search_intent": "commercial",
+    "audience": "Newcastle visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Newcastle.",
+    "unique_value": "Explains Bigg Market, Ouseburn, Central Station, Tynemouth as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Tyne and Wear Metro, buses and licensed taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Newcastle",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "rock pub",
+        "alternative club",
+        "live music venue"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-leeds"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-leeds",
+      "/guides/dive-bars-brighton"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Newcastle map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-brighton",
+    "canonical_path": "/guides/dive-bars-brighton.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars brighton",
+    "secondary_queries": [
+      "rock bars brighton",
+      "alternative bars brighton",
+      "punk bars brighton"
+    ],
+    "search_intent": "commercial",
+    "audience": "Brighton visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Brighton.",
+    "unique_value": "Explains The Lanes, North Laine, Kemptown, Hove as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Brighton buses, rail and the night bus network",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Brighton",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "alternative pub",
+        "punk gig",
+        "LGBTQ+ bar"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-newcastle"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-newcastle",
+      "/guides/dive-bars-belfast"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Brighton map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-belfast",
+    "canonical_path": "/guides/dive-bars-belfast.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars belfast",
+    "secondary_queries": [
+      "rock bars belfast",
+      "alternative bars belfast",
+      "punk bars belfast"
+    ],
+    "search_intent": "commercial",
+    "audience": "Belfast visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Belfast.",
+    "unique_value": "Explains Cathedral Quarter, Linen Quarter, Queen's Quarter, Ballyhackamore as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Translink buses, Glider services and licensed taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Belfast",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "rock bar",
+        "music pub",
+        "alternative venue"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-brighton"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-brighton",
+      "/guides/dive-bars-madrid"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Belfast map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-madrid",
+    "canonical_path": "/guides/dive-bars-madrid.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars madrid",
+    "secondary_queries": [
+      "rock bars madrid",
+      "alternative bars madrid",
+      "punk bars madrid"
+    ],
+    "search_intent": "commercial",
+    "audience": "Madrid visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Madrid.",
+    "unique_value": "Explains Malasaña, Lavapiés, La Latina, Argüelles as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Metro de Madrid, night buses and official taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Madrid",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "bar de rock",
+        "garito",
+        "sala de conciertos"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-belfast"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-belfast",
+      "/guides/dive-bars-barcelona"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Madrid map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-barcelona",
+    "canonical_path": "/guides/dive-bars-barcelona.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars barcelona",
+    "secondary_queries": [
+      "rock bars barcelona",
+      "alternative bars barcelona",
+      "punk bars barcelona"
+    ],
+    "search_intent": "commercial",
+    "audience": "Barcelona visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Barcelona.",
+    "unique_value": "Explains El Raval, Gothic Quarter, Gràcia, Poblenou as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "TMB Metro, NitBus and official taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Barcelona",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "bar de rock",
+        "bar alternativo",
+        "sala de concerts"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-madrid"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-madrid",
+      "/guides/dive-bars-lisbon"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Barcelona map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-lisbon",
+    "canonical_path": "/guides/dive-bars-lisbon.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars lisbon",
+    "secondary_queries": [
+      "rock bars lisbon",
+      "alternative bars lisbon",
+      "punk bars lisbon"
+    ],
+    "search_intent": "commercial",
+    "audience": "Lisbon visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Lisbon.",
+    "unique_value": "Explains Bairro Alto, Cais do Sodré, Intendente, Marvila as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Metro, Carris night buses, trams and licensed taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Lisbon",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "bar rock",
+        "bar alternativo",
+        "música ao vivo"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-barcelona"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-barcelona",
+      "/guides/dive-bars-porto"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Lisbon map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-porto",
+    "canonical_path": "/guides/dive-bars-porto.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars porto",
+    "secondary_queries": [
+      "rock bars porto",
+      "alternative bars porto",
+      "punk bars porto"
+    ],
+    "search_intent": "commercial",
+    "audience": "Porto visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Porto.",
+    "unique_value": "Explains Galerias de Paris, Cedofeita, Bonfim, Ribeira as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Metro do Porto, STCP buses and licensed taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Porto",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "bar rock",
+        "tasca",
+        "música ao vivo"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-lisbon"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-lisbon",
+      "/guides/dive-bars-rome"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Porto map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-rome",
+    "canonical_path": "/guides/dive-bars-rome.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars rome",
+    "secondary_queries": [
+      "rock bars rome",
+      "alternative bars rome",
+      "punk bars rome"
+    ],
+    "search_intent": "commercial",
+    "audience": "Rome visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Rome.",
+    "unique_value": "Explains San Lorenzo, Pigneto, Testaccio, Monti as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "ATAC Metro, night buses and official white taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Rome",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "rock pub",
+        "locale alternativo",
+        "musica dal vivo"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-porto"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-porto",
+      "/guides/dive-bars-milan"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Rome map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-milan",
+    "canonical_path": "/guides/dive-bars-milan.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars milan",
+    "secondary_queries": [
+      "rock bars milan",
+      "alternative bars milan",
+      "punk bars milan"
+    ],
+    "search_intent": "commercial",
+    "audience": "Milan visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Milan.",
+    "unique_value": "Explains Navigli, NoLo, Porta Venezia, Isola as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "ATM Metro, night buses and official taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Milan",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "rock pub",
+        "locale underground",
+        "musica live"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-rome"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-rome",
+      "/guides/dive-bars-bologna"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Milan map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-bologna",
+    "canonical_path": "/guides/dive-bars-bologna.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars bologna",
+    "secondary_queries": [
+      "rock bars bologna",
+      "alternative bars bologna",
+      "punk bars bologna"
+    ],
+    "search_intent": "commercial",
+    "audience": "Bologna visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Bologna.",
+    "unique_value": "Explains University Quarter, Via del Pratello, Bolognina, San Donato as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "TPER buses, night services and licensed taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Bologna",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "osteria",
+        "circolo",
+        "musica dal vivo"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-milan"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-milan",
+      "/guides/dive-bars-hamburg"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Bologna map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-hamburg",
+    "canonical_path": "/guides/dive-bars-hamburg.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars hamburg",
+    "secondary_queries": [
+      "rock bars hamburg",
+      "alternative bars hamburg",
+      "punk bars hamburg"
+    ],
+    "search_intent": "commercial",
+    "audience": "Hamburg visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Hamburg.",
+    "unique_value": "Explains St Pauli, Sternschanze, Karoviertel, Wilhelmsburg as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "HVV U-Bahn, S-Bahn, night buses and ferries",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Hamburg",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "Rockkneipe",
+        "Musikbar",
+        "Liveclub"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-bologna"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-bologna",
+      "/guides/dive-bars-leipzig"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Hamburg map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-leipzig",
+    "canonical_path": "/guides/dive-bars-leipzig.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars leipzig",
+    "secondary_queries": [
+      "rock bars leipzig",
+      "alternative bars leipzig",
+      "punk bars leipzig"
+    ],
+    "search_intent": "commercial",
+    "audience": "Leipzig visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Leipzig.",
+    "unique_value": "Explains Südvorstadt, Connewitz, Plagwitz, Zentrum-Süd as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "LVB trams, night lines and S-Bahn",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Leipzig",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "Kneipe",
+        "Musikkneipe",
+        "alternativer Club"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-hamburg"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-hamburg",
+      "/guides/dive-bars-cologne"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Leipzig map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-cologne",
+    "canonical_path": "/guides/dive-bars-cologne.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars cologne",
+    "secondary_queries": [
+      "rock bars cologne",
+      "alternative bars cologne",
+      "punk bars cologne"
+    ],
+    "search_intent": "commercial",
+    "audience": "Cologne visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Cologne.",
+    "unique_value": "Explains Belgisches Viertel, Ehrenfeld, Südstadt, Mülheim as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "KVB trams, S-Bahn and night buses",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Cologne",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "Kneipe",
+        "Rockbar",
+        "Liveclub"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-leipzig"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-leipzig",
+      "/guides/dive-bars-munich"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Cologne map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-munich",
+    "canonical_path": "/guides/dive-bars-munich.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars munich",
+    "secondary_queries": [
+      "rock bars munich",
+      "alternative bars munich",
+      "punk bars munich"
+    ],
+    "search_intent": "commercial",
+    "audience": "Munich visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Munich.",
+    "unique_value": "Explains Glockenbachviertel, Westend, Schwabing, Werksviertel as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "MVV U-Bahn, S-Bahn, trams and night buses",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Munich",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "Rockkneipe",
+        "Musikbar",
+        "alternativer Club"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-cologne"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-cologne",
+      "/guides/dive-bars-brussels"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Munich map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-brussels",
+    "canonical_path": "/guides/dive-bars-brussels.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars brussels",
+    "secondary_queries": [
+      "rock bars brussels",
+      "alternative bars brussels",
+      "punk bars brussels"
+    ],
+    "search_intent": "commercial",
+    "audience": "Brussels visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Brussels.",
+    "unique_value": "Explains Saint-Géry, Marolles, Saint-Gilles, Ixelles as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "STIB-MIVB Metro, trams, Noctis buses and trains",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Brussels",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "café rock",
+        "muziekcafé",
+        "concertzaal"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-munich"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-munich",
+      "/guides/dive-bars-copenhagen"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Brussels map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-copenhagen",
+    "canonical_path": "/guides/dive-bars-copenhagen.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars copenhagen",
+    "secondary_queries": [
+      "rock bars copenhagen",
+      "alternative bars copenhagen",
+      "punk bars copenhagen"
+    ],
+    "search_intent": "commercial",
+    "audience": "Copenhagen visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Copenhagen.",
+    "unique_value": "Explains Indre By, Vesterbro, Nørrebro, Refshaleøen as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Metro, S-trains, night buses and safe cycle routes",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Copenhagen",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "bodega",
+        "rockbar",
+        "spillested"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-brussels"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-brussels",
+      "/guides/dive-bars-stockholm"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Copenhagen map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-stockholm",
+    "canonical_path": "/guides/dive-bars-stockholm.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars stockholm",
+    "secondary_queries": [
+      "rock bars stockholm",
+      "alternative bars stockholm",
+      "punk bars stockholm"
+    ],
+    "search_intent": "commercial",
+    "audience": "Stockholm visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Stockholm.",
+    "unique_value": "Explains Södermalm, Norrmalm, Hornstull, Solna and Sundbyberg as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "SL Tunnelbana, commuter rail, buses and night services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Stockholm",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "rockbar",
+        "krog",
+        "livescen"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-copenhagen"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-copenhagen",
+      "/guides/dive-bars-oslo"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Stockholm map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-oslo",
+    "canonical_path": "/guides/dive-bars-oslo.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars oslo",
+    "secondary_queries": [
+      "rock bars oslo",
+      "alternative bars oslo",
+      "punk bars oslo"
+    ],
+    "search_intent": "commercial",
+    "audience": "Oslo visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Oslo.",
+    "unique_value": "Explains Youngstorget, Grünerløkka, Tøyen, Bjørvika as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Ruter Metro, trams, buses and night services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Oslo",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "rockebar",
+        "pub",
+        "konsertscene"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-stockholm"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-stockholm",
+      "/guides/dive-bars-helsinki"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Oslo map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-helsinki",
+    "canonical_path": "/guides/dive-bars-helsinki.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars helsinki",
+    "secondary_queries": [
+      "rock bars helsinki",
+      "alternative bars helsinki",
+      "punk bars helsinki"
+    ],
+    "search_intent": "commercial",
+    "audience": "Helsinki visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Helsinki.",
+    "unique_value": "Explains Kamppi, Kallio, Punavuori, Sörnäinen as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "HSL Metro, trams, commuter trains and night buses",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Helsinki",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "rockbaari",
+        "musiikkibaari",
+        "liveklubi"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-oslo"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-oslo",
+      "/guides/dive-bars-prague"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Helsinki map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-prague",
+    "canonical_path": "/guides/dive-bars-prague.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars prague",
+    "secondary_queries": [
+      "rock bars prague",
+      "alternative bars prague",
+      "punk bars prague"
+    ],
+    "search_intent": "commercial",
+    "audience": "Prague visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Prague.",
+    "unique_value": "Explains Nové Město, Holešovice, Žižkov, Vinohrady as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "DPP Metro, trams and night tram services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Prague",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "rockový bar",
+        "hospoda",
+        "hudební klub"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-helsinki"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-helsinki",
+      "/guides/dive-bars-vienna"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Prague map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-vienna",
+    "canonical_path": "/guides/dive-bars-vienna.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars vienna",
+    "secondary_queries": [
+      "rock bars vienna",
+      "alternative bars vienna",
+      "punk bars vienna"
+    ],
+    "search_intent": "commercial",
+    "audience": "Vienna visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Vienna.",
+    "unique_value": "Explains Gürtel, Neubau, Favoriten, Donaukanal as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Wiener Linien U-Bahn, trams and night buses",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Vienna",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "Beisl",
+        "Rocklokal",
+        "Livemusikclub"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-prague"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-prague",
+      "/guides/dive-bars-budapest"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Vienna map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-budapest",
+    "canonical_path": "/guides/dive-bars-budapest.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars budapest",
+    "secondary_queries": [
+      "rock bars budapest",
+      "alternative bars budapest",
+      "punk bars budapest"
+    ],
+    "search_intent": "commercial",
+    "audience": "Budapest visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Budapest.",
+    "unique_value": "Explains District VII, District VIII, Bartók Béla Boulevard, District XIII as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "BKK Metro, trams, night buses and official taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Budapest",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "romkocsma",
+        "rock kocsma",
+        "élőzene"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-vienna"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-vienna",
+      "/guides/dive-bars-warsaw"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Budapest map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-warsaw",
+    "canonical_path": "/guides/dive-bars-warsaw.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars warsaw",
+    "secondary_queries": [
+      "rock bars warsaw",
+      "alternative bars warsaw",
+      "punk bars warsaw"
+    ],
+    "search_intent": "commercial",
+    "audience": "Warsaw visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Warsaw.",
+    "unique_value": "Explains Śródmieście, Praga, Powiśle, Wola as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Warsaw Metro, trams, night buses and licensed taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Warsaw",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "pub rockowy",
+        "klub muzyczny",
+        "bar alternatywny"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-budapest"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-budapest",
+      "/guides/dive-bars-athens"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Warsaw map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-athens",
+    "canonical_path": "/guides/dive-bars-athens.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars athens",
+    "secondary_queries": [
+      "rock bars athens",
+      "alternative bars athens",
+      "punk bars athens"
+    ],
+    "search_intent": "commercial",
+    "audience": "Athens visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Athens.",
+    "unique_value": "Explains Exarchia, Psyrri, Gazi, Koukaki as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "OASA Metro, trams, night buses and official taxis",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Athens",
+      "region": "Europe",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "rock bar",
+        "rebetadiko",
+        "live stage"
+      ]
+    },
+    "hub_slug": "/guides/europe",
+    "hub_path": "/guides/europe.html",
+    "internal_links_in": [
+      "/guides/europe",
+      "/guides/dive-bars-warsaw"
+    ],
+    "internal_links_out": [
+      "/guides/europe",
+      "/guides/dive-bars-warsaw",
+      "/guides/dive-bars-manchester"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Athens map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-seattle",
+    "canonical_path": "/guides/dive-bars-seattle.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars seattle",
+    "secondary_queries": [
+      "rock bars seattle",
+      "alternative bars seattle",
+      "punk bars seattle"
+    ],
+    "search_intent": "commercial",
+    "audience": "Seattle visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Seattle.",
+    "unique_value": "Explains Capitol Hill, Ballard, University District, Georgetown as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "King County Metro, Link light rail and late buses",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Seattle",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "punk bar",
+        "live music tavern"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-athens"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-guadalajara",
+      "/guides/dive-bars-portland"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Seattle map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-portland",
+    "canonical_path": "/guides/dive-bars-portland.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars portland",
+    "secondary_queries": [
+      "rock bars portland",
+      "alternative bars portland",
+      "punk bars portland"
+    ],
+    "search_intent": "commercial",
+    "audience": "Portland visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Portland.",
+    "unique_value": "Explains Hawthorne and Belmont, Mississippi and Alberta, St Johns, Old Town as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "TriMet MAX, buses and late-night ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Portland",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "punk bar",
+        "neighbourhood tavern"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-seattle"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-seattle",
+      "/guides/dive-bars-san-francisco"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Portland map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-san-francisco",
+    "canonical_path": "/guides/dive-bars-san-francisco.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars san francisco",
+    "secondary_queries": [
+      "rock bars san francisco",
+      "alternative bars san francisco",
+      "punk bars san francisco"
+    ],
+    "search_intent": "commercial",
+    "audience": "San Francisco visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in San Francisco.",
+    "unique_value": "Explains Tenderloin, Mission, SoMa, Inner Richmond as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Muni Metro, buses, BART and late-night Owl service",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "San Francisco",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "punk bar",
+        "neighbourhood saloon"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-portland"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-portland",
+      "/guides/dive-bars-san-diego"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the San Francisco map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-san-diego",
+    "canonical_path": "/guides/dive-bars-san-diego.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars san diego",
+    "secondary_queries": [
+      "rock bars san diego",
+      "alternative bars san diego",
+      "punk bars san diego"
+    ],
+    "search_intent": "commercial",
+    "audience": "San Diego visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in San Diego.",
+    "unique_value": "Explains North Park, City Heights, Ocean Beach, Gaslamp as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "MTS trolley, buses and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "San Diego",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "punk bar",
+        "live music bar"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-san-francisco"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-san-francisco",
+      "/guides/dive-bars-las-vegas"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the San Diego map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-las-vegas",
+    "canonical_path": "/guides/dive-bars-las-vegas.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars las vegas",
+    "secondary_queries": [
+      "rock bars las vegas",
+      "alternative bars las vegas",
+      "punk bars las vegas"
+    ],
+    "search_intent": "commercial",
+    "audience": "Las Vegas visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Las Vegas.",
+    "unique_value": "Explains Downtown, Commercial Center, Chinatown, Arts District as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "RTC buses, the Deuce and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Las Vegas",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "punk venue",
+        "locals bar"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-san-diego"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-san-diego",
+      "/guides/dive-bars-denver"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Las Vegas map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-denver",
+    "canonical_path": "/guides/dive-bars-denver.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars denver",
+    "secondary_queries": [
+      "rock bars denver",
+      "alternative bars denver",
+      "punk bars denver"
+    ],
+    "search_intent": "commercial",
+    "audience": "Denver visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Denver.",
+    "unique_value": "Explains Colfax, Baker, RiNo, Highlands as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "RTD rail, buses and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Denver",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "rock bar",
+        "music venue"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-las-vegas"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-las-vegas",
+      "/guides/dive-bars-phoenix"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Denver map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-phoenix",
+    "canonical_path": "/guides/dive-bars-phoenix.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars phoenix",
+    "secondary_queries": [
+      "rock bars phoenix",
+      "alternative bars phoenix",
+      "punk bars phoenix"
+    ],
+    "search_intent": "commercial",
+    "audience": "Phoenix visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Phoenix.",
+    "unique_value": "Explains Roosevelt Row, Tempe, Melrose District, Mesa as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Valley Metro rail, buses and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Phoenix",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "rock bar",
+        "live music venue"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-denver"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-denver",
+      "/guides/dive-bars-dallas"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Phoenix map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-dallas",
+    "canonical_path": "/guides/dive-bars-dallas.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars dallas",
+    "secondary_queries": [
+      "rock bars dallas",
+      "alternative bars dallas",
+      "punk bars dallas"
+    ],
+    "search_intent": "commercial",
+    "audience": "Dallas visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Dallas.",
+    "unique_value": "Explains Deep Ellum, Cedars, Lower Greenville, Oak Cliff as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "DART rail, buses and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Dallas",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "rock club",
+        "honky tonk"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-phoenix"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-phoenix",
+      "/guides/dive-bars-houston"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Dallas map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-houston",
+    "canonical_path": "/guides/dive-bars-houston.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars houston",
+    "secondary_queries": [
+      "rock bars houston",
+      "alternative bars houston",
+      "punk bars houston"
+    ],
+    "search_intent": "commercial",
+    "audience": "Houston visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Houston.",
+    "unique_value": "Explains Montrose, Midtown, EaDo, Heights as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "METRORail, buses and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Houston",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "metal bar",
+        "live music venue"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-dallas"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-dallas",
+      "/guides/dive-bars-minneapolis"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Houston map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-minneapolis",
+    "canonical_path": "/guides/dive-bars-minneapolis.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars minneapolis",
+    "secondary_queries": [
+      "rock bars minneapolis",
+      "alternative bars minneapolis",
+      "punk bars minneapolis"
+    ],
+    "search_intent": "commercial",
+    "audience": "Minneapolis visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Minneapolis.",
+    "unique_value": "Explains Downtown West, Uptown, Cedar-Riverside, Northeast Minneapolis as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Metro Transit light rail, buses and late ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Minneapolis",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "punk bar",
+        "music club"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-houston"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-houston",
+      "/guides/dive-bars-detroit"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Minneapolis map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-detroit",
+    "canonical_path": "/guides/dive-bars-detroit.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars detroit",
+    "secondary_queries": [
+      "rock bars detroit",
+      "alternative bars detroit",
+      "punk bars detroit"
+    ],
+    "search_intent": "commercial",
+    "audience": "Detroit visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Detroit.",
+    "unique_value": "Explains Midtown, Corktown, Hamtramck, Ferndale as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "DDOT, SMART, QLINE and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Detroit",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "punk venue",
+        "live music bar"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-minneapolis"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-minneapolis",
+      "/guides/dive-bars-cleveland"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Detroit map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-cleveland",
+    "canonical_path": "/guides/dive-bars-cleveland.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars cleveland",
+    "secondary_queries": [
+      "rock bars cleveland",
+      "alternative bars cleveland",
+      "punk bars cleveland"
+    ],
+    "search_intent": "commercial",
+    "audience": "Cleveland visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Cleveland.",
+    "unique_value": "Explains Gordon Square, Ohio City, Coventry Village, Flats as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "RTA rail, buses and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Cleveland",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "rock club",
+        "neighbourhood tavern"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-detroit"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-detroit",
+      "/guides/dive-bars-boston"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Cleveland map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-boston",
+    "canonical_path": "/guides/dive-bars-boston.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars boston",
+    "secondary_queries": [
+      "rock bars boston",
+      "alternative bars boston",
+      "punk bars boston"
+    ],
+    "search_intent": "commercial",
+    "audience": "Boston visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Boston.",
+    "unique_value": "Explains Allston, Cambridge, Fenway, Dorchester as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "MBTA subway, buses and late licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Boston",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "rock club",
+        "neighbourhood pub"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-cleveland"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-cleveland",
+      "/guides/dive-bars-philadelphia"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Boston map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-philadelphia",
+    "canonical_path": "/guides/dive-bars-philadelphia.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars philadelphia",
+    "secondary_queries": [
+      "rock bars philadelphia",
+      "alternative bars philadelphia",
+      "punk bars philadelphia"
+    ],
+    "search_intent": "commercial",
+    "audience": "Philadelphia visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Philadelphia.",
+    "unique_value": "Explains South Street, Fishtown, East Passyunk, West Philadelphia as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "SEPTA subway, trolleys, buses and regional rail",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Philadelphia",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "punk bar",
+        "corner tavern"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-boston"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-boston",
+      "/guides/dive-bars-washington-dc"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Philadelphia map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-washington-dc",
+    "canonical_path": "/guides/dive-bars-washington-dc.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars washington, dc",
+    "secondary_queries": [
+      "rock bars washington, dc",
+      "alternative bars washington, dc",
+      "punk bars washington, dc"
+    ],
+    "search_intent": "commercial",
+    "audience": "Washington, DC visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Washington, DC.",
+    "unique_value": "Explains U Street, Columbia Heights, H Street, Adams Morgan as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "WMATA Metro, buses and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Washington, DC",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "punk club",
+        "neighbourhood bar"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-philadelphia"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-philadelphia",
+      "/guides/dive-bars-baltimore"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Washington, DC map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-baltimore",
+    "canonical_path": "/guides/dive-bars-baltimore.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars baltimore",
+    "secondary_queries": [
+      "rock bars baltimore",
+      "alternative bars baltimore",
+      "punk bars baltimore"
+    ],
+    "search_intent": "commercial",
+    "audience": "Baltimore visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Baltimore.",
+    "unique_value": "Explains Station North, Hampden, Federal Hill, Canton as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "MTA light rail, Metro, buses and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Baltimore",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "punk venue",
+        "neighbourhood tavern"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-washington-dc"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-washington-dc",
+      "/guides/dive-bars-atlanta"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Baltimore map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-atlanta",
+    "canonical_path": "/guides/dive-bars-atlanta.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars atlanta",
+    "secondary_queries": [
+      "rock bars atlanta",
+      "alternative bars atlanta",
+      "punk bars atlanta"
+    ],
+    "search_intent": "commercial",
+    "audience": "Atlanta visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Atlanta.",
+    "unique_value": "Explains East Atlanta Village, Little Five Points, Midtown, West End as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "MARTA rail, buses and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Atlanta",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "rock club",
+        "alternative bar"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-baltimore"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-baltimore",
+      "/guides/dive-bars-miami"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Atlanta map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-miami",
+    "canonical_path": "/guides/dive-bars-miami.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars miami",
+    "secondary_queries": [
+      "rock bars miami",
+      "alternative bars miami",
+      "punk bars miami"
+    ],
+    "search_intent": "commercial",
+    "audience": "Miami visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Miami.",
+    "unique_value": "Explains Wynwood, Little Havana, Little Haiti, Miami Beach as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Metrorail, Metromover, buses and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Miami",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "rock bar",
+        "local cantina"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-atlanta"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-atlanta",
+      "/guides/dive-bars-memphis"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Miami map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-memphis",
+    "canonical_path": "/guides/dive-bars-memphis.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars memphis",
+    "secondary_queries": [
+      "rock bars memphis",
+      "alternative bars memphis",
+      "punk bars memphis"
+    ],
+    "search_intent": "commercial",
+    "audience": "Memphis visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Memphis.",
+    "unique_value": "Explains Beale Street, South Main, Cooper-Young, Overton Square as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "MATA buses, trolley services and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Memphis",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "blues bar",
+        "punk venue"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-miami"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-miami",
+      "/guides/dive-bars-kansas-city"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Memphis map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-kansas-city",
+    "canonical_path": "/guides/dive-bars-kansas-city.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars kansas city",
+    "secondary_queries": [
+      "rock bars kansas city",
+      "alternative bars kansas city",
+      "punk bars kansas city"
+    ],
+    "search_intent": "commercial",
+    "audience": "Kansas City visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Kansas City.",
+    "unique_value": "Explains Crossroads, Westport, 18th and Vine, Strawberry Hill as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "KC Streetcar, RideKC buses and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Kansas City",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "jazz club",
+        "rock venue"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-memphis"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-memphis",
+      "/guides/dive-bars-vancouver"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Kansas City map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-vancouver",
+    "canonical_path": "/guides/dive-bars-vancouver.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars vancouver",
+    "secondary_queries": [
+      "rock bars vancouver",
+      "alternative bars vancouver",
+      "punk bars vancouver"
+    ],
+    "search_intent": "commercial",
+    "audience": "Vancouver visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Vancouver.",
+    "unique_value": "Explains Downtown Eastside, Commercial Drive, Mount Pleasant, Granville Street as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "TransLink SkyTrain, buses and NightBus services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Vancouver",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "punk venue",
+        "neighbourhood pub"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-kansas-city"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-kansas-city",
+      "/guides/dive-bars-calgary"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Vancouver map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-calgary",
+    "canonical_path": "/guides/dive-bars-calgary.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars calgary",
+    "secondary_queries": [
+      "rock bars calgary",
+      "alternative bars calgary",
+      "punk bars calgary"
+    ],
+    "search_intent": "commercial",
+    "audience": "Calgary visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Calgary.",
+    "unique_value": "Explains Beltline, Inglewood, Kensington, Bridgeland as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Calgary Transit CTrain, buses and licensed ride services",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Calgary",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "dive bar",
+        "rock bar",
+        "live music pub"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-vancouver"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-vancouver",
+      "/guides/dive-bars-mexico-city"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Calgary map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-mexico-city",
+    "canonical_path": "/guides/dive-bars-mexico-city.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars mexico city",
+    "secondary_queries": [
+      "rock bars mexico city",
+      "alternative bars mexico city",
+      "punk bars mexico city"
+    ],
+    "search_intent": "commercial",
+    "audience": "Mexico City visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Mexico City.",
+    "unique_value": "Explains Centro Histórico, Roma and Condesa, Santa María la Ribera, Coyoacán as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "Metro, Metrobús, authorised taxis and app-based rides",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Mexico City",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "bar de rock",
+        "foro",
+        "cantina"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-calgary"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-calgary",
+      "/guides/dive-bars-guadalajara"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Mexico City map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  },
+  {
+    "slug": "/guides/dive-bars-guadalajara",
+    "canonical_path": "/guides/dive-bars-guadalajara.html",
+    "page_family": "city-guide",
+    "primary_query": "dive bars guadalajara",
+    "secondary_queries": [
+      "rock bars guadalajara",
+      "alternative bars guadalajara",
+      "punk bars guadalajara"
+    ],
+    "search_intent": "commercial",
+    "audience": "Guadalajara visitors and locals looking for unpretentious or alternative nightlife",
+    "user_problem": "The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in Guadalajara.",
+    "unique_value": "Explains Colonia Americana, Centro Histórico, Chapultepec, Analco as distinct search zones, with local scene language, transport context and live verification checks.",
+    "evidence": [
+      "Current public search results reviewed on 2026-09-02",
+      "SITEUR light rail, Mi Macro, authorised taxis and app-based rides",
+      "First-party Dive Bar Finder workflow and category filters"
+    ],
+    "template_fields": {
+      "city": "Guadalajara",
+      "region": "North America",
+      "district_count": 4,
+      "field_note_count": 3,
+      "search_terms": [
+        "bar de rock",
+        "foro independiente",
+        "cantina"
+      ]
+    },
+    "hub_slug": "/guides/north-america",
+    "hub_path": "/guides/north-america.html",
+    "internal_links_in": [
+      "/guides/north-america",
+      "/guides/dive-bars-mexico-city"
+    ],
+    "internal_links_out": [
+      "/guides/north-america",
+      "/guides/dive-bars-mexico-city",
+      "/guides/dive-bars-seattle"
+    ],
+    "conversion_path": "Download Dive Bar Finder and open the Guadalajara map with scene filters",
+    "indexing_decision": "index",
+    "risk_flags": [
+      "Venue and transport information can change and must be verified live"
+    ],
+    "status": "verified-local",
+    "verified_on": "2026-09-02",
+    "score": {
+      "business_fit": 5,
+      "intent_value": 4,
+      "differentiation": 4,
+      "evidence": 4,
+      "usefulness": 4,
+      "authority_fit": 5,
+      "conversion_path": 5,
+      "competitiveness": 3,
+      "cannibalisation": 1,
+      "maintenance": 2,
+      "content_risk": 1,
+      "priority": 39
+    }
+  }
+]

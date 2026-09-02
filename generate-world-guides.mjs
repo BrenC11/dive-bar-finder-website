@@ -1,3 +1,7 @@
+import { readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
+import { expansionCities } from "./seo/expansion-cities.mjs";
+
 const cities = [
   {
     slug: "new-york", name: "New York City", short: "New York", code: "NYC", country: "US", locale: "en-US", accent: "#f2c94c",
@@ -127,6 +131,7 @@ const cities = [
   },
   {
     slug: "montreal", name: "Montréal", short: "Montréal", code: "YUL", country: "CA", locale: "en-CA", accent: "#4dd0e1",
+    generated: false,
     modified: "2026-07-28", displayModified: "28 July 2026",
     tagline: "Late nights in two languages.",
     description: "Find dive bars in Montréal across the Plateau, Mile End, Village and emerging neighbourhood scenes, with practical bilingual and late-night tips.",
@@ -170,6 +175,7 @@ const cities = [
   },
   {
     slug: "berlin", name: "Berlin", short: "Berlin", code: "BER", country: "DE", locale: "en", accent: "#d4e157",
+    generated: false,
     modified: "2026-07-28", displayModified: "28 July 2026",
     tagline: "No last call. Still make a plan.",
     description: "A field guide to Berlin dive bars, Kneipen, punk rooms and neighbourhood nightlife across Kreuzberg, Neukölln and Friedrichshain.",
@@ -248,6 +254,118 @@ const cities = [
     etiquette: "Do not demand a ‘Scottish experience’, respect live performers and understand that a quiet local is not there to entertain a tour group."
   },
   {
+    slug: "manchester", name: "Manchester", short: "Manchester", code: "MAN", country: "GB", locale: "en-GB", accent: "#ff6b35",
+    region: "Europe", regionHub: "europe.html", managed: true,
+    published: "2026-09-02", modified: "2026-09-02", displayModified: "2 September 2026",
+    seoTitle: "Dive Bars in Manchester: Rock and Alternative Nightlife",
+    tagline: "Follow the railway arches and the riff.",
+    description: "Find Manchester dive bars, rock pubs and alternative music rooms across Oxford Road, the Northern Quarter, Ancoats and Salford.",
+    intro: "Manchester rewards a music-first bar search. Everyday pubs, basement rooms, gig venues and late alternative clubs sit close together in the centre, but they do different jobs. Decide whether you want a drink, a soundtrack, a live bill or a club night before following the nearest pin.",
+    meaning: "A Manchester dive might be a compact basement bar, a rock pub near a station, an independent music venue or a no-frills local outside the centre. The strongest signal is a room with a clear identity and a crowd that returns between major event nights, not a wall of borrowed music memorabilia.",
+    calloutTitle: "Oxford Road is a route, not one neighbourhood",
+    callout: "The corridor runs from the city centre past universities and major venues. Check walking time and the exact entrance before assuming two nearby pins belong to the same part of the night.",
+    districts: [
+      ["South centre", "Oxford Road & Princess Street", "Rock pubs, basement bars and live rooms cluster around the stations and university corridor. Separate an everyday bar from a ticketed venue before setting off."],
+      ["Northeast", "Northern Quarter & Ancoats", "Independent bars, small venues and busy weekend streets overlap. Look beyond décor and compare the current programme, crowd and closing time."],
+      ["West", "Salford & Chapel Street", "Independent venues and neighbourhood pubs continue beyond the city boundary on the map. Treat Salford as its own route rather than a casual final stop."],
+      ["South", "Hulme & Moss Side edges", "Community venues, pubs and DIY culture sit outside the most obvious visitor circuit. Current event information matters more than an old best-of list."]
+    ],
+    fieldNotes: [["Search", "Try rock pub, metal bar, punk venue and live music alongside Manchester."], ["Programme", "A familiar venue can change character completely between events."], ["Route", "Oxford Road and Piccadilly are different late-night starting points."]],
+    transport: "Use Transport for Greater Manchester's journey planner for the last tram, bus or train, especially when the route crosses into Salford.",
+    transportUrl: "https://tfgm.com/plan-a-journey",
+    transportLabel: "Plan a journey with Transport for Greater Manchester",
+    etiquette: "Buy a ticket when the bill is the point, give the support act a chance and do not treat a working music pub like a themed photo stop.",
+    faq: [
+      ["Where should I start looking for alternative bars in Manchester?", "Oxford Road and Princess Street are useful for rock pubs, basement bars and venues. The Northern Quarter and Ancoats offer another compact search area, while Salford deserves a separate route."],
+      ["Should I search for dive bars or rock pubs in Manchester?", "Try both, then add metal bar, punk venue and live music. Dive bar is only one label, while many characterful Manchester rooms describe themselves through music or venue type."],
+      ["How do I plan a late night across Manchester and Salford?", "Check the final tram, bus or train before leaving the first area. Straight-line distance can hide a slow late-night connection, so keep one backup close to your starting point."]
+    ]
+  },
+  {
+    slug: "glasgow", name: "Glasgow", short: "Glasgow", code: "GLA", country: "GB", locale: "en-GB", accent: "#4dd0e1",
+    region: "Europe", regionHub: "europe.html", managed: true,
+    published: "2026-09-02", modified: "2026-09-02", displayModified: "2 September 2026",
+    seoTitle: "Dive Bars in Glasgow: Rock Pubs and Alternative Nights",
+    tagline: "One good room can carry the whole night.",
+    description: "Find Glasgow dive bars, rock pubs and alternative nightlife across the city centre, Finnieston, the West End and the Southside.",
+    intro: "Glasgow's best bar searches are built around conversation and music rather than a checklist of décor. The city centre offers compact late-night options, while Finnieston, the West End and the Southside work better as focused neighbourhood evenings than as add-ons to a central crawl.",
+    meaning: "The local equivalent of a dive is often an unpretentious pub, a music bar or a small room with a steady crowd. It can be bright, tidy and still full of character. Search for the atmosphere and soundtrack you want instead of expecting every useful result to use the American label.",
+    calloutTitle: "Do not confuse a gig room with a late bar",
+    callout: "Glasgow's live-music identity creates plenty of promising pins, but a venue may only open around a ticketed show. Verify ordinary bar hours separately from doors and stage times.",
+    districts: [
+      ["Centre", "Sauchiehall Street & Bath Street", "Rock bars, late venues and busy nightlife sit within a compact grid. Check current opening patterns because the street changes quickly between early evening and late night."],
+      ["West", "Finnieston", "Music venues, pubs and newer bars share the same corridor. Compare recent evidence so an atmospheric room is not confused with a polished destination bar."],
+      ["Northwest", "West End", "Traditional pubs, student nights and music-led rooms spread around Byres Road and Great Western Road. Pick one corridor before moving farther west."],
+      ["South", "Southside", "Neighbourhood pubs and independent venues around Shawlands and Govanhill reward a dedicated search. Keep the return route in view after the subway stops."]
+    ],
+    fieldNotes: [["Search", "Try rock bar, music pub, punk bar and late bar alongside Glasgow."], ["Timing", "A gig-night room and its ordinary weekday version may feel unrelated."], ["Distance", "The Clyde and late transport can turn a short map line into a longer trip."]],
+    transport: "Check Strathclyde Partnership for Transport information before relying on the subway or a connection beyond the city centre late at night.",
+    transportUrl: "https://www.spt.co.uk/travel-with-spt/",
+    transportLabel: "Check late travel with SPT",
+    etiquette: "Let conversation develop naturally, support independent venues when you use their rooms and never mistake friendliness for an invitation to perform a Glasgow stereotype.",
+    faq: [
+      ["What should I search for besides dive bar in Glasgow?", "Try rock bar, music pub, punk bar, late bar and the neighbourhood name. Many unpretentious Glasgow rooms are described by their music or pub identity rather than as dive bars."],
+      ["Which Glasgow areas are useful for alternative nightlife?", "The city centre has the densest late-night cluster. Finnieston and the West End offer strong music and pub routes, while the Southside works best as its own neighbourhood evening."],
+      ["Does Glasgow's subway run all night?", "Do not assume it does. Check current SPT information and plan a bus, taxi or walk before the final service, particularly when crossing between the centre, West End and Southside."]
+    ]
+  },
+  {
+    slug: "bristol", name: "Bristol", short: "Bristol", code: "BRS", country: "GB", locale: "en-GB", accent: "#ff4d9d",
+    region: "Europe", regionHub: "europe.html", managed: true,
+    published: "2026-09-02", modified: "2026-09-02", displayModified: "2 September 2026",
+    seoTitle: "Dive Bars in Bristol: Alternative Pubs and Music Rooms",
+    tagline: "Old pubs, small rooms, steep streets.",
+    description: "Find Bristol dive bars, alternative pubs and independent music rooms across the Old City, Stokes Croft, Gloucester Road and Bedminster.",
+    intro: "Bristol's alternative nightlife is spread between historic centre pubs, independent music rooms and neighbourhood corridors climbing away from the harbour. The most useful search starts with the kind of room you need, then checks whether tonight is an ordinary bar session, a club night or a ticketed show.",
+    meaning: "A Bristol dive may look like an old pub, a basement metal bar, a DIY venue or a lived-in local. The city's independent culture matters more than a fixed visual formula. Rough edges alone do not make a place authentic, and a historic frontage says little about tonight's music.",
+    calloutTitle: "The hill changes the backup plan",
+    callout: "A second option that looks close can sit at the top of a steep climb or across the harbour. Choose a compact area and keep one realistic backup within it.",
+    districts: [
+      ["Centre", "Old City & St Nicholas", "Historic pubs, basement rooms and central venues sit close together. Check access, stairs and the live programme before relying on an old description."],
+      ["North", "Stokes Croft", "Independent venues, late bars and street-level culture create a strong alternative route. Respect residents and do not turn the neighbourhood into a backdrop."],
+      ["North", "Gloucester Road", "A long corridor of pubs, music and independent businesses rewards a route built around the bus rather than a city-centre loop."],
+      ["South", "Bedminster & Southville", "Neighbourhood pubs, arts spaces and music venues across the river suit a separate evening, with the final connection planned before the first drink."]
+    ],
+    fieldNotes: [["Search", "Try alternative pub, punk venue, metal bar and gig pub alongside Bristol."], ["Terrain", "A short distance can include a steep climb or harbour crossing."], ["Format", "Check whether the listing is a pub, venue, club night or all three."]],
+    transport: "Use Travelwest for current bus, walking and cycling information, and do not plan to ride a bicycle or scooter after drinking.",
+    transportUrl: "https://travelwest.info/",
+    transportLabel: "Plan the route with Travelwest",
+    etiquette: "Pay for the show when a venue is hosting one, keep residential streets quiet and support the independent rooms whose programmes create the scene.",
+    faq: [
+      ["Where should I look for alternative bars in Bristol?", "Start with the Old City and St Nicholas for a compact central search, or build a separate route around Stokes Croft and Gloucester Road. Bedminster and Southville work better as their own evening."],
+      ["What search terms work for Bristol's alternative nightlife?", "Try alternative pub, punk venue, metal bar, gig pub and independent music venue. Check the programme because many Bristol rooms change style by event."],
+      ["Can I walk between Bristol nightlife areas?", "Some central routes are walkable, but hills, the harbour and late-night conditions matter. Compare travel time rather than distance and keep a nearby backup."]
+    ]
+  },
+  {
+    slug: "liverpool", name: "Liverpool", short: "Liverpool", code: "LPL", country: "GB", locale: "en-GB", accent: "#ffd166",
+    region: "Europe", regionHub: "europe.html", managed: true,
+    published: "2026-09-02", modified: "2026-09-02", displayModified: "2 September 2026",
+    seoTitle: "Dive Bars in Liverpool: Rock Pubs and Punk Venues",
+    tagline: "Look beyond the obvious music history.",
+    description: "Find Liverpool dive bars, rock pubs and punk venues across the Ropewalks, Baltic Triangle, Georgian Quarter and north city centre.",
+    intro: "Liverpool's music reputation can make search results feel broader than the night you actually want. A heritage venue, an everyday rock pub, a grassroots gig room and a visitor-facing live bar are different choices. Start with the format, then choose a compact part of the centre.",
+    meaning: "A Liverpool dive is more likely to call itself a pub, rock bar, music bar or independent venue. Character comes from regular use, a clear soundtrack and a room that works when no famous story is being retold. The strongest pages and listings explain what happens there now.",
+    calloutTitle: "Music history is context, not tonight's programme",
+    callout: "A famous address can still be the wrong room for the current night. Check who is playing, whether entry is ticketed and what happens after the show.",
+    districts: [
+      ["Centre", "Ropewalks", "Independent bars, rock pubs and small venues cluster around Slater Street, Seel Street and Bold Street. Street-by-street differences make this the easiest comparison zone."],
+      ["South centre", "Georgian Quarter", "Traditional pubs, student routes and independent music venues overlap around Hope Street and the university edge. Check whether the room is event-led."],
+      ["South", "Baltic Triangle", "Warehouses, venues and destination bars create a looser route. Confirm the exact event and return journey before leaving the central cluster."],
+      ["North centre", "Cavern Quarter & Dale Street", "Music heritage and visitor traffic dominate parts of the area, but independent rooms still exist nearby. Current identity matters more than a famous postcode."]
+    ],
+    fieldNotes: [["Search", "Try rock pub, punk venue, music bar and grassroots venue alongside Liverpool."], ["History", "A legendary address does not guarantee the soundtrack you want tonight."], ["Cluster", "Ropewalks is compact; the Baltic Triangle needs a more deliberate route."]],
+    transport: "Check Merseytravel information for the last train or bus, especially when the night crosses the city centre, Baltic Triangle or the river.",
+    transportUrl: "https://www.merseytravel.gov.uk/",
+    transportLabel: "Check the journey with Merseytravel",
+    etiquette: "Listen to the current bands, not only the city's history, respect working pubs and keep residential routes quiet when leaving late.",
+    faq: [
+      ["Where should I start looking for rock bars in Liverpool?", "Ropewalks is the easiest compact search around Slater Street, Seel Street and Bold Street. The Georgian Quarter and Baltic Triangle offer different venue-led routes, so treat them separately."],
+      ["How do I find Liverpool punk and metal venues?", "Search punk venue, metal bar, rock pub, grassroots venue and the date you are going. Many useful rooms are programme-led rather than permanently tied to one genre."],
+      ["Is every Liverpool music bar aimed at live bands?", "No. Some are everyday pubs with a strong soundtrack, some host ticketed gigs and others are visitor-facing live bars. Check the current programme and entry details before choosing."]
+    ]
+  },
+  {
     slug: "tokyo", name: "Tokyo", short: "Tokyo", code: "TYO", country: "JP", locale: "en", accent: "#ff1744",
     tagline: "One door. Eight seats. A whole night.",
     description: "Find Tokyo dive bars, tiny music bars, izakaya and live houses with practical neighbourhood, etiquette and last-train guidance.",
@@ -285,17 +403,40 @@ const cities = [
   }
 ];
 
+cities.push(...expansionCities);
+
 const appUrl = "https://apps.apple.com/gb/app/dive-bar-finder/id6758267440";
-const date = "2026-07-18";
-const displayDate = "18 July 2026";
+const date = "2026-09-02";
+const displayDate = "2 September 2026";
+
+const europeanCountries = new Set(["AT", "BE", "CZ", "DE", "DK", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IT", "NL", "NO", "PL", "PT", "SE"]);
+const northAmericanCountries = new Set(["CA", "MX", "US"]);
+
+function regionFor(city) {
+  if (city.region) return city.region;
+  if (europeanCountries.has(city.country)) return "Europe";
+  if (northAmericanCountries.has(city.country)) return "North America";
+  return "Worldwide";
+}
+
+function regionHubFor(city) {
+  const region = regionFor(city);
+  if (region === "Europe") return "europe.html";
+  if (region === "North America") return "north-america.html";
+  return "cities.html";
+}
 
 function esc(value) {
   return value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 }
 
 function page(city, index) {
-  const prev = cities[(index - 1 + cities.length) % cities.length];
-  const next = cities[(index + 1) % cities.length];
+  const siblings = cities.filter((candidate) => regionFor(candidate) === regionFor(city));
+  const siblingIndex = siblings.findIndex((candidate) => candidate.slug === city.slug);
+  const prev = siblings[(siblingIndex - 1 + siblings.length) % siblings.length];
+  const next = siblings[(siblingIndex + 1) % siblings.length];
+  const regionalHub = regionHubFor(city);
+  const regionalLabel = regionFor(city) === "Worldwide" ? "City guides" : `${regionFor(city)} guides`;
   const districts = city.districts.map(([zone, name, copy]) => `
           <article><span>${zone}</span><h3>${name}</h3><p>${copy}</p></article>`).join("");
   const notes = city.fieldNotes.map(([label, copy]) => `
@@ -306,8 +447,8 @@ function page(city, index) {
           <h2 id="${city.slug}-faq">${city.short} dive bar questions</h2>
           ${faq.map(([question, answer]) => `<details><summary>${question}</summary><p class="answer">${answer}</p></details>`).join("\n          ")}
         </section>` : "";
-  const articleSchema = {"@type":"Article","headline":`Dive Bars in ${city.name}: ${city.tagline}`,"description":city.description,"image":"https://divebarfinder.info/assets/app-store/screenshot-6.webp","author":{"@type":"Organization","name":"Dive Bar Finder","url":"https://divebarfinder.info/about.html"},"publisher":{"@type":"Organization","name":"Fear Army LTD","logo":{"@type":"ImageObject","url":"https://divebarfinder.info/assets/app-store/app-icon.jpg"}},"datePublished":date,"dateModified":city.modified ?? date,"mainEntityOfPage":`https://divebarfinder.info/guides/dive-bars-${city.slug}.html`,"about":{"@type":"Place","name":city.name,"address":{"@type":"PostalAddress","addressLocality":city.name,"addressCountry":city.country}}};
-  const breadcrumbSchema = {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://divebarfinder.info/"},{"@type":"ListItem","position":2,"name":"City guides","item":"https://divebarfinder.info/guides/cities.html"},{"@type":"ListItem","position":3,"name":`Dive bars in ${city.name}`,"item":`https://divebarfinder.info/guides/dive-bars-${city.slug}.html`} ]};
+  const articleSchema = {"@type":"Article","headline":city.seoTitle ?? `Dive Bars in ${city.name}: ${city.tagline}`,"description":city.description,"image":"https://divebarfinder.info/assets/app-store/screenshot-6.webp","author":{"@type":"Organization","name":"Dive Bar Finder","url":"https://divebarfinder.info/about.html"},"publisher":{"@type":"Organization","name":"Fear Army LTD","logo":{"@type":"ImageObject","url":"https://divebarfinder.info/assets/app-store/app-icon.jpg"}},"datePublished":city.published ?? date,"dateModified":city.modified ?? date,"mainEntityOfPage":`https://divebarfinder.info/guides/dive-bars-${city.slug}.html`,"about":{"@type":"Place","name":city.name,"address":{"@type":"PostalAddress","addressLocality":city.name,"addressCountry":city.country}}};
+  const breadcrumbSchema = {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://divebarfinder.info/"},{"@type":"ListItem","position":2,"name":"City guides","item":"https://divebarfinder.info/guides/cities.html"},{"@type":"ListItem","position":3,"name":regionalLabel,"item":`https://divebarfinder.info/guides/${regionalHub}`},{"@type":"ListItem","position":4,"name":`Dive bars in ${city.name}`,"item":`https://divebarfinder.info/guides/dive-bars-${city.slug}.html`} ]};
   const faqSchema = faq.length ? {"@type":"FAQPage","mainEntity":faq.map(([question, answer]) => ({"@type":"Question","name":question,"acceptedAnswer":{"@type":"Answer","text":answer}}))} : null;
   const graph = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
   return `<!doctype html>
@@ -315,7 +456,7 @@ function page(city, index) {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Dive Bars in ${city.name}: A Local Search Guide | Dive Bar Finder</title>
+    <title>${city.seoTitle ?? `Dive Bars in ${city.name}: A Local Search Guide | Dive Bar Finder`}</title>
     <meta name="description" content="${esc(city.description)}" />
     <link rel="canonical" href="https://divebarfinder.info/guides/dive-bars-${city.slug}.html" />
     <meta property="og:type" content="article" />
@@ -342,7 +483,7 @@ function page(city, index) {
       <section class="guide-hero world-city-hero">
         <div class="world-grid" aria-hidden="true"></div>
         <div class="wrap">
-          <div class="breadcrumbs"><a href="../index.html">Home</a> / <a href="cities.html">City guides</a> / ${city.name}</div>
+          <div class="breadcrumbs"><a href="../index.html">Home</a> / <a href="cities.html">City guides</a> / <a href="${regionalHub}">${regionalLabel}</a> / ${city.name}</div>
           <div class="city-stamp" aria-hidden="true">${city.code}<br />${String(index + 2).padStart(2, "0")}</div>
           <div class="eyebrow">After-dark field notes · ${city.country}</div>
           <h1>Dive bars in ${city.name}. <em>${city.tagline}</em></h1>
@@ -368,7 +509,7 @@ function page(city, index) {
       <article class="article article-wrap">
         <h2>How to find a ${city.short} dive tonight</h2>
         <ol class="route-steps">
-          <li><strong>Open the map where you are.</strong> Use Nearby in Dive Bar Finder so distance and open status reflect your real starting point—not a generic city centre.</li>
+          <li><strong>Open the map where you are.</strong> Use Nearby in Dive Bar Finder so distance and open status reflect your real starting point, not a generic city centre.</li>
           <li><strong>Choose the character you want.</strong> Start with Dive bars, then add rock, metal, punk, gothic or unique/alternative when the scene matters more than the label.</li>
           <li><strong>Compare a small cluster.</strong> Use list view for ratings, Dive Score and open status, then map view to see whether two or three candidates form a realistic route.</li>
           <li><strong>Check the live details.</strong> Verify hours, door policy, programme, accessibility and payment information with the venue before making a special journey.</li>
@@ -380,33 +521,132 @@ function page(city, index) {
         </div>
 
         <h2>Getting home changes the search</h2>
-        <p>${city.transport}</p>
+        <p>${city.transport}${city.transportUrl ? ` <a href="${city.transportUrl}">${city.transportLabel} ↗</a>` : ""}</p>
         <p>A responsible route includes the return journey. Never drive after drinking, and use official transport information because schedules, closures and local conditions can change without notice.</p>
 
         <h2>Enter as a guest</h2>
         <p>${city.etiquette}</p>
         <p>Characterful bars are communities, workplaces and sometimes small cultural institutions. Recent safety, accessibility and venue information should always outweigh a romantic description of grit.</p>
 
-        ${faqMarkup}
+        ${faqMarkup.trimStart()}
 
         <section class="article-cta london-cta">
           <div><span class="eyebrow">The live map beats the old list</span><h2>Find your ${city.short} bar.</h2><p>Compare nearby options, filter by scene, save favourites and open directions on your iPhone.</p></div>
           <a class="app-button" data-download-source="dive-bars-${city.slug}" href="${appUrl}">Download Dive Bar Finder</a>
         </section>
       </article>
-      <section class="related"><div class="article-wrap"><h3>Next city</h3><div class="related-grid"><a href="dive-bars-${prev.slug}.html">${prev.name} after dark →</a><a href="cities.html">Explore every city guide →</a><a href="dive-bars-${next.slug}.html">${next.name} after dark →</a></div></div></section>
+      <section class="related"><div class="article-wrap"><h3>Next city</h3><div class="related-grid"><a href="dive-bars-${prev.slug}.html">${prev.name} after dark →</a><a href="${regionalHub}">Explore ${regionalLabel.toLowerCase()} →</a><a href="dive-bars-${next.slug}.html">${next.name} after dark →</a></div></div></section>
     </main>
     <script src="../script.js"></script>
   </body>
 </html>`;
 }
 
+function regionalHub(region, slug, title, description, intro, extraCity = null) {
+  const items = cities.filter((city) => regionFor(city) === region);
+  const cards = [
+    ...(extraCity ? [extraCity] : []),
+    ...items,
+  ].map((city) => `<a href="${city.href ?? `dive-bars-${city.slug}.html`}" style="--city-accent:${city.accent}"><span>${city.code}</span><h2>${city.name}</h2><p>${city.tagline}</p><b>Open field guide ↗</b></a>`).join("");
+  const hasPart = [
+    ...(extraCity ? [extraCity] : []),
+    ...items,
+  ].map((city) => ({"@type":"Article","name":`Dive bars in ${city.name}`,"url":`https://divebarfinder.info/guides/${city.href ?? `dive-bars-${city.slug}.html`}`}));
+  return `<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>${title}</title>
+    <meta name="description" content="${esc(description)}" />
+    <link rel="canonical" href="https://divebarfinder.info/guides/${slug}.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="${title}" />
+    <meta property="og:description" content="${esc(description)}" />
+    <meta property="og:url" content="https://divebarfinder.info/guides/${slug}.html" />
+    <meta property="og:image" content="https://divebarfinder.info/assets/app-store/screenshot-6.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../assets/app-store/app-icon.jpg" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":title,"description":description,"url":`https://divebarfinder.info/guides/${slug}.html`,"dateModified":date,"isPartOf":{"@type":"CollectionPage","name":"World City Dive Bar Guides","url":"https://divebarfinder.info/guides/cities.html"},"hasPart":hasPart}, null, 2)}</script>
+  </head>
+  <body class="cities-hub">
+    <header class="site-header"><div class="wrap nav"><a class="brand" href="../index.html"><img src="../assets/app-store/app-icon.jpg" alt="Dive Bar Finder app icon" />Dive Bar Finder</a><button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="navlinks" aria-label="Main navigation"><a href="../index.html#how">How it works</a><a href="cities.html">City guides</a><a href="../about.html">About</a><a class="nav-cta" data-download-source="${slug}-nav" href="${appUrl}">Get the app</a></nav></div></header>
+    <main>
+      <section class="atlas-hero"><div class="atlas-orbit" aria-hidden="true"></div><div class="wrap"><div class="breadcrumbs"><a href="../index.html">Home</a> / <a href="cities.html">City guides</a> / ${region}</div><div class="eyebrow">The after-dark atlas · ${String(items.length + (extraCity ? 1 : 0)).padStart(2, "0")} cities</div><h1>${region}.<br /><em>After dark.</em></h1><p>${intro}</p><a class="atlas-jump" href="#city-index">Choose a city <span>↓</span></a></div></section>
+      <section class="atlas-manifesto"><div class="wrap"><span>How to use it</span><p>Choose a city, understand its neighbourhoods and local scene language, then use the live map for current nearby results. Every guide includes a route-home check.</p></div></section>
+      <section class="city-index wrap" id="city-index"><section class="city-region"><div class="city-region-title"><span>${region} city guides</span><b>${String(items.length + (extraCity ? 1 : 0)).padStart(2, "0")}</b></div><div class="city-index-grid">${cards}</div></section></section>
+      <section class="related"><div class="article-wrap"><h3>Keep exploring</h3><div class="related-grid"><a href="cities.html">World city atlas →</a><a href="${region === "Europe" ? "north-america.html" : "europe.html"}">${region === "Europe" ? "North America" : "Europe"} guides →</a><a href="../index.html#how">How Dive Bar Finder works →</a></div></div></section>
+      <section class="article-cta atlas-cta wrap"><div><span class="eyebrow">${items.length + (extraCity ? 1 : 0)} cities. One live map.</span><h2>Find the room you will remember.</h2><p>Download Dive Bar Finder for iPhone and turn the field guide into a nearby search.</p></div><a class="app-button" data-download-source="${slug}-hub" href="${appUrl}">Download Dive Bar Finder</a></section>
+    </main><script src="../script.js"></script>
+  </body>
+</html>`;
+}
+
+function manifest() {
+  const managed = cities.filter((city) => city.managed);
+  return managed.map((city, index) => {
+    const hub = regionHubFor(city);
+    const siblings = managed.filter((candidate) => regionFor(candidate) === regionFor(city));
+    const siblingIndex = siblings.findIndex((candidate) => candidate.slug === city.slug);
+    const prev = siblings[(siblingIndex - 1 + siblings.length) % siblings.length];
+    const next = siblings[(siblingIndex + 1) % siblings.length];
+    const searchTerms = city.searchTerms ?? city.fieldNotes?.find(([label]) => label === "Search language")?.[1]?.split(", ") ?? ["dive bar", "rock bar", "alternative nightlife"];
+    return {
+      slug: `/guides/dive-bars-${city.slug}`,
+      canonical_path: `/guides/dive-bars-${city.slug}.html`,
+      page_family: "city-guide",
+      primary_query: `dive bars ${city.name.toLowerCase()}`,
+      secondary_queries: [`rock bars ${city.name.toLowerCase()}`, `alternative bars ${city.name.toLowerCase()}`, `punk bars ${city.name.toLowerCase()}`],
+      search_intent: "commercial",
+      audience: `${city.name} visitors and locals looking for unpretentious or alternative nightlife`,
+      user_problem: `The searcher needs current local terminology, a realistic neighbourhood cluster and a safe route home in ${city.name}.`,
+      unique_value: `Explains ${city.districts.map((district) => district[1]).join(", ")} as distinct search zones, with local scene language, transport context and live verification checks.`,
+      evidence: ["Current public search results reviewed on 2026-09-02", `${city.transit ?? "Official local transport information"}`, "First-party Dive Bar Finder workflow and category filters"],
+      template_fields: {city: city.name, region: regionFor(city), district_count: city.districts.length, field_note_count: city.fieldNotes.length, search_terms: searchTerms},
+      hub_slug: `/guides/${hub.replace(".html", "")}`,
+      hub_path: `/guides/${hub}`,
+      internal_links_in: [`/guides/${hub.replace(".html", "")}`, index === 0 ? "/guides/cities" : `/guides/dive-bars-${managed[index - 1].slug}`],
+      internal_links_out: [`/guides/${hub.replace(".html", "")}`, `/guides/dive-bars-${prev.slug}`, `/guides/dive-bars-${next.slug}`],
+      conversion_path: `Download Dive Bar Finder and open the ${city.name} map with scene filters`,
+      indexing_decision: "index",
+      risk_flags: ["Venue and transport information can change and must be verified live"],
+      status: "verified-local",
+      verified_on: date,
+      score: {business_fit:5,intent_value:4,differentiation:4,evidence:4,usefulness:4,authority_fit:5,conversion_path:5,competitiveness:3,cannibalisation:1,maintenance:2,content_risk:1,priority:39},
+    };
+  });
+}
+
+function htmlFiles(directory) {
+  return readdirSync(directory, {withFileTypes:true}).flatMap((entry) => {
+    if (entry.name === ".git" || entry.name === "node_modules") return [];
+    const path = join(directory, entry.name);
+    if (entry.isDirectory()) return htmlFiles(path);
+    return entry.isFile() && entry.name.endsWith(".html") ? [path] : [];
+  });
+}
+
+function sitemap() {
+  const previous = readFileSync("sitemap.xml", "utf8");
+  const previousDates = new Map([...previous.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)].map((match) => [match[1], match[2]]));
+  const changed = new Set(["https://divebarfinder.info/", "https://divebarfinder.info/guides/cities.html", "https://divebarfinder.info/guides/europe.html", "https://divebarfinder.info/guides/north-america.html", ...cities.filter((city) => city.managed).map((city) => `https://divebarfinder.info/guides/dive-bars-${city.slug}.html`)]);
+  const urls = htmlFiles(".").map((file) => {
+    const source = readFileSync(file, "utf8");
+    const canonical = source.match(/<link\s+rel="canonical"\s+href="([^"]+)"/i)?.[1];
+    if (!canonical) throw new Error(`Missing canonical in ${file}`);
+    const lastmod = changed.has(canonical) ? date : previousDates.get(canonical) ?? date;
+    return {canonical, lastmod};
+  }).sort((a, b) => a.canonical.localeCompare(b.canonical));
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(({canonical,lastmod}) => `  <url>\n    <loc>${canonical}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`).join("\n")}\n</urlset>\n`;
+}
+
 function hub() {
   const regions = [
     ["United States", cities.slice(0, 6)],
     ["Canada", cities.slice(6, 8)],
-    ["Europe", cities.slice(8, 13)],
-    ["Asia Pacific", cities.slice(13)]
+    ["Europe", cities.slice(8, 17)],
+    ["Asia Pacific", cities.slice(17)]
   ];
   const cards = regions.map(([region, items]) => `<section class="city-region"><div class="city-region-title"><span>${region}</span><b>${String(items.length).padStart(2,"0")}</b></div><div class="city-index-grid">${items.map((c) => `<a href="dive-bars-${c.slug}.html" style="--city-accent:${c.accent}"><span>${c.code}</span><h2>${c.name}</h2><p>${c.tagline}</p><b>Open field guide ↗</b></a>`).join("")}</div></section>`).join("");
   return `<!doctype html>
@@ -418,7 +658,7 @@ function hub() {
     <link rel="canonical" href="https://divebarfinder.info/guides/cities.html" />
     <meta property="og:type" content="website" /><meta property="og:title" content="After-dark field guides for the world’s great bar cities" /><meta property="og:description" content="No stale top-ten lists. Learn how each city works, then use the live map to find your room." /><meta property="og:url" content="https://divebarfinder.info/guides/cities.html" /><meta property="og:image" content="https://divebarfinder.info/assets/app-store/screenshot-6.webp" /><meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="../assets/app-store/app-icon.jpg" /><link rel="stylesheet" href="../styles.css" />
-    <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":"World City Dive Bar Guides","description":"Neighbourhood-first guides to dive bars and alternative nightlife in major world cities.","url":"https://divebarfinder.info/guides/cities.html","isPartOf":{"@type":"WebSite","name":"Dive Bar Finder","url":"https://divebarfinder.info/"},"hasPart":[{"@type":"Article","name":"Dive bars in London","url":"https://divebarfinder.info/guides/dive-bars-london.html"},...cities.map(c=>({"@type":"Article","name":`Dive bars in ${c.name}`,"url":`https://divebarfinder.info/guides/dive-bars-${c.slug}.html`}))]}, null, 2)}</script>
+    <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":"World City Dive Bar Guides","description":"Neighbourhood-first guides to dive bars and alternative nightlife in major world cities.","url":"https://divebarfinder.info/guides/cities.html","dateModified":"2026-09-02","isPartOf":{"@type":"WebSite","name":"Dive Bar Finder","url":"https://divebarfinder.info/"},"hasPart":[{"@type":"Article","name":"Dive bars in London","url":"https://divebarfinder.info/guides/dive-bars-london.html"},...cities.map(c=>({"@type":"Article","name":`Dive bars in ${c.name}`,"url":`https://divebarfinder.info/guides/dive-bars-${c.slug}.html`})),{"@type":"Article","name":"Punk, metal and goth places in Berlin","url":"https://divebarfinder.info/guides/alternative-bars-berlin.html"},{"@type":"Article","name":"Punk, rock and metal bars in Montréal","url":"https://divebarfinder.info/guides/punk-rock-bars-montreal.html"}]}, null, 2)}</script>
   </head>
   <body class="cities-hub">
     <header class="site-header"><div class="wrap nav"><a class="brand" href="../index.html"><img src="../assets/app-store/app-icon.jpg" alt="Dive Bar Finder app icon" />Dive Bar Finder</a><button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="navlinks" aria-label="Main navigation"><a href="../index.html#how">How it works</a><a href="cities.html">City guides</a><a href="../about.html">About</a><a class="nav-cta" data-download-source="cities-nav" href="${appUrl}">Get the app</a></nav></div></header>
@@ -429,8 +669,9 @@ function hub() {
         <section class="city-region featured-region"><div class="city-region-title"><span>United Kingdom · Original guide</span><b>01</b></div><div class="city-index-grid"><a href="dive-bars-london.html" style="--city-accent:#ee321f"><span>LON</span><h2>London</h2><p>Pubs, basements and scenes beyond the label.</p><b>Open the London cluster ↗</b></a></div></section>
         ${cards}
       </section>
+      <section class="related"><div class="article-wrap"><h3>City scene guides</h3><div class="related-grid"><a href="alternative-bars-berlin.html">Punk, metal and goth places in Berlin →</a><a href="punk-rock-bars-montreal.html">Punk and rock bars in Montréal →</a><a href="rock-metal-bars-london.html">Rock and metal bars in London →</a></div></div></section>
       <section class="atlas-method"><div class="wrap"><div><span>01</span><h2>Start local.</h2><p>Open Nearby from your actual location. City-wide lists ignore the hour you lose crossing town.</p></div><div><span>02</span><h2>Filter the mood.</h2><p>Combine dive, punk, rock, metal, gothic and alternative filters around the night you want.</p></div><div><span>03</span><h2>Verify tonight.</h2><p>Check current hours, programmes, transport and access before making a special journey.</p></div></div></section>
-      <section class="article-cta atlas-cta wrap"><div><span class="eyebrow">Sixteen cities. One live map.</span><h2>Find the room you’ll remember.</h2><p>Download Dive Bar Finder for iPhone and turn the guide into a nearby search.</p></div><a class="app-button" data-download-source="cities-hub" href="${appUrl}">Download Dive Bar Finder</a></section>
+      <section class="article-cta atlas-cta wrap"><div><span class="eyebrow">Twenty cities. One live map.</span><h2>Find the room you’ll remember.</h2><p>Download Dive Bar Finder for iPhone and turn the guide into a nearby search.</p></div><a class="app-button" data-download-source="cities-hub" href="${appUrl}">Download Dive Bar Finder</a></section>
     </main><script src="../script.js"></script>
   </body>
 </html>`;
@@ -440,8 +681,15 @@ function addFile(path, content) {
   return `*** Add File: ${path}\n${content.split("\n").map((line) => `+${line}`).join("\n")}\n`;
 }
 
-let patch = "*** Begin Patch\n";
-patch += addFile("guides/cities.html", hub());
-cities.forEach((city, index) => { patch += addFile(`guides/dive-bars-${city.slug}.html`, page(city, index)); });
-patch += "*** End Patch\n";
-process.stdout.write(patch);
+if (process.argv.includes("--write")) {
+  writeFileSync("guides/europe.html", regionalHub("Europe", "europe", "Dive Bars in Europe: 36 City Guides | Dive Bar Finder", "Explore 36 practical city guides to dive bars, rock pubs, punk venues and alternative nightlife across Europe.", "From British pub culture and Iberian late nights to Nordic rock bars and Central European cellars, each guide starts with how the city actually works.", {name:"London",slug:"london",href:"dive-bars-london.html",code:"LON",accent:"#ee321f",tagline:"Pubs, basements and scenes beyond the label."}));
+  writeFileSync("guides/north-america.html", regionalHub("North America", "north-america", "Dive Bars in North America: 32 City Guides | Dive Bar Finder", "Explore 32 practical city guides to dive bars, punk venues, rock clubs and neighbourhood taverns across the United States, Canada and Mexico.", "From corner taverns and desert locals to punk basements and megacity rock bars, these guides turn a continent-scale search into one workable neighbourhood at a time."));
+  cities.forEach((city, index) => {
+    if (!city.managed) return;
+    writeFileSync(`guides/dive-bars-${city.slug}.html`, page(city, index));
+  });
+  writeFileSync("seo/page-manifest.json", `${JSON.stringify(manifest(), null, 2)}\n`);
+  writeFileSync("sitemap.xml", sitemap());
+} else {
+  process.stdout.write("Run node generate-world-guides.mjs --write to generate managed city guides, regional hubs, the SEO manifest and sitemap.\n");
+}

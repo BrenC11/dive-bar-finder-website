@@ -9,7 +9,9 @@ Publisher: Fear Army LTD
 ## Main pages
 
 - [About Dive Bar Finder](https://divebarfinder.info/about.html): Product purpose, editorial method and limitations.
-- [World city guides](https://divebarfinder.info/guides/cities.html): Neighbourhood-first nightlife guides for sixteen cities.
+- [World city guides](https://divebarfinder.info/guides/cities.html): Neighbourhood-first nightlife guides for seventy cities.
+- [Europe city guides](https://divebarfinder.info/guides/europe.html): 36 city guides across the United Kingdom and continental Europe.
+- [North America city guides](https://divebarfinder.info/guides/north-america.html): 32 city guides across the United States, Canada and Mexico.
 - [Support](https://divebarfinder.info/support.html): App help and contact information.
 - [For bars and venues](https://divebarfinder.info/venues.html): Listing corrections, venue suggestions and guide-linking information.
 - [Privacy policy](https://divebarfinder.info/privacy.html)
