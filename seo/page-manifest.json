@@ -33,11 +33,11 @@
     "hub_path": "/guides/europe.html",
     "internal_links_in": [
       "/guides/europe",
-      "/guides/cities"
+      "/guides/dive-bars-glasgow"
     ],
     "internal_links_out": [
       "/guides/europe",
-      "/guides/dive-bars-athens",
+      "/guides/dive-bars-edinburgh",
       "/guides/dive-bars-glasgow"
     ],
     "conversion_path": "Download Dive Bar Finder and open the Manchester map with scene filters",
@@ -1865,7 +1865,7 @@
     "internal_links_out": [
       "/guides/europe",
       "/guides/dive-bars-warsaw",
-      "/guides/dive-bars-manchester"
+      "/guides/dive-bars-paris"
     ],
     "conversion_path": "Download Dive Bar Finder and open the Athens map with scene filters",
     "indexing_decision": "index",
@@ -1923,11 +1923,11 @@
     "hub_path": "/guides/north-america.html",
     "internal_links_in": [
       "/guides/north-america",
-      "/guides/dive-bars-athens"
+      "/guides/dive-bars-portland"
     ],
     "internal_links_out": [
       "/guides/north-america",
-      "/guides/dive-bars-guadalajara",
+      "/guides/dive-bars-montreal",
       "/guides/dive-bars-portland"
     ],
     "conversion_path": "Download Dive Bar Finder and open the Seattle map with scene filters",
@@ -3377,7 +3377,7 @@
     "internal_links_out": [
       "/guides/north-america",
       "/guides/dive-bars-mexico-city",
-      "/guides/dive-bars-seattle"
+      "/guides/dive-bars-new-york"
     ],
     "conversion_path": "Download Dive Bar Finder and open the Guadalajara map with scene filters",
     "indexing_decision": "index",

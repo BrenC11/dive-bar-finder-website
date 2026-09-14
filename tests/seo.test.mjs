@@ -7,6 +7,12 @@ import test from "node:test";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const canonicalOrigin = "https://divebarfinder.info";
+const sitemapLeafFiles = [
+  "sitemap-core.xml",
+  "sitemap-europe.xml",
+  "sitemap-north-america.xml",
+  "sitemap-world.xml",
+];
 
 async function htmlFiles(directory = root) {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -33,6 +39,50 @@ function localFileFor(url) {
   if (pathname === "/") return path.join(root, "index.html");
   if (pathname.endsWith("/")) return path.join(root, pathname, "index.html");
   return path.join(root, pathname);
+}
+
+function plainText(source) {
+  const entities = {
+    amp: "&",
+    apos: "'",
+    gt: ">",
+    lt: "<",
+    nbsp: " ",
+    quot: '"',
+  };
+  return source
+    .replace(/<a\b[^>]*>[\s\S]*?<\/a\s*>/gi, "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&(#x[\da-f]+|#\d+|\w+);/gi, (_, entity) => {
+      if (entity.startsWith("#x")) return String.fromCodePoint(Number.parseInt(entity.slice(2), 16));
+      if (entity.startsWith("#")) return String.fromCodePoint(Number.parseInt(entity.slice(1), 10));
+      return entities[entity.toLowerCase()] ?? `&${entity};`;
+    })
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function structuredDataNodes(source) {
+  const nodes = [];
+  for (const match of source.matchAll(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/gi)) {
+    const data = JSON.parse(match[1]);
+    for (const item of Array.isArray(data) ? data : [data]) {
+      nodes.push(...(Array.isArray(item?.["@graph"]) ? item["@graph"] : [item]));
+    }
+  }
+  return nodes;
+}
+
+function visibleFaq(source) {
+  const answers = new Map();
+  for (const match of source.matchAll(/<details\b[^>]*>[\s\S]*?<summary>([\s\S]*?)<\/summary>[\s\S]*?<(?:div|p)\s+class="answer">([\s\S]*?)<\/(?:div|p)>[\s\S]*?<\/details>/gi)) {
+    answers.set(plainText(match[1]), plainText(match[2]));
+  }
+  const guide = source.match(/<div\s+class="guide-faq">([\s\S]*?)<\/div>/i)?.[1] ?? "";
+  for (const match of guide.matchAll(/<h3>([\s\S]*?)<\/h3>\s*<p>([\s\S]*?)<\/p>/gi)) {
+    answers.set(plainText(match[1]), plainText(match[2]));
+  }
+  return answers;
 }
 
 test("every HTML page has unique indexable metadata and valid JSON-LD", async () => {
@@ -80,10 +130,22 @@ test("every HTML page has unique indexable metadata and valid JSON-LD", async ()
   }
 });
 
-test("sitemap contains every canonical HTML page once", async () => {
-  const sitemap = await readFile(path.join(root, "sitemap.xml"), "utf8");
-  const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
-  assert.equal(new Set(locations).size, locations.length, "sitemap contains duplicate URLs");
+test("sitemap index, child maps and text fallback contain every canonical HTML page once", async () => {
+  const sitemapIndex = await readFile(path.join(root, "sitemap.xml"), "utf8");
+  assert.match(sitemapIndex, /<sitemapindex\s+xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/);
+  const childLocations = [...sitemapIndex.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+  assert.deepEqual(
+    childLocations,
+    sitemapLeafFiles.map((file) => `${canonicalOrigin}/${file}`),
+  );
+
+  const locations = [];
+  for (const file of sitemapLeafFiles) {
+    const sitemap = await readFile(path.join(root, file), "utf8");
+    assert.match(sitemap, /<urlset\s+xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/);
+    locations.push(...[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]));
+  }
+  assert.equal(new Set(locations).size, locations.length, "child sitemaps contain duplicate URLs");
 
   const canonicals = [];
   for (const file of await htmlFiles()) {
@@ -92,8 +154,29 @@ test("sitemap contains every canonical HTML page once", async () => {
   }
 
   assert.deepEqual(locations.sort(), canonicals.sort());
+  const textLocations = (await readFile(path.join(root, "sitemap.txt"), "utf8"))
+    .trim()
+    .split("\n");
+  assert.deepEqual(textLocations.sort(), canonicals.sort());
   for (const location of locations) {
     assert.equal(existsSync(localFileFor(new URL(location))), true, `${location} does not resolve locally`);
+  }
+});
+
+test("FAQ structured data exactly matches the visible questions and answers", async () => {
+  for (const file of await htmlFiles()) {
+    const source = await readFile(file, "utf8");
+    const faqPages = structuredDataNodes(source).filter((node) => node?.["@type"] === "FAQPage");
+    if (faqPages.length === 0) continue;
+
+    const relative = path.relative(root, file);
+    assert.equal(faqPages.length, 1, `${relative} must have exactly one FAQPage node`);
+    const visible = visibleFaq(source);
+    const structured = new Map(faqPages[0].mainEntity.map((question) => [
+      plainText(question.name),
+      plainText(question.acceptedAnswer?.text ?? ""),
+    ]));
+    assert.deepEqual(structured, visible, `${relative} FAQ schema must match visible copy`);
   }
 });
 
@@ -125,6 +208,7 @@ test("the 54-page programmatic SEO cohort is implemented and linked from regiona
   for (const page of manifest) {
     const hub = await readFile(localFileFor(new URL(page.hub_path, canonicalOrigin)), "utf8");
     const source = await readFile(localFileFor(new URL(page.canonical_path, canonicalOrigin)), "utf8");
+    const pageHref = `${path.basename(page.slug)}.html`;
     assert.equal(page.page_family, "city-guide");
     assert.equal(page.indexing_decision, "index");
     assert.ok(page.evidence.length > 0);
@@ -134,6 +218,14 @@ test("the 54-page programmatic SEO cohort is implemented and linked from regiona
     assert.match(source, /class="district-board"/);
     assert.match(source, /class="guide-faq"/);
     assert.match(source, /Getting home changes the search/);
+    for (const inboundPath of page.internal_links_in) {
+      const inboundFile = localFileFor(new URL(`${inboundPath}.html`, canonicalOrigin));
+      const inboundSource = await readFile(inboundFile, "utf8");
+      assert.match(inboundSource, new RegExp(`href="${pageHref}"`));
+    }
+    for (const outboundPath of page.internal_links_out) {
+      assert.match(source, new RegExp(`href="${path.basename(outboundPath)}\\.html"`));
+    }
   }
 });
 

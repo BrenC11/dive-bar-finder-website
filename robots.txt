@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://divebarfinder.info/sitemap.xml
+Sitemap: https://divebarfinder.info/sitemap.txt

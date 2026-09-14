@@ -408,6 +408,13 @@ cities.push(...expansionCities);
 const appUrl = "https://apps.apple.com/gb/app/dive-bar-finder/id6758267440";
 const date = "2026-09-02";
 const displayDate = "2 September 2026";
+const sitemapPublicationDate = "2026-09-14";
+const sitemapLeafFiles = [
+  "sitemap-core.xml",
+  "sitemap-europe.xml",
+  "sitemap-north-america.xml",
+  "sitemap-world.xml",
+];
 
 const europeanCountries = new Set(["AT", "BE", "CZ", "DE", "DK", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IT", "NL", "NO", "PL", "PT", "SE"]);
 const northAmericanCountries = new Set(["CA", "MX", "US"]);
@@ -585,9 +592,9 @@ function regionalHub(region, slug, title, description, intro, extraCity = null) 
 
 function manifest() {
   const managed = cities.filter((city) => city.managed);
-  return managed.map((city, index) => {
+  return managed.map((city) => {
     const hub = regionHubFor(city);
-    const siblings = managed.filter((candidate) => regionFor(candidate) === regionFor(city));
+    const siblings = cities.filter((candidate) => regionFor(candidate) === regionFor(city));
     const siblingIndex = siblings.findIndex((candidate) => candidate.slug === city.slug);
     const prev = siblings[(siblingIndex - 1 + siblings.length) % siblings.length];
     const next = siblings[(siblingIndex + 1) % siblings.length];
@@ -606,7 +613,10 @@ function manifest() {
       template_fields: {city: city.name, region: regionFor(city), district_count: city.districts.length, field_note_count: city.fieldNotes.length, search_terms: searchTerms},
       hub_slug: `/guides/${hub.replace(".html", "")}`,
       hub_path: `/guides/${hub}`,
-      internal_links_in: [`/guides/${hub.replace(".html", "")}`, index === 0 ? "/guides/cities" : `/guides/dive-bars-${managed[index - 1].slug}`],
+      internal_links_in: [
+        `/guides/${hub.replace(".html", "")}`,
+        prev.managed ? `/guides/dive-bars-${prev.slug}` : `/guides/dive-bars-${next.slug}`,
+      ],
       internal_links_out: [`/guides/${hub.replace(".html", "")}`, `/guides/dive-bars-${prev.slug}`, `/guides/dive-bars-${next.slug}`],
       conversion_path: `Download Dive Bar Finder and open the ${city.name} map with scene filters`,
       indexing_decision: "index",
@@ -627,18 +637,71 @@ function htmlFiles(directory) {
   });
 }
 
-function sitemap() {
-  const previous = readFileSync("sitemap.xml", "utf8");
-  const previousDates = new Map([...previous.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)].map((match) => [match[1], match[2]]));
-  const changed = new Set(["https://divebarfinder.info/", "https://divebarfinder.info/guides/cities.html", "https://divebarfinder.info/guides/europe.html", "https://divebarfinder.info/guides/north-america.html", ...cities.filter((city) => city.managed).map((city) => `https://divebarfinder.info/guides/dive-bars-${city.slug}.html`)]);
-  const urls = htmlFiles(".").map((file) => {
+function previousSitemapDates() {
+  const candidates = ["sitemap.xml", ...sitemapLeafFiles];
+  return new Map(candidates.flatMap((file) => {
+    try {
+      const source = readFileSync(file, "utf8");
+      return [...source.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)]
+        .map((match) => [match[1], match[2]]);
+    } catch {
+      return [];
+    }
+  }));
+}
+
+function canonicalPages() {
+  const previousDates = previousSitemapDates();
+  const changed = new Set([
+    "https://divebarfinder.info/",
+    "https://divebarfinder.info/guides/alternative-bars-berlin.html",
+    "https://divebarfinder.info/guides/rock-metal-bars-london.html",
+  ]);
+  return htmlFiles(".").map((file) => {
     const source = readFileSync(file, "utf8");
     const canonical = source.match(/<link\s+rel="canonical"\s+href="([^"]+)"/i)?.[1];
     if (!canonical) throw new Error(`Missing canonical in ${file}`);
-    const lastmod = changed.has(canonical) ? date : previousDates.get(canonical) ?? date;
+    const lastmod = changed.has(canonical) ? sitemapPublicationDate : previousDates.get(canonical) ?? date;
     return {canonical, lastmod};
   }).sort((a, b) => a.canonical.localeCompare(b.canonical));
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(({canonical,lastmod}) => `  <url>\n    <loc>${canonical}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`).join("\n")}\n</urlset>\n`;
+}
+
+function sitemapUrlset(pages) {
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map(({canonical,lastmod}) => `  <url>\n    <loc>${canonical}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`).join("\n")}\n</urlset>\n`;
+}
+
+function sitemapDocuments() {
+  const pages = canonicalPages();
+  const cityRegions = new Map(cities.map((city) => [
+    `https://divebarfinder.info/guides/dive-bars-${city.slug}.html`,
+    regionFor(city),
+  ]));
+  const buckets = {
+    "sitemap-core.xml": [],
+    "sitemap-europe.xml": [],
+    "sitemap-north-america.xml": [],
+    "sitemap-world.xml": [],
+  };
+
+  for (const page of pages) {
+    const region = cityRegions.get(page.canonical);
+    if (page.canonical.endsWith("/guides/europe.html") || region === "Europe") {
+      buckets["sitemap-europe.xml"].push(page);
+    } else if (page.canonical.endsWith("/guides/north-america.html") || region === "North America") {
+      buckets["sitemap-north-america.xml"].push(page);
+    } else if (page.canonical.endsWith("/guides/cities.html") || region === "Worldwide") {
+      buckets["sitemap-world.xml"].push(page);
+    } else {
+      buckets["sitemap-core.xml"].push(page);
+    }
+  }
+
+  const index = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapLeafFiles.map((file) => `  <sitemap>\n    <loc>https://divebarfinder.info/${file}</loc>\n    <lastmod>${sitemapPublicationDate}</lastmod>\n  </sitemap>`).join("\n")}\n</sitemapindex>\n`;
+  return {
+    "sitemap.xml": index,
+    "sitemap.txt": `${pages.map((page) => page.canonical).join("\n")}\n`,
+    ...Object.fromEntries(Object.entries(buckets).map(([file, entries]) => [file, sitemapUrlset(entries)])),
+  };
 }
 
 function hub() {
@@ -689,7 +752,9 @@ if (process.argv.includes("--write")) {
     writeFileSync(`guides/dive-bars-${city.slug}.html`, page(city, index));
   });
   writeFileSync("seo/page-manifest.json", `${JSON.stringify(manifest(), null, 2)}\n`);
-  writeFileSync("sitemap.xml", sitemap());
+  for (const [file, content] of Object.entries(sitemapDocuments())) {
+    writeFileSync(file, content);
+  }
 } else {
   process.stdout.write("Run node generate-world-guides.mjs --write to generate managed city guides, regional hubs, the SEO manifest and sitemap.\n");
 }
