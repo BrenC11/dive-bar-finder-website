@@ -37,7 +37,7 @@ function buildCity(seed) {
     etiquette: `Read the room, respect the regular crowd and ask before photographing people. In ${name}, a neighbourhood bar is part of local life, not scenery for a themed crawl.`,
     faq: [
       [`What should I search for besides dive bar in ${name}?`, `Try ${termList}, then add ${first[1]}, ${second[1]} or another neighbourhood name. Local scene language often produces better results than a direct translation of “dive bar”.`],
-      [`Where should I begin an alternative night in ${name}?`, `${first[1]} is a useful first search zone for ${first[2].toLowerCase()} ${second[1]} offers ${second[2].toLowerCase()} Compare current listings before choosing.`],
+      [`Where should I begin an alternative night in ${name}?`, `Start by comparing ${first[1]} and ${second[1]}. ${first[1]}: ${first[2]} ${second[1]}: ${second[2]} Check current listings before choosing.`],
       [`How should I plan a late journey home in ${name}?`, `Build the route around ${transit}, verify the final service and never drive after drinking.`],
     ],
     searchTerms,
