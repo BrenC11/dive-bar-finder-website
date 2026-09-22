@@ -696,7 +696,7 @@ function sitemapDocuments() {
     }
   }
 
-  const index = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapLeafFiles.map((file) => `  <sitemap>\n    <loc>https://divebarfinder.info/${file}</loc>\n    <lastmod>${sitemapPublicationDate}</lastmod>\n  </sitemap>`).join("\n")}\n</sitemapindex>\n`;
+  const index = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapLeafFiles.map((file) => `  <sitemap>\n    <loc>https://divebarfinder.info/${file}</loc>\n    <lastmod>${[sitemapPublicationDate, ...buckets[file].map((page) => page.lastmod)].sort().at(-1)}</lastmod>\n  </sitemap>`).join("\n")}\n</sitemapindex>\n`;
   return {
     "sitemap.xml": index,
     "sitemap.txt": `${pages.map((page) => page.canonical).join("\n")}\n`,
