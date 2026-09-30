@@ -199,6 +199,15 @@ test("local links and assets resolve", async () => {
   }
 });
 
+test("city guide headings avoid the generator's awkward city article", async () => {
+  const generator = await readFile(path.join(root, "generate-world-guides.mjs"), "utf8");
+  assert.match(generator, /How to find a dive bar in \$\{city\.short\} tonight/);
+  for (const file of await htmlFiles(path.join(root, "guides"))) {
+    const source = await readFile(file, "utf8");
+    assert.doesNotMatch(source, /How to find a [AEIOU][^<]* dive tonight/i, file);
+  }
+});
+
 test("the 54-page programmatic SEO cohort is implemented and linked from regional hubs", async () => {
   const manifest = JSON.parse(await readFile(path.join(root, "seo/page-manifest.json"), "utf8"));
   assert.equal(manifest.length, 54);

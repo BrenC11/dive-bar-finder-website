@@ -514,7 +514,7 @@ function page(city, index) {
       </section>
 
       <article class="article article-wrap">
-        <h2>How to find a ${city.short} dive tonight</h2>
+        <h2>How to find a dive bar in ${city.short} tonight</h2>
         <ol class="route-steps">
           <li><strong>Open the map where you are.</strong> Use Nearby in Dive Bar Finder so distance and open status reflect your real starting point, not a generic city centre.</li>
           <li><strong>Choose the character you want.</strong> Start with Dive bars, then add rock, metal, punk, gothic or unique/alternative when the scene matters more than the label.</li>
