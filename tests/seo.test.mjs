@@ -238,6 +238,13 @@ test("the 54-page programmatic SEO cohort is implemented and linked from regiona
   }
 });
 
+test("Chicago guide keeps its official return-journey link in visible content", async () => {
+  const source = await readFile(path.join(root, "guides/dive-bars-chicago.html"), "utf8");
+  assert.match(source, /href="https:\/\/www\.transitchicago\.com\/"/);
+  assert.match(source, /Plan your route and check CTA service alerts/);
+  assert.match(source, /"dateModified": "2026-10-02"/);
+});
+
 test("the world atlas links both regional crawl hubs", async () => {
   const hub = await readFile(path.join(root, "guides/cities.html"), "utf8");
   assert.match(hub, /href="europe\.html"/);

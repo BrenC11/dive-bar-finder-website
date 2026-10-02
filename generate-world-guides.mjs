@@ -59,6 +59,7 @@ const cities = [
   },
   {
     slug: "chicago", name: "Chicago", short: "Chicago", code: "CHI", country: "US", locale: "en-US", accent: "#64b5f6",
+    modified: "2026-10-02", displayModified: "2 October 2026",
     tagline: "A neighbourhood city after midnight.",
     description: "Find Chicago dive bars by neighbourhood, from music-rich North Side rooms to taverns and local bars beyond the downtown core.",
     intro: "Chicago’s bar culture makes most sense at neighbourhood scale. The Loop is a useful landmark, not the centre of every good night, and the character you want may live along a Blue, Red or Brown Line corridor several stops away.",
@@ -73,6 +74,7 @@ const cities = [
     ],
     fieldNotes: [["Transit", "Build around one CTA line."], ["Weather", "A ten-minute walk is a different proposition in February."], ["Type", "Separate tavern, music venue and late-night bar intent."]],
     transport: "Check the final train and bus connections, especially when moving between north, west and south side neighbourhoods.",
+    transportUrl: "https://www.transitchicago.com/", transportLabel: "Plan your route and check CTA service alerts",
     etiquette: "Chicago taverns reward straightforward behaviour: know what you want, respect the regular crowd and never describe someone’s neighbourhood as newly discovered."
   },
   {
