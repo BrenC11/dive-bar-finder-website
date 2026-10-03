@@ -245,6 +245,13 @@ test("Chicago guide keeps its official return-journey link in visible content", 
   assert.match(source, /"dateModified": "2026-10-02"/);
 });
 
+test("Toronto guide links to current official TTC journey information", async () => {
+  const source = await readFile(path.join(root, "guides/dive-bars-toronto.html"), "utf8");
+  assert.match(source, /href="https:\/\/www\.ttc\.ca\/riding-the-ttc\/stay-informed"/);
+  assert.match(source, /Check the TTC trip planner and live service alerts/);
+  assert.match(source, /"dateModified": "2026-10-03"/);
+});
+
 test("the world atlas links both regional crawl hubs", async () => {
   const hub = await readFile(path.join(root, "guides/cities.html"), "utf8");
   assert.match(hub, /href="europe\.html"/);

@@ -115,6 +115,7 @@ const cities = [
   },
   {
     slug: "toronto", name: "Toronto", short: "Toronto", code: "YYZ", country: "CA", locale: "en-CA", accent: "#ef5350",
+    modified: "2026-10-03", displayModified: "3 October 2026",
     tagline: "Ride west. Look between the headlines.",
     description: "A neighbourhood guide to dive bars in Toronto, live-music rooms and local nightlife along the city’s west-end and east-end corridors.",
     intro: "Toronto nightlife spreads along streets and streetcar routes rather than resolving into one obvious district. The useful search often moves west of the towers, where small venues, taverns and neighbourhood bars sit between restaurants, record shops and residential blocks.",
@@ -129,6 +130,7 @@ const cities = [
     ],
     fieldNotes: [["Transit", "Streetcar disruptions can redraw the night."], ["Price", "Use value and atmosphere, not an outdated definition of cheap."], ["Season", "Patio Toronto and February Toronto are different cities."]],
     transport: "Check live TTC information and keep the final leg simple; replacement buses and overnight routes can materially change journey time.",
+    transportUrl: "https://www.ttc.ca/riding-the-ttc/stay-informed", transportLabel: "Check the TTC trip planner and live service alerts",
     etiquette: "Respect queues, tip according to local norms and do not mistake a quiet room for a failed night—Toronto bars often build gradually."
   },
   {
