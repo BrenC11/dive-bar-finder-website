@@ -99,4 +99,13 @@ const seeds = [
   ["guadalajara", "Guadalajara", "GDL", "MX", "en", "#ffd166", "North America", "Tapatío nights with the guitars turned up.", "Guadalajara combines cantinas, rock bars and independent music across a broad city whose central and western scenes should be planned separately.", ["bar de rock", "foro independiente", "cantina"], "SITEUR light rail, Mi Macro, authorised taxis and app-based rides", [["Centre", "Colonia Americana", "Independent bars and music make this a strong walkable starting area."], ["Centre", "Centro Histórico", "Traditional cantinas and busy streets require current block-level checks."], ["West", "Chapultepec", "Avenida nightlife shifts sharply between weekdays and weekends."], ["East", "Analco", "Neighbourhood culture deserves informed, respectful exploration."]]],
 ];
 
-export const expansionCities = seeds.map(buildCity);
+export const expansionCities = seeds.map((seed) => {
+  const city = buildCity(seed);
+  if (city.slug === "detroit") {
+    city.modified = "2026-10-04";
+    city.displayModified = "4 October 2026";
+    city.localExample = `<h2>One place to test the search against</h2>
+        <p>If you want a neighbourhood tavern rather than a music-led night, look at the <a href="https://2wayinn.com/">Two Way Inn</a> on Mount Elliott Street. The family-run bar describes its long history on its own site, where you can also check its current hours and contact details. It sits well outside the Midtown and Corktown starting areas above, so treat it as a separate trip and arrange your journey home before you go. It is an example of the choice, not a promise that any particular night will suit you.</p>`;
+  }
+  return city;
+});
