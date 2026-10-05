@@ -665,7 +665,12 @@ function canonicalPages() {
     const source = readFileSync(file, "utf8");
     const canonical = source.match(/<link\s+rel="canonical"\s+href="([^"]+)"/i)?.[1];
     if (!canonical) throw new Error(`Missing canonical in ${file}`);
-    const lastmod = changed.has(canonical) ? sitemapPublicationDate : previousDates.get(canonical) ?? date;
+    const articleModified = source.match(/"dateModified":\s*"(\d{4}-\d{2}-\d{2})"/)?.[1];
+    const lastmod = [
+      previousDates.get(canonical),
+      articleModified,
+      changed.has(canonical) ? sitemapPublicationDate : undefined,
+    ].filter(Boolean).sort().at(-1) ?? date;
     return {canonical, lastmod};
   }).sort((a, b) => a.canonical.localeCompare(b.canonical));
 }

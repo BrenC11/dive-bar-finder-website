@@ -163,6 +163,22 @@ test("sitemap index, child maps and text fallback contain every canonical HTML p
   }
 });
 
+test("sitemap modification dates do not predate visible page metadata", async () => {
+  const sitemapDates = new Map();
+  for (const file of sitemapLeafFiles) {
+    const source = await readFile(path.join(root, file), "utf8");
+    for (const match of source.matchAll(/<url>\s*<loc>([^<]+)<\/loc>\s*<lastmod>(\d{4}-\d{2}-\d{2})<\/lastmod>/g)) {
+      sitemapDates.set(match[1], match[2]);
+    }
+  }
+  for (const file of await htmlFiles()) {
+    const source = await readFile(file, "utf8");
+    const canonical = source.match(/<link\s+rel="canonical"\s+href="([^"]+)"/i)?.[1];
+    const modified = source.match(/"dateModified":\s*"(\d{4}-\d{2}-\d{2})"/)?.[1];
+    if (modified) assert.ok(sitemapDates.get(canonical) >= modified, `${file} has a stale sitemap date`);
+  }
+});
+
 test("FAQ structured data exactly matches the visible questions and answers", async () => {
   for (const file of await htmlFiles()) {
     const source = await readFile(file, "utf8");
@@ -250,6 +266,14 @@ test("Toronto guide links to current official TTC journey information", async ()
   assert.match(source, /href="https:\/\/www\.ttc\.ca\/riding-the-ttc\/stay-informed"/);
   assert.match(source, /Check the TTC trip planner and live service alerts/);
   assert.match(source, /"dateModified": "2026-10-03"/);
+});
+
+test("Portland guide distinguishes live shows from a quiet bar night using the venue source", async () => {
+  const source = await readFile(path.join(root, "guides/dive-bars-portland.html"), "utf8");
+  assert.match(source, /href="https:\/\/www\.nofunportland\.com\/"/);
+  assert.match(source, /cover is cash only at the door/);
+  assert.match(source, /Check the current listing before you leave/);
+  assert.match(source, /"dateModified": "2026-10-05"/);
 });
 
 test("the world atlas links both regional crawl hubs", async () => {

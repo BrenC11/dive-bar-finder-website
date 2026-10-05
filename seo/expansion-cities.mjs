@@ -107,5 +107,12 @@ export const expansionCities = seeds.map((seed) => {
     city.localExample = `<h2>One place to test the search against</h2>
         <p>If you want a neighbourhood tavern rather than a music-led night, look at the <a href="https://2wayinn.com/">Two Way Inn</a> on Mount Elliott Street. The family-run bar describes its long history on its own site, where you can also check its current hours and contact details. It sits well outside the Midtown and Corktown starting areas above, so treat it as a separate trip and arrange your journey home before you go. It is an example of the choice, not a promise that any particular night will suit you.</p>`;
   }
+  if (city.slug === "portland") {
+    city.modified = "2026-10-05";
+    city.displayModified = "5 October 2026";
+    city.fieldNotes[1][1] = "Hawthorne and Belmont form an inner-east search. Mississippi and Alberta are farther north, so plan them as a separate route.";
+    city.localExample = `<h2>Choose the night, not just the bar</h2>
+        <p>On Hawthorne, <a href="https://www.nofunportland.com/">No Fun</a> is a useful example of why the calendar matters. Its own listings mix live bills with karaoke and trivia. The venue says shows are for people aged 21 and over, cover is cash only at the door, and earplugs are available. Check the current listing before you leave: a quiet drink and a live show are different plans, even at the same address.</p>`;
+  }
   return city;
 });
