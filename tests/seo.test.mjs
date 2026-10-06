@@ -269,6 +269,11 @@ test("Austin guide links its Night Owl advice to the official service page", asy
   assert.match(generator, /transportUrl: "https:\/\/www\.capmetro\.org\/latenight"/);
 });
 
+test("city guides without a city-specific scene label do not display London", async () => {
+  const styles = await readFile(path.join(root, "styles.css"), "utf8");
+  assert.match(styles, /content: var\(--scene-label, "NIGHT \/ FIELD NOTES"\)/);
+});
+
 test("Toronto guide links to current official TTC journey information", async () => {
   const source = await readFile(path.join(root, "guides/dive-bars-toronto.html"), "utf8");
   assert.match(source, /href="https:\/\/www\.ttc\.ca\/riding-the-ttc\/stay-informed"/);
