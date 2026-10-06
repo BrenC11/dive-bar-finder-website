@@ -261,6 +261,14 @@ test("Chicago guide keeps its official return-journey link in visible content", 
   assert.match(source, /"dateModified": "2026-10-02"/);
 });
 
+test("Austin guide links its Night Owl advice to the official service page", async () => {
+  const source = await readFile(path.join(root, "guides/dive-bars-austin.html"), "utf8");
+  const generator = await readFile(path.join(root, "generate-world-guides.mjs"), "utf8");
+  assert.match(source, /CapMetro's Night Owl\s+buses serve selected late-night corridors/);
+  assert.match(source, /href="https:\/\/www\.capmetro\.org\/latenight"/);
+  assert.match(generator, /transportUrl: "https:\/\/www\.capmetro\.org\/latenight"/);
+});
+
 test("Toronto guide links to current official TTC journey information", async () => {
   const source = await readFile(path.join(root, "guides/dive-bars-toronto.html"), "utf8");
   assert.match(source, /href="https:\/\/www\.ttc\.ca\/riding-the-ttc\/stay-informed"/);

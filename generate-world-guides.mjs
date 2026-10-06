@@ -41,6 +41,7 @@ const cities = [
   },
   {
     slug: "austin", name: "Austin", short: "Austin", code: "AUS", country: "US", locale: "en-US", accent: "#ff4d9d",
+    modified: "2026-10-06", displayModified: "6 October 2026",
     tagline: "Follow the sound, not the slogan.",
     description: "A practical guide to dive bars in Austin, live-music districts and neighbourhood rooms beyond the busiest stretch of Sixth Street.",
     intro: "Austin’s reputation creates its own search problem: ‘live music’ can mean a revered small room, a ticketed showcase, a patio songwriter or a high-volume entertainment strip. Finding your kind of dive means matching the district and the calendar to the night you actually want.",
@@ -54,7 +55,8 @@ const cities = [
       ["North", "North Loop & campus edges", "Useful for smaller neighbourhood bars and a less destination-driven night away from the headline districts."]
     ],
     fieldNotes: [["Music", "Genre and set time are stronger signals than a generic live-music tag."], ["Heat", "Walking plans change with summer temperature."], ["Events", "SXSW and festival weeks require a completely different strategy."]],
-    transport: "Keep the night in one district when possible and confirm the return ride before venues empty at the same time.",
+    transport: "Keep the night in one district when possible. CapMetro's Night Owl buses serve selected late-night corridors, including South Congress and South Lamar, not every bar district. Check your route and return stop before choosing where to spend the evening.",
+    transportUrl: "https://www.capmetro.org/latenight", transportLabel: "Check CapMetro's current Night Owl routes",
     etiquette: "If music is playing, listen. Do not talk over a quiet set, block the stage for photos or assume every performance is free."
   },
   {
