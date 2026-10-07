@@ -269,6 +269,14 @@ test("Austin guide links its Night Owl advice to the official service page", asy
   assert.match(generator, /transportUrl: "https:\/\/www\.capmetro\.org\/latenight"/);
 });
 
+test("Tokyo guide links last-train planning to operator timetables", async () => {
+  const source = await readFile(path.join(root, "guides/dive-bars-tokyo.html"), "utf8");
+  const generator = await readFile(path.join(root, "generate-world-guides.mjs"), "utf8");
+  assert.match(source, /Tokyo Metro publishes station\s+timetables for its own lines/);
+  assert.match(source, /href="https:\/\/www\.tokyometro\.jp\/lang_en\/station\/timetable\.html"/);
+  assert.match(generator, /transportUrl: "https:\/\/www\.tokyometro\.jp\/lang_en\/station\/timetable\.html"/);
+});
+
 test("city guides without a city-specific scene label do not display London", async () => {
   const styles = await readFile(path.join(root, "styles.css"), "utf8");
   assert.match(styles, /content: var\(--scene-label, "NIGHT \/ FIELD NOTES"\)/);

@@ -373,6 +373,7 @@ const cities = [
   },
   {
     slug: "tokyo", name: "Tokyo", short: "Tokyo", code: "TYO", country: "JP", locale: "en", accent: "#ff1744",
+    modified: "2026-10-07", displayModified: "7 October 2026",
     tagline: "One door. Eight seats. A whole night.",
     description: "Find Tokyo dive bars, tiny music bars, izakaya and live houses with practical neighbourhood, etiquette and last-train guidance.",
     intro: "Tokyo turns bar discovery vertical. A building may hold a different eight-seat world on every floor, and the most interesting door may reveal almost nothing from the street. The challenge is not scarcity but interpreting categories, cover charges and welcome signals correctly.",
@@ -386,7 +387,8 @@ const cities = [
       ["West", "Koenji", "Punk, underground music, izakaya and small rooms reward patient exploration and current Japanese-language event research."]
     ],
     fieldNotes: [["Capacity", "Eight seats means your group may not fit."], ["Charges", "Cover and otōshi seating charges are normal in many places."], ["Trains", "Miss the last train and the plan changes until morning."]],
-    transport: "Build the evening backwards from the last train unless you deliberately plan to stay out until first service. Taxis across Tokyo are costly.",
+    transport: "Plan backwards from the last train. Tokyo Metro publishes station timetables for its own lines; check the final departure and every transfer, including any JR or other operator leg, before choosing a district. If the return train does not work, choose a nearer bar or plan another way home.",
+    transportUrl: "https://www.tokyometro.jp/lang_en/station/timetable.html", transportLabel: "Check Tokyo Metro station timetables",
     etiquette: "Keep voices low in tiny rooms, do not photograph without permission, order at a reasonable pace and never follow street touts into an unknown venue."
   },
   {
