@@ -224,6 +224,24 @@ test("city guide headings avoid the generator's awkward city article", async () 
   }
 });
 
+test("generated regional guide links use properly capitalised names", async () => {
+  const generator = await readFile(path.join(root, "generate-world-guides.mjs"), "utf8");
+  assert.match(generator, /Explore \$\{regionalLabel\} guides/);
+  for (const file of await htmlFiles(path.join(root, "guides"))) {
+    const source = await readFile(file, "utf8");
+    assert.doesNotMatch(source, /Explore (?:europe|north america) guides/, file);
+  }
+});
+
+test("Vienna guide links night travel advice to Wiener Linien timetables", async () => {
+  const source = await readFile(path.join(root, "guides/dive-bars-vienna.html"), "utf8");
+  const config = await readFile(path.join(root, "seo/expansion-cities.mjs"), "utf8");
+  assert.match(source, /Wiener Linien lists Nightline routes and current timetables together/);
+  assert.match(source, /href="https:\/\/tramwm\.wienerlinien\.at\/web\/guest\/fahrplaene"/);
+  assert.match(config, /city\.slug === "vienna"/);
+  assert.match(config, /city\.transportUrl = "https:\/\/tramwm\.wienerlinien\.at\/web\/guest\/fahrplaene"/);
+});
+
 test("the 54-page programmatic SEO cohort is implemented and linked from regional hubs", async () => {
   const manifest = JSON.parse(await readFile(path.join(root, "seo/page-manifest.json"), "utf8"));
   assert.equal(manifest.length, 54);

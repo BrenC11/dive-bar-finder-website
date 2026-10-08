@@ -550,7 +550,7 @@ function page(city, index) {
           <a class="app-button" data-download-source="dive-bars-${city.slug}" href="${appUrl}">Download Dive Bar Finder</a>
         </section>
       </article>
-      <section class="related"><div class="article-wrap"><h3>Next city</h3><div class="related-grid"><a href="dive-bars-${prev.slug}.html">${prev.name} after dark →</a><a href="${regionalHub}">Explore ${regionalLabel.toLowerCase()} →</a><a href="dive-bars-${next.slug}.html">${next.name} after dark →</a></div></div></section>
+      <section class="related"><div class="article-wrap"><h3>Next city</h3><div class="related-grid"><a href="dive-bars-${prev.slug}.html">${prev.name} after dark →</a><a href="${regionalHub}">Explore ${regionalLabel} guides →</a><a href="dive-bars-${next.slug}.html">${next.name} after dark →</a></div></div></section>
     </main>
     <script src="../script.js"></script>
   </body>

@@ -101,6 +101,13 @@ const seeds = [
 
 export const expansionCities = seeds.map((seed) => {
   const city = buildCity(seed);
+  if (city.slug === "vienna") {
+    city.modified = "2026-10-08";
+    city.displayModified = "8 October 2026";
+    city.transport = "Before settling on Gürtel, Neubau or another district, check how you will get back. Wiener Linien lists Nightline routes and current timetables together, including changes to individual services. Check the service for your night and the stop nearest your chosen bar; do not assume a daytime tram or U-Bahn will still be running.";
+    city.transportUrl = "https://tramwm.wienerlinien.at/web/guest/fahrplaene";
+    city.transportLabel = "Check Wiener Linien night routes and timetables";
+  }
   if (city.slug === "detroit") {
     city.modified = "2026-10-04";
     city.displayModified = "4 October 2026";
