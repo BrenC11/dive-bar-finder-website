@@ -481,7 +481,7 @@ function page(city, index) {
     <meta property="og:image" content="https://divebarfinder.info/assets/app-store/screenshot-6.webp" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="../assets/app-store/app-icon.jpg" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles.css?v=20261010" />
     <script type="application/ld+json">
       ${JSON.stringify({"@context":"https://schema.org","@graph":graph}, null, 2)}
     </script>
@@ -552,7 +552,7 @@ function page(city, index) {
       </article>
       <section class="related"><div class="article-wrap"><h3>Next city</h3><div class="related-grid"><a href="dive-bars-${prev.slug}.html">${prev.name} after dark →</a><a href="${regionalHub}">Explore ${regionalLabel} guides →</a><a href="dive-bars-${next.slug}.html">${next.name} after dark →</a></div></div></section>
     </main>
-    <script src="../script.js"></script>
+    <script src="../script.js?v=20261010"></script>
   </body>
 </html>`;
 }
@@ -582,7 +582,7 @@ function regionalHub(region, slug, title, description, intro, extraCity = null) 
     <meta property="og:image" content="https://divebarfinder.info/assets/app-store/screenshot-6.webp" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="../assets/app-store/app-icon.jpg" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles.css?v=20261010" />
     <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":title,"description":description,"url":`https://divebarfinder.info/guides/${slug}.html`,"dateModified":date,"isPartOf":{"@type":"CollectionPage","name":"World City Dive Bar Guides","url":"https://divebarfinder.info/guides/cities.html"},"hasPart":hasPart}, null, 2)}</script>
   </head>
   <body class="cities-hub">
@@ -593,7 +593,7 @@ function regionalHub(region, slug, title, description, intro, extraCity = null) 
       <section class="city-index wrap" id="city-index"><section class="city-region"><div class="city-region-title"><span>${region} city guides</span><b>${String(items.length + (extraCity ? 1 : 0)).padStart(2, "0")}</b></div><div class="city-index-grid">${cards}</div></section></section>
       <section class="related"><div class="article-wrap"><h3>Keep exploring</h3><div class="related-grid"><a href="cities.html">World city atlas →</a><a href="${region === "Europe" ? "north-america.html" : "europe.html"}">${region === "Europe" ? "North America" : "Europe"} guides →</a><a href="../index.html#how">How Dive Bar Finder works →</a></div></div></section>
       <section class="article-cta atlas-cta wrap"><div><span class="eyebrow">${items.length + (extraCity ? 1 : 0)} cities. One live map.</span><h2>Find the room you will remember.</h2><p>Download Dive Bar Finder for iPhone and turn the field guide into a nearby search.</p></div><a class="app-button" data-download-source="${slug}-hub" href="${appUrl}">Download Dive Bar Finder</a></section>
-    </main><script src="../script.js"></script>
+    </main><script src="../script.js?v=20261010"></script>
   </body>
 </html>`;
 }
@@ -733,7 +733,7 @@ function hub() {
     <meta name="description" content="Explore practical, neighbourhood-first guides to dive bars and alternative nightlife in London, New York, Los Angeles, Tokyo, Berlin and more great cities." />
     <link rel="canonical" href="https://divebarfinder.info/guides/cities.html" />
     <meta property="og:type" content="website" /><meta property="og:title" content="After-dark field guides for the world’s great bar cities" /><meta property="og:description" content="No stale top-ten lists. Learn how each city works, then use the live map to find your room." /><meta property="og:url" content="https://divebarfinder.info/guides/cities.html" /><meta property="og:image" content="https://divebarfinder.info/assets/app-store/screenshot-6.webp" /><meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="../assets/app-store/app-icon.jpg" /><link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="../assets/app-store/app-icon.jpg" /><link rel="stylesheet" href="../styles.css?v=20261010" />
     <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"CollectionPage","name":"World City Dive Bar Guides","description":"Neighbourhood-first guides to dive bars and alternative nightlife in major world cities.","url":"https://divebarfinder.info/guides/cities.html","dateModified":"2026-09-02","isPartOf":{"@type":"WebSite","name":"Dive Bar Finder","url":"https://divebarfinder.info/"},"hasPart":[{"@type":"Article","name":"Dive bars in London","url":"https://divebarfinder.info/guides/dive-bars-london.html"},...cities.map(c=>({"@type":"Article","name":`Dive bars in ${c.name}`,"url":`https://divebarfinder.info/guides/dive-bars-${c.slug}.html`})),{"@type":"Article","name":"Punk, metal and goth places in Berlin","url":"https://divebarfinder.info/guides/alternative-bars-berlin.html"},{"@type":"Article","name":"Punk, rock and metal bars in Montréal","url":"https://divebarfinder.info/guides/punk-rock-bars-montreal.html"}]}, null, 2)}</script>
   </head>
   <body class="cities-hub">
@@ -748,7 +748,7 @@ function hub() {
       <section class="related"><div class="article-wrap"><h3>City scene guides</h3><div class="related-grid"><a href="alternative-bars-berlin.html">Punk, metal and goth places in Berlin →</a><a href="punk-rock-bars-montreal.html">Punk and rock bars in Montréal →</a><a href="rock-metal-bars-london.html">Rock and metal bars in London →</a></div></div></section>
       <section class="atlas-method"><div class="wrap"><div><span>01</span><h2>Start local.</h2><p>Open Nearby from your actual location. City-wide lists ignore the hour you lose crossing town.</p></div><div><span>02</span><h2>Filter the mood.</h2><p>Combine dive, punk, rock, metal, gothic and alternative filters around the night you want.</p></div><div><span>03</span><h2>Verify tonight.</h2><p>Check current hours, programmes, transport and access before making a special journey.</p></div></div></section>
       <section class="article-cta atlas-cta wrap"><div><span class="eyebrow">Twenty cities. One live map.</span><h2>Find the room you’ll remember.</h2><p>Download Dive Bar Finder for iPhone and turn the guide into a nearby search.</p></div><a class="app-button" data-download-source="cities-hub" href="${appUrl}">Download Dive Bar Finder</a></section>
-    </main><script src="../script.js"></script>
+    </main><script src="../script.js?v=20261010"></script>
   </body>
 </html>`;
 }
