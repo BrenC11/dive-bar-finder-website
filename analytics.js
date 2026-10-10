@@ -42,7 +42,55 @@
     }
   };
 
-  const anonymousId = storedId(localStorage, anonymousIdKey);
+  const consentKey = "divebar.analyticsConsent.v1";
+  const consentLifetime = 180 * 24 * 60 * 60 * 1000;
+  let consent = null;
+  let anonymousId = null;
+  let consentExpiresAt = 0;
+  try {
+    const saved = JSON.parse(localStorage.getItem(consentKey) || "null");
+    if (saved && saved.expiresAt > Date.now()) {
+      consent = saved.accepted === true;
+      consentExpiresAt = saved.expiresAt;
+    }
+  } catch { /* Invalid preferences leave analytics off. */ }
+  if (navigator.doNotTrack === "1" || navigator.globalPrivacyControl === true) consent = false;
+
+  const clearIdentifiers = () => {
+    try { localStorage.removeItem(anonymousIdKey); } catch {}
+    try { sessionStorage.removeItem(sessionIdKey); sessionStorage.removeItem(sessionActivityKey); } catch {}
+    anonymousId = null;
+  };
+  if (consent !== true) clearIdentifiers();
+
+  const chooseAnalytics = accepted => {
+    consent = accepted === true;
+    consentExpiresAt = Date.now() + consentLifetime;
+    try { localStorage.setItem(consentKey, JSON.stringify({ accepted: consent, expiresAt: consentExpiresAt })); } catch {}
+    if (!consent) clearIdentifiers();
+    lastPageViewPath = null;
+    consentPanel?.remove();
+    consentPanel = null;
+    if (consent) capturePageView();
+  };
+  let consentPanel = null;
+  const showAnalyticsChoices = () => {
+    if (consentPanel || !document.body) return;
+    consentPanel = document.createElement("section");
+    consentPanel.className = "analytics-consent";
+    consentPanel.setAttribute("aria-label", "Website analytics choices");
+    const text = document.createElement("p");
+    text.textContent = "May we collect basic website statistics? Optional analytics help us understand which pages people use. You can change your choice at any time.";
+    consentPanel.append(text);
+    for (const [label, accepted] of [["Allow analytics", true], ["Keep analytics off", false]]) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = label;
+      button.addEventListener("click", () => chooseAnalytics(accepted));
+      consentPanel.append(button);
+    }
+    document.body.append(consentPanel);
+  };
 
   const currentSessionId = () => {
     const now = Date.now();
@@ -145,6 +193,11 @@
 
   const capture = (event, properties, value) => {
     try {
+      if (consent !== true || Date.now() >= consentExpiresAt || navigator.doNotTrack === "1" || navigator.globalPrivacyControl === true) {
+        clearIdentifiers();
+        return;
+      }
+      if (!anonymousId) anonymousId = storedId(localStorage, anonymousIdKey);
       const eventName = normaliseEvent(event);
       if (!eventName) return;
 
@@ -178,7 +231,14 @@
     capture("page_view");
   };
 
-  window.irAnalytics = Object.freeze({ capture });
+  window.irAnalytics = Object.freeze({ capture, setConsent: chooseAnalytics, showChoices: showAnalyticsChoices });
+  const choicesButton = document.createElement("button");
+  choicesButton.type = "button";
+  choicesButton.className = "analytics-choices";
+  choicesButton.textContent = "Analytics choices";
+  choicesButton.addEventListener("click", showAnalyticsChoices);
+  (document.querySelector(".footer .legal") || document.body)?.append(choicesButton);
+  if (consent === null) showAnalyticsChoices();
 
   document.addEventListener("click", (clickEvent) => {
     const element = clickEvent.target?.closest?.("[data-analytics]");
@@ -199,5 +259,5 @@
 
   addEventListener("popstate", () => setTimeout(capturePageView, 0));
   capturePageView();
-  queuedCaptures.forEach((args) => capture(...args));
+  if (consent === true) queuedCaptures.forEach((args) => capture(...args));
 })();

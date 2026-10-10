@@ -17,6 +17,8 @@ class MemoryStorage {
     return this.entries.get(key) ?? null;
   }
 
+  removeItem(key) { this.entries.delete(key); }
+
   setItem(key, value) {
     this.entries.set(key, String(value));
   }
@@ -27,10 +29,12 @@ function loadTracker({
   referrer = "",
   localEntries,
   sessionEntries,
+  consent = true,
+  doNotTrack,
 } = {}) {
   const requests = [];
   const listeners = new Map();
-  const localStorage = new MemoryStorage(localEntries);
+  const localStorage = new MemoryStorage({ ...(consent === null ? {} : { "divebar.analyticsConsent.v1": JSON.stringify({ accepted: consent, expiresAt: Date.now() + 100000 }) }), ...localEntries });
   const sessionStorage = new MemoryStorage(sessionEntries);
   const location = {
     origin: "http://localhost:4173",
@@ -38,7 +42,11 @@ function loadTracker({
   };
   let id = 0;
 
+  const element = () => ({ append() {}, setAttribute() {}, addEventListener() {}, remove() {} });
   const document = {
+    body: element(),
+    createElement: element,
+    querySelector: () => null,
     title: "Dive Bars Near Me",
     referrer,
     addEventListener(type, listener) {
@@ -58,6 +66,7 @@ function loadTracker({
     },
   };
   const navigator = {
+    doNotTrack,
     sendBeacon(url, body) {
       requests.push({ url, body });
       return true;
@@ -167,4 +176,21 @@ test("renews inactive sessions and normalises data-analytics clicks", async () =
   });
 
   assert.equal((await payloadAt(tracker, 1)).event, "get_the_app");
+});
+
+test("no consent means no identifiers or network requests, including queued clicks", () => {
+ const tracker = loadTracker({consent:null});
+ tracker.window.irAnalytics.capture("app_store_click");
+ assert.equal(tracker.requests.length,0);
+ assert.equal(tracker.localStorage.getItem("ir_analytics_anonymous_id"),null);
+ assert.equal(tracker.sessionStorage.getItem("ir_analytics_session_id"),null);
+});
+test("withdrawal stops tracking and removes identifiers",()=>{
+ const tracker=loadTracker();assert.equal(tracker.requests.length,1);
+ tracker.window.irAnalytics.setConsent(false);tracker.window.irAnalytics.capture("app_store_click");
+ assert.equal(tracker.requests.length,1);assert.equal(tracker.localStorage.getItem("ir_analytics_anonymous_id"),null);
+ tracker.window.irAnalytics.setConsent(true);assert.equal(tracker.requests.length,2);
+});
+test("Do Not Track overrides a saved analytics consent",()=>{
+ const tracker=loadTracker({doNotTrack:"1"});assert.equal(tracker.requests.length,0);assert.equal(tracker.localStorage.getItem("ir_analytics_anonymous_id"),null);
 });

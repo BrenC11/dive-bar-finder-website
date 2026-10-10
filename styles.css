@@ -2076,3 +2076,10 @@ details[open] summary::after {
     font-size: clamp(4.7rem, 23vw, 7.5rem);
   }
 }
+
+.analytics-consent { position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 100; max-width: 640px; margin: auto; padding: 1.25rem; background: #151515; color: #fff; border: 1px solid #777; border-radius: 12px; box-shadow: 0 8px 32px #0009; }
+.analytics-consent p { margin: 0 0 1rem; }
+.analytics-consent button, .analytics-choices { color: inherit; font: inherit; cursor: pointer; border: 1px solid #888; background: #222; border-radius: 6px; padding: .6rem .8rem; }
+.analytics-consent button { margin: 0 .6rem .4rem 0; }
+.analytics-choices { font-size: .8rem; }
+.analytics-consent button:focus-visible, .analytics-choices:focus-visible { outline: 3px solid #f5b94c; outline-offset: 3px; }
