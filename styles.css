@@ -63,12 +63,21 @@ img {
   color: var(--cream);
   font-size: 1.55rem;
 }
+.support-topics {
+  line-height: 2;
+}
+.legal-copy h2[id] {
+  scroll-margin-top: 120px;
+}
 .legal-copy p + p,
 .legal-copy ul + p,
-.legal-copy p + ul {
+.legal-copy ol + p,
+.legal-copy p + ul,
+.legal-copy p + ol {
   margin-top: 16px;
 }
-.legal-copy ul {
+.legal-copy ul,
+.legal-copy ol {
   padding-left: 22px;
 }
 .legal-copy li + li {
