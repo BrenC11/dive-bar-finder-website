@@ -14,8 +14,8 @@ if (!window.__insaneRabbitAnalyticsLoaderInstalled) {
   const analytics = document.createElement("script");
   const currentScript = document.currentScript;
   analytics.src = currentScript
-    ? new URL("analytics.js", currentScript.src).href
-    : "/analytics.js";
+    ? new URL("analytics.js?v=20261010", currentScript.src).href
+    : "/analytics.js?v=20261010";
   analytics.async = true;
   analytics.dataset.insaneRabbitAnalytics = "true";
   document.head.append(analytics);
