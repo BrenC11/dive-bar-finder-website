@@ -7,6 +7,16 @@ import test from "node:test";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const canonicalOrigin = "https://divebarfinder.info";
+test("city callouts use the correct article before vowel city names", async () => {
+  for (const [slug, name] of [["oslo", "Oslo"], ["athens", "Athens"], ["atlanta", "Atlanta"]]) {
+    const source = await readFile(path.join(root, `guides/dive-bars-${slug}.html`), "utf8");
+    assert.ok(source.includes(`versions of an ${name} night`));
+  }
+  const { expansionCities } = await import("../seo/expansion-cities.mjs");
+  for (const city of expansionCities) {
+    assert.doesNotMatch(city.callout, /versions of a [AEIOU]/);
+  }
+});
 const sitemapLeafFiles = [
   "sitemap-core.xml",
   "sitemap-europe.xml",

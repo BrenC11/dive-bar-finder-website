@@ -26,7 +26,7 @@ function buildCity(seed) {
     intro: `${identity} A useful search starts with the kind of room you want, then narrows the city to a compact area where recent evidence and a realistic journey home line up.`,
     meaning: `The phrase “dive bar” does not map perfectly onto every local scene. In ${name}, useful search language includes ${termList}. Treat those as clues to a venue's purpose, then check current photos, programme details and reviews before travelling.`,
     calloutTitle: `Start with ${first[1]} or ${second[1]}`,
-    callout: `These areas offer different versions of a ${name} night. Compare the current programme and closing pattern, then keep one backup close enough to reach without sacrificing the evening.`,
+    callout: `These areas offer different versions of ${/^[AEIOU]/.test(name) ? "an" : "a"} ${name} night. Compare the current programme and closing pattern, then keep one backup close enough to reach without sacrificing the evening.`,
     districts,
     fieldNotes: [
       ["Search language", `Try ${termList} alongside the neighbourhood name.`],
