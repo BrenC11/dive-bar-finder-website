@@ -101,6 +101,15 @@ const seeds = [
 
 export const expansionCities = seeds.map((seed) => {
   const city = buildCity(seed);
+  if (city.slug === "oslo") {
+    city.modified = "2026-10-12";
+    city.displayModified = "12 October 2026";
+    city.intro = "Start around Youngstorget for a central search, or compare bars in Grünerløkka farther east. Choose a small area, check the current programme and plan how you will get home before travelling.";
+    city.transport = "Check your return journey before choosing a bar district. Ruter says its night buses run on Friday and Saturday nights, from the centre towards the districts. A weekend route is not a promise of a weekday service. Check the journey planner for your date, departure stop and destination, including any changes or connections.";
+    city.transportUrl = "https://ruter.no/en/plan-journey/nattransport/night-bus";
+    city.transportLabel = "Check Ruter night buses and journey planning";
+    city.faq[2][1] = "Check Ruter's journey planner for your date, departure stop and destination. Its night buses run on Friday and Saturday nights, so do not assume the same service is available on a weekday. Verify any connections before leaving and never drive after drinking.";
+  }
   if (city.slug === "vienna") {
     city.modified = "2026-10-08";
     city.displayModified = "8 October 2026";
