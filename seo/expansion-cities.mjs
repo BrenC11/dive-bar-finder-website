@@ -101,6 +101,13 @@ const seeds = [
 
 export const expansionCities = seeds.map((seed) => {
   const city = buildCity(seed);
+  if (city.slug === "athens") {
+    city.modified = "2026-10-13";
+    city.displayModified = "13 October 2026";
+    city.districts = city.districts.map(([area, name, detail]) => [name === "Gazi" ? "Nightlife" : area, name, detail]);
+    city.localExample = `<h2>A bar visit or an event in Gazi?</h2>
+        <p><a href="https://www.thisisathens.org/neighbourhoods/gazi-keramikos-guide">Athens' official Gazi and Keramikos guide</a> describes Technopolis, the former gasworks, as a cultural venue hosting events such as music festivals and exhibitions. It is an example of why an area search needs a second step: an event venue and a bar are different plans. Check the current programme and admission details for an event, or compare nearby bars if you want a drink without building the evening around a show.</p>`;
+  }
   if (city.slug === "oslo") {
     city.modified = "2026-10-12";
     city.displayModified = "12 October 2026";
