@@ -101,6 +101,16 @@ const seeds = [
 
 export const expansionCities = seeds.map((seed) => {
   const city = buildCity(seed);
+  if (city.slug === "copenhagen") {
+    city.modified = "2026-10-14";
+    city.displayModified = "14 October 2026";
+    city.intro = "Start with Indre By for a central bar search, or compare Vesterbro and Nørrebro for a neighbourhood night. Keep two options close together and check the journey home before leaving.";
+    city.transport = "The Copenhagen Metro is designed to run around the clock, but evening and night maintenance can close parts of a line. Check the operator's planned changes before leaving. Replacement Metrobuses can take longer and may not stop at every station, so check the stop and any onward connection. If you've been drinking, use public transport or a licensed taxi rather than cycling.";
+    city.transportUrl = "https://m.dk/en/plan-your-trip/information-about-metrobuses/";
+    city.transportLabel = "Check Copenhagen Metro replacement-bus information";
+    city.transport += ' <a href="https://m.dk/en/operation-and-service/status-and-planned-changes/">Check Metro service status and planned changes ↗</a>';
+    city.faq[2][1] = "Check Copenhagen Metro's current service status and planned changes for your night. Although the Metro is designed to run around the clock, maintenance can require replacement buses with different stops and longer journeys. Check your onward connection and use public transport or a licensed taxi if you've been drinking.";
+  }
   if (city.slug === "athens") {
     city.modified = "2026-10-13";
     city.displayModified = "13 October 2026";
