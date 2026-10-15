@@ -101,6 +101,12 @@ const seeds = [
 
 export const expansionCities = seeds.map((seed) => {
   const city = buildCity(seed);
+  if (city.slug === "helsinki") {
+    city.modified = "2026-10-15";
+    city.displayModified = "15 October 2026";
+    city.localExample = `<h2>A rock bar or a live show?</h2>
+        <p><a href="https://barloose.com/en/meista/">Bar Loose</a>, on Annankatu, describes an upstairs bar and a downstairs live venue. Its programme spans several genres, so the name alone will not tell you what the evening sounds like. Check the <a href="https://barloose.com/en/live/">current event listing</a> for the room, music and admission details before setting off. If you want conversation rather than a gig, make that distinction when comparing it with other bars on the map.</p>`;
+  }
   if (city.slug === "copenhagen") {
     city.modified = "2026-10-14";
     city.displayModified = "14 October 2026";

@@ -330,3 +330,13 @@ test("the world atlas links both regional crawl hubs", async () => {
   assert.match(hub, /href="europe\.html"/);
   assert.match(hub, /href="north-america\.html"/);
 });
+
+test("Helsinki keeps its source-backed bar and gig distinction in the generator", async () => {
+  const source = await readFile(path.join(root, "guides/dive-bars-helsinki.html"), "utf8");
+  const { expansionCities } = await import("../seo/expansion-cities.mjs");
+  const city = expansionCities.find((entry) => entry.slug === "helsinki");
+  assert.ok(source.includes(city.localExample));
+  assert.match(source, /href="https:\/\/barloose\.com\/en\/meista\/"/);
+  assert.match(source, /href="https:\/\/barloose\.com\/en\/live\/"/);
+  assert.match(source, /room, music and admission details/);
+});
