@@ -243,6 +243,7 @@ const cities = [
   },
   {
     slug: "edinburgh", name: "Edinburgh", short: "Edinburgh", code: "EDI", country: "GB", locale: "en-GB", accent: "#90a4ae",
+    published: "2026-07-18", modified: "2026-10-17", displayModified: "17 October 2026",
     tagline: "Stone closes in. The night opens out.",
     description: "Find Edinburgh dive bars, old pubs and alternative music rooms from the Old Town closes to Leith and Southside.",
     intro: "Edinburgh’s compact centre hides sharp changes in elevation, crowd and purpose. A cellar bar near the Royal Mile, a student music room in Southside and a Leith local may sit only minutes apart on a map while offering entirely different versions of the city.",
@@ -256,7 +257,8 @@ const cities = [
       ["West", "Dalry & Gorgie", "Look for straightforward locals and match-night energy beyond the visitor core, with transport planned around the final bus."]
     ],
     fieldNotes: [["Terrain", "A short route may include steep closes and stairs."], ["Festival", "August rewrites normal demand."], ["Weather", "Wind and rain make distant backups less useful."]],
-    transport: "The centre is walkable, but hills, weather and late buses matter. Keep a realistic route home from Leith or the west.",
+    transport: "Before choosing a bar in Leith, Southside or the west, check how you will get back. Lothian's NightBus page brings together its night route map, service timetables and fare information. Find a service for your destination, then check the departure stop and time for your journey. Do not assume the daytime bus you arrived on is your route home.",
+    transportUrl: "https://www.lothianbuses.com/our-services/nightbus/", transportLabel: "Check Lothian NightBus routes, timetables and fares",
     etiquette: "Do not demand a ‘Scottish experience’, respect live performers and understand that a quiet local is not there to entertain a tour group."
   },
   {

@@ -331,6 +331,16 @@ test("the world atlas links both regional crawl hubs", async () => {
   assert.match(hub, /href="north-america\.html"/);
 });
 
+test("Edinburgh links night travel planning to Lothian's maintained service page", async () => {
+  const source = await readFile(path.join(root, "guides/dive-bars-edinburgh.html"), "utf8");
+  const generator = await readFile(path.join(root, "generate-world-guides.mjs"), "utf8");
+  assert.match(source, /href="https:\/\/www\.lothianbuses\.com\/our-services\/nightbus\/"/);
+  assert.match(generator, /transportUrl: "https:\/\/www\.lothianbuses\.com\/our-services\/nightbus\/"/);
+  assert.match(source, /Do not assume the daytime bus you arrived on is your route home/);
+  assert.match(source, /"datePublished": "2026-07-18"/);
+  assert.match(source, /"dateModified": "2026-10-17"/);
+});
+
 test("Helsinki keeps its source-backed bar and gig distinction in the generator", async () => {
   const source = await readFile(path.join(root, "guides/dive-bars-helsinki.html"), "utf8");
   const { expansionCities } = await import("../seo/expansion-cities.mjs");
