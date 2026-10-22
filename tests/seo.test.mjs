@@ -350,3 +350,14 @@ test("Helsinki keeps its source-backed bar and gig distinction in the generator"
   assert.match(source, /href="https:\/\/barloose\.com\/en\/live\/"/);
   assert.match(source, /room, music and admission details/);
 });
+
+test("Liverpool distinguishes the garden bar from associated event spaces", async () => {
+  const source = await readFile(path.join(root, "guides/dive-bars-liverpool.html"), "utf8");
+  const generator = await readFile(path.join(root, "generate-world-guides.mjs"), "utf8");
+  for (const text of ["Kazimier Stockroom and Kazimier Lounge", "check which space the listing names", 'href="https://www.invisiblewindfactory.com/kaz-garden/"']) {
+    assert.ok(source.includes(text));
+    assert.ok(generator.includes(text));
+  }
+  assert.match(source, /"datePublished": "2026-09-02"/);
+  assert.match(source, /"dateModified": "2026-10-22"/);
+});

@@ -348,7 +348,9 @@ const cities = [
   {
     slug: "liverpool", name: "Liverpool", short: "Liverpool", code: "LPL", country: "GB", locale: "en-GB", accent: "#ffd166",
     region: "Europe", regionHub: "europe.html", managed: true,
-    published: "2026-09-02", modified: "2026-09-02", displayModified: "2 September 2026",
+    published: "2026-09-02", modified: "2026-10-22", displayModified: "22 October 2026",
+    localExample: `<h2>A garden bar is not the same plan as a gig</h2>
+        <p>Kazimier Garden is one example to compare with your Liverpool search. The operator's <a href="https://www.invisiblewindfactory.com/kaz-garden/">Kazimier Garden page</a> describes a garden bar and names two associated spaces, Kazimier Stockroom and Kazimier Lounge. If you are going for an event, check which space the listing names, then confirm its entry arrangements. A description of the garden alone does not tell you what is happening in another room.</p>`,
     seoTitle: "Dive Bars in Liverpool: Rock Pubs and Punk Venues",
     tagline: "Look beyond the obvious music history.",
     description: "Find Liverpool dive bars, rock pubs and punk venues across the Ropewalks, Baltic Triangle, Georgian Quarter and north city centre.",
