@@ -361,3 +361,14 @@ test("Liverpool distinguishes the garden bar from associated event spaces", asyn
   assert.match(source, /"datePublished": "2026-09-02"/);
   assert.match(source, /"dateModified": "2026-10-22"/);
 });
+
+test("Birmingham keeps official return planning and FAQ guidance in sync", async () => {
+  const source = await readFile(path.join(root, "guides/dive-bars-birmingham.html"), "utf8");
+  const { expansionCities } = await import("../seo/expansion-cities.mjs");
+  const city = expansionCities.find((entry) => entry.slug === "birmingham");
+  assert.ok(source.includes(city.transport));
+  assert.ok(source.includes(city.faq[2][1]));
+  assert.match(source, /href="https:\/\/www\.tfwm\.org\.uk\/plan-your-journey\/"/);
+  assert.match(source, /"datePublished": "2026-09-02"/);
+  assert.match(source, /"dateModified": "2026-10-23"/);
+});

@@ -101,6 +101,14 @@ const seeds = [
 
 export const expansionCities = seeds.map((seed) => {
   const city = buildCity(seed);
+  if (city.slug === "birmingham") {
+    city.modified = "2026-10-23";
+    city.displayModified = "23 October 2026";
+    city.transport = "Before choosing between Digbeth, Jewellery Quarter and Stirchley, check a return journey for your destination and the time you expect to leave. Transport for West Midlands brings together bus, train and tram journey planning, route timetables and disruption checks. Confirm the departure stop and any connection rather than assuming the service you arrived on will still be running.";
+    city.transportUrl = "https://www.tfwm.org.uk/plan-your-journey/";
+    city.transportLabel = "Check routes, timetables and disruptions with TfWM";
+    city.faq[2][1] = "Check your destination and expected departure time with Transport for West Midlands, then confirm the route timetable, departure stop, connections and disruptions. Never drive after drinking.";
+  }
   if (city.slug === "helsinki") {
     city.modified = "2026-10-15";
     city.displayModified = "15 October 2026";
