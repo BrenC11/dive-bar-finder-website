@@ -14,7 +14,7 @@ const cities = [
     districts: [
       ["Manhattan", "East Village & Lower East Side", "Dense, late and historically tied to downtown music culture. Compare current atmosphere carefully: legacy rooms and polished imitations often sit side by side."],
       ["Brooklyn", "Williamsburg & Greenpoint", "Music rooms, long-standing neighbourhood bars and newer concepts overlap. Search beyond the busiest waterfront blocks for a more local rhythm."],
-      ["Brooklyn", "Bushwick & Ridgewood", "Useful for DIY energy, event-led nights and bars at the edge of club culture. Check tonight’s programming before travelling."],
+      ["Brooklyn / Queens", "Bushwick & Ridgewood", "Bushwick is in Brooklyn; neighbouring Ridgewood is in Queens. Use <a href=\"https://www.nyctourism.com/new-york/queens/ridgewood/\">NYC Tourism's Ridgewood guide</a> to orient your search, then check the venue's own programme before travelling."],
       ["Queens", "Astoria & Jackson Heights", "Broaden the search for lived-in neighbourhood bars, varied communities and places that are destinations for locals rather than visitors."]
     ],
     fieldNotes: [["Distance", "Subway time matters more than straight-line miles."], ["Timing", "A quiet early drink and a 1am room can be completely different experiences."], ["Signal", "Recent interior photos and repeated local reviews beat ‘hidden gem’ language."]],

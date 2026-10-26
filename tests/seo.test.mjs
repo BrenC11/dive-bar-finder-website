@@ -362,6 +362,16 @@ test("Liverpool distinguishes the garden bar from associated event spaces", asyn
   assert.match(source, /"dateModified": "2026-10-22"/);
 });
 
+test("New York places the Bushwick and Ridgewood search area across both boroughs", async () => {
+  const source = await readFile(path.join(root, "guides/dive-bars-new-york.html"), "utf8");
+  const generator = await readFile(path.join(root, "generate-world-guides.mjs"), "utf8");
+  assert.match(source, /<span>Brooklyn \/ Queens<\/span>\s*<h3>Bushwick & Ridgewood<\/h3>/);
+  for (const text of ["Bushwick is in Brooklyn; neighbouring Ridgewood is in Queens.", "https://www.nyctourism.com/new-york/queens/ridgewood/"]) {
+    assert.ok(source.includes(text));
+    assert.ok(generator.includes(text));
+  }
+});
+
 test("Birmingham keeps official return planning and FAQ guidance in sync", async () => {
   const source = await readFile(path.join(root, "guides/dive-bars-birmingham.html"), "utf8");
   const { expansionCities } = await import("../seo/expansion-cities.mjs");
