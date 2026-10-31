@@ -207,9 +207,10 @@ const cities = [
   },
   {
     slug: "amsterdam", name: "Amsterdam", short: "Amsterdam", code: "AMS", country: "NL", locale: "en", accent: "#ff5252",
+    published: "2026-07-18", modified: "2026-10-31", displayModified: "31 October 2026",
     tagline: "Beyond the party postcard.",
     description: "Find dive bars and brown cafés in Amsterdam while avoiding the busiest tourist circuit and respecting the city’s neighbourhoods.",
-    intro: "Amsterdam’s centre is compact enough to encourage aimless bar-hopping—and busy enough to make that a poor strategy. The city’s more characterful search includes brown cafés, music bars and neighbourhood pubs outside the most pressured visitor streets.",
+    intro: "Amsterdam’s centre is compact enough to encourage aimless bar-hopping, but busy enough to make that a poor strategy. The city’s more characterful search includes brown cafés, music bars and neighbourhood pubs outside the most pressured visitor streets.",
     meaning: "A brown café is not simply the Dutch translation of a dive bar: it is its own tradition, often marked by dark wood, age and a stable local rhythm. Music bars and rougher late rooms add other possibilities. Search the category you actually want instead of flattening them into one label.",
     calloutTitle: "Be a visitor the city can live with",
     callout: "Amsterdam actively asks visitors to reduce nuisance. Keep noise down on residential streets, use bins and never assume the centre is a consequence-free party zone.",
@@ -220,7 +221,8 @@ const cities = [
       ["South", "De Pijp", "Dense food and bar options make comparison easy, though the busiest streets can feel more destination-led at weekends."]
     ],
     fieldNotes: [["Category", "Brown café, music bar and coffeeshop mean different things."], ["Bikes", "Never stand in a cycle lane while checking the map."], ["Noise", "Residential canals amplify late-night sound."]],
-    transport: "Walk, tram or use the free ferries where practical; if cycling, do not drink and ride, and learn the traffic rules first.",
+    transport: "Plan the return journey before choosing a bar, especially if Amsterdam-Noord is on your route. Set the date and the time you expect to leave in GVB’s journey planner, then check the departure stop, connections and any disruptions. A route that works on the way out may be different later. If cycling, do not drink and ride.",
+    transportUrl: "https://www.gvb.nl/en/travel-information/journey-planner", transportLabel: "Plan your return journey with GVB",
     etiquette: "Keep groups compact, respect closing staff and neighbourhood quiet, and understand that a coffeeshop is not a conventional bar."
   },
   {
