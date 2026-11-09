@@ -182,7 +182,7 @@ const cities = [
   {
     slug: "berlin", name: "Berlin", short: "Berlin", code: "BER", country: "DE", locale: "en", accent: "#d4e157",
     generated: false,
-    modified: "2026-07-28", displayModified: "28 July 2026",
+    modified: "2026-11-09", displayModified: "9 November 2026",
     tagline: "No last call. Still make a plan.",
     description: "A field guide to Berlin dive bars, Kneipen, punk rooms and neighbourhood nightlife across Kreuzberg, Neukölln and Friedrichshain.",
     intro: "Berlin’s lack of a universal closing time changes the psychology of a night out: there is less pressure to arrive early, but more reason to understand the room you are entering. The city’s Kneipen, music bars and club-adjacent spaces are distinct cultures, not interchangeable stops.",
