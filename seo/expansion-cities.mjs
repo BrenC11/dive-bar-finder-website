@@ -116,9 +116,16 @@ export const expansionCities = seeds.map((seed) => {
         <p><a href="https://barloose.com/en/meista/">Bar Loose</a>, on Annankatu, describes an upstairs bar and a downstairs live venue. Its programme spans several genres, so the name alone will not tell you what the evening sounds like. Check the <a href="https://barloose.com/en/live/">current event listing</a> for the room, music and admission details before setting off. If you want conversation rather than a gig, make that distinction when comparing it with other bars on the map.</p>`;
   }
   if (city.slug === "copenhagen") {
-    city.modified = "2026-10-14";
-    city.displayModified = "14 October 2026";
-    city.intro = "Start with Indre By for a central bar search, or compare Vesterbro and Nørrebro for a neighbourhood night. Keep two options close together and check the journey home before leaving.";
+    city.modified = "2026-11-11";
+    city.displayModified = "11 November 2026";
+    city.intro = "For a punk-bodega search, compare Sorte René with Skovbar in Nørrebro. Sorte René describes a bar with concerts and a pool table; Skovbar describes itself as punk and queer friendly. Choose the room and the kind of evening first, then check current opening information and keep a nearby backup.";
+    city.localExample = `<h2>Two Copenhagen bars to compare</h2>
+        <p>These examples come from the bars' own information, checked on 11 November 2026. They are starting points for different preferences, not a ranking or a promise about tonight's crowd.</p>
+        <h3>Sorte René: a punk bodega with concerts</h3>
+        <p><a href="https://www.sorterene.com/">Sorte René's official site</a> describes a punk bodega with concerts and a pool table. It is a useful candidate if you want a bar with a connection to the city's underground rock scene. If live music is the reason for your trip, follow its links to current social posts and check the actual bill and admission details. A venue that hosts concerts does not necessarily have a show every night.</p>
+        <h3>Skovbar: punk and queer friendly in Nørrebro</h3>
+        <p><a href="https://skovbar.dk/">Skovbar's own site</a> describes a punk and queer friendly bar and sets out a policy against discriminatory behaviour. Its drinks menu includes cocktails named after punk and alternative artists, alongside beer and alcohol-free choices. Compare it if the bar's stated identity fits the evening you want; a drinks menu is not evidence of a live gig. Check its current hours before leaving, rather than assuming a neighbourhood bar opens every day.</p>
+        <p>Use the app's map to compare the journey and save a backup near your first choice. Keep the venue's own information as your final check for opening hours and events.</p>`;
     city.transport = "The Copenhagen Metro is designed to run around the clock, but evening and night maintenance can close parts of a line. Check the operator's planned changes before leaving. Replacement Metrobuses can take longer and may not stop at every station, so check the stop and any onward connection. If you've been drinking, use public transport or a licensed taxi rather than cycling.";
     city.transportUrl = "https://m.dk/en/plan-your-trip/information-about-metrobuses/";
     city.transportLabel = "Check Copenhagen Metro replacement-bus information";
