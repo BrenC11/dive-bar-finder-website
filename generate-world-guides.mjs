@@ -394,7 +394,7 @@ const cities = [
     ],
     fieldNotes: [["Capacity", "Eight seats means your group may not fit."], ["Charges", "Cover and otōshi seating charges are normal in many places."], ["Trains", "Miss the last train and the plan changes until morning."]],
     transport: "Plan backwards from the last train. Tokyo Metro publishes station timetables for its own lines; check the final departure and every transfer, including any JR or other operator leg, before choosing a district. If the return train does not work, choose a nearer bar or plan another way home.",
-    transportUrl: "https://www.tokyometro.jp/lang_en/station/timetable.html", transportLabel: "Check Tokyo Metro station timetables",
+    transportUrl: "https://www.tokyometro.jp/lang_en/station/index03.html", transportLabel: "Find your Tokyo Metro station and timetable",
     etiquette: "Keep voices low in tiny rooms, do not photograph without permission, order at a reasonable pace and never follow street touts into an unknown venue."
   },
   {
